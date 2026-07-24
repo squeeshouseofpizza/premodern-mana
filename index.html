@@ -99,8 +99,12 @@ details .body{padding:0 14px 14px 34px;color:var(--muted);max-width:78ch}
 code{font-family:var(--mono);font-size:12px;color:var(--gold)}
 .prose{max-width:70ch;color:var(--muted)}
 .prose p{margin:0 0 14px}
-.edge{max-width:74ch;margin:14px 0 0;padding-left:20px;color:var(--muted);font-size:16px}
-.edge li{margin:0 0 5px}
+.why{margin:16px 0 0;border:1px solid var(--edge);border-radius:3px;background:var(--panel)}
+.why>summary{font-family:Cinzel,serif;font-size:13px;letter-spacing:.06em;color:var(--gold);
+  padding:13px 16px}
+.why>summary:hover{color:var(--ink)}
+.why-body{padding:0 16px 4px 16px}
+.why-body p{max-width:70ch;margin:0 0 12px;color:var(--ink);font-size:16px}
 details.doc{background:transparent;border:0;border-top:1px solid var(--edge);border-radius:0;margin:32px 0 0}
 details.doc>summary{font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--muted);padding:14px 0}
@@ -128,11 +132,26 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
   <h1>Premodern Mana Sources</h1>
   <p class="thesis">Paste a decklist. Every spell gets checked against the sources it needs to be
   cast on curve, counted from what your cards do in play rather than what their mana symbols say.</p>
-  <ul class="edge">
-    <li>Fetchlands are read against the basics your list actually plays. No duals exist here to find.</li>
-    <li>Skycloud Expanse, Cabal Coffers and Gaea's Cradle all print colors they cannot make alone.</li>
-    <li>Rituals, Lotus Petal, Mox Diamond and the mana creatures count as well.</li>
-  </ul>
+  <details class="why">
+    <summary>Why this is more accurate than a general mana calculator</summary>
+    <div class="why-body">
+      <p>A general calculator reads the colors printed on a card and trusts them. That works in
+      formats with dual lands. It falls apart in Premodern, where a lot of the mana comes from cards
+      whose printed colors are not what they produce.</p>
+      <p>Reflecting Pool prints five colors and makes none of them alone. Skycloud Expanse prints
+      white and blue and makes neither by itself. Fetchlands find basics rather than duals, so a
+      fetch is only a blue source if you are actually playing Islands. Rituals, Lotus Petal, Mox
+      Diamond and the mana creatures are a real part of the mana and are not lands at all. Read any
+      of that off the printed colors and the count is wrong, sometimes by a lot.</p>
+      <p>The reason a general tool cannot just fix this is that the fix is not a setting. It is 354
+      cards read one at a time. Every mana source legal in Premodern, 199 lands and 155 other
+      sources, was checked against its oracle text and classified by hand, with the reasoning
+      written down for each one. A calculator built from a card database inherits the database's
+      answer, that Reflecting Pool makes five colors, because nothing short of reading every card
+      tells it otherwise. That reading is the work, and it is what the count here is built on. The
+      card-by-card breakdown is further down the page.</p>
+    </div>
+  </details>
 </header>
 
 <div class="cols">
@@ -277,8 +296,7 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
 
 <section id="generic">
   <h2>What a card database misses</h2>
-  <p class="prose">Card data records what a land could theoretically produce. These are the ones
-  where that is not what happens.</p>
+  <p class="prose">The cards behind that count. Each prints one thing and produces another.</p>
   <table class="miss"><thead><tr>
     <th scope=col>Card</th><th scope=col>Recorded as</th><th scope=col>Makes on its own</th>
   </tr></thead><tbody>
@@ -290,9 +308,8 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
     <tr><td>Temple of the False God</td><td class="num">C</td><td>nothing, below five lands</td></tr>
     <tr><td>Flooded Strand</td><td class="num">nothing</td><td>whatever your list plays</td></tr>
   </tbody></table>
-  <p class="prose">Four Reflecting Pool read from that data is four sources of every color, which
-  is wrong by four sources of every color. Every mana source legal in the format was read and
-  classified by hand instead.</p>
+  <p class="prose">Four Reflecting Pool read off that data is four sources of every color, wrong by
+  four sources of every color. The tool counts what the card makes in play instead.</p>
 </section>
 
 <section id="ref">
