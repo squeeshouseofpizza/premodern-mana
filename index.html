@@ -44,9 +44,20 @@ button.quiet:hover{background:var(--edge);color:var(--ink)}
 .hint code{font-family:var(--mono);font-size:12px;color:var(--gold)}
 .tally{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 20px}
 .tally b{color:var(--ink);font-weight:400}
-.estimate{margin:0 0 20px;font-size:16px;color:var(--muted)}
-.estimate b{font-family:var(--mono);font-size:17px;color:var(--ink);font-weight:400;margin-left:4px}
-.est-note{display:block;margin-top:5px;font-size:14px;max-width:70ch}
+.toggle{display:inline-flex;border:1px solid var(--edge);border-radius:2px;overflow:hidden;margin-bottom:14px}
+.tg{font-family:Cinzel,serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  background:transparent;color:var(--muted);border:0;border-radius:0;padding:8px 16px;cursor:pointer}
+.tg+.tg{border-left:1px solid var(--edge)}
+.tg:hover{color:var(--ink)}
+.tg.on{background:var(--gold);color:var(--ground)}
+.dropintro{margin:0 0 12px;color:var(--muted);font-size:16px}
+.dropintro b,.dropnote b{color:var(--ink)}
+.drops{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}
+.drop{flex:1 1 130px;max-width:200px;background:var(--panel);border:1px solid var(--edge);
+  border-radius:2px;padding:13px 14px}
+.dt{font-family:Cinzel,serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.dp{font-family:var(--mono);font-size:26px;margin-top:6px;font-variant-numeric:tabular-nums}
+.dropnote{margin:0;color:var(--muted);font-size:14px;max-width:74ch}
 .grid{display:flex;flex-wrap:wrap;gap:12px}
 .tile{flex:1 1 168px;max-width:250px;background:var(--panel);border:1px solid var(--edge);
   border-top-width:2px;border-radius:2px;padding:15px 15px 13px}
@@ -233,15 +244,14 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
     neither alone. Cabal Coffers and Gaea's Cradle make nothing on an empty board. The Tainted cycle
     is colorless until a Swamp is out. Anything excluded from a count is listed above it with the
     reason.</p>
-    <p>The land count estimate is a different kind of number from everything else here. Source
-    requirements are hypergeometric probability, exact given their assumptions. The land count is
-    Karsten's regression on tournament decklists, 19.59 + 1.90 times average mana value, minus 0.28
-    per cheap draw or accelerant. He reports an R-squared of 0.395 and a root mean square error of
-    2.75, so the shown band is roughly one standard error either side. It is a sanity check, not a
-    target, and the decks it was fitted on did not include this format. Average mana value uses any
-    alternative cost you supplied, so a deck pitching four Foil is not charged for four four-drops.
-    Cheap accelerants are counted from the data; cheap card draw is not, because identifying it
-    means reading what a card does and Impulse never says "draw a card".</p>
+    <p>The land-drop panel is exact, not an estimate. It reads Karsten's 2017 hypergeometric
+    table for the probability of playing a land on each of your first turns, on the play, under his
+    standard mulligan rule, at whatever land count you pasted. It is deliberately not a single
+    recommendation: he showed that a deck needing three lands to operate wants a different number
+    from a low-curve deck, and noted himself that there is no scientific reason to prefer 83.5
+    percent over 80 or 87. The numbers let you make that call rather than making it for you. The toggle switches between
+    playing and drawing first; every figure is a few points higher on the draw, since you have seen
+    one more card.</p>
     <p>Nonland mana is included. Dorks count half, because they die. Artifact accelerants count
     three quarters. Mox Diamond counts one. Rituals count zero: Dark Ritual multiplies black you
     already have, and it will not cast a turn-one Duress.</p>
@@ -311,6 +321,7 @@ function karstenTable(lands){
 }
 
 let LANDS=null,NONLANDS=null,COSTS=null,BYNAME=null;
+let drawMode=false;
 const norm=s=>s.toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g," ").trim();
 
 function symbolsOf(p){
@@ -512,21 +523,28 @@ function render(text){
     }
   }
 
-  // Karsten's land-count regression. Premodern has no companions and no MDFCs,
-  // so both correction terms are always zero here.
-  let landAdvice=null;
-  if(COSTS){
-    const md=spells.filter(x=>!x.sideboard);
-    let mv=0,n=0;
-    for(const sp of md){ mv+=readCost(sp.cost).cmc*sp.qty; n+=sp.qty; }
-    if(n>0){
-      const amv=mv/n;
-      let ramp=0;
-      for(const e of accel) if(e.card.cmc<=2 && e.card.abilities.length) ramp+=e.qty;
-      const est=19.59+1.90*amv-0.28*ramp;
-      landAdvice={amv,ramp,est,lo:Math.round(est-2.75),hi:Math.round(est+2.75),
-                  inside:landCount>=est-2.75&&landCount<=est+2.75};
-    }
+  // (regression removed; see land-drop table below)
+  // Karsten's 2017 land-drop table: P(hit your Nth land drop by turn N),
+  // on the play, under his standard mulligan strategy. Keyed by land count.
+  // Columns: turn2, turn3, turn4, turn5.
+  const LANDDROP={
+    // [play t2,t3,t4,t5],[draw t2,t3,t4,t5]  (Karsten 2017, standard mulligan)
+    17:[[95.6,69.1,41.0,20.8],[96.8,77.2,51.1,28.8]],
+    18:[[96.8,73.0,45.9,24.9],[97.7,80.7,56.3,33.8]],
+    19:[[97.7,76.5,50.6,29.2],[98.4,83.8,61.2,39.0]],
+    20:[[98.3,79.6,55.2,33.7],[98.9,86.4,65.8,44.1]],
+    21:[[98.8,82.3,59.6,38.3],[99.2,88.6,70.0,49.3]],
+    22:[[99.2,84.7,63.7,43.0],[99.5,90.5,73.9,54.3]],
+    23:[[99.4,86.8,67.7,47.6],[99.6,92.1,77.4,59.1]],
+    24:[[99.6,88.7,71.3,52.2],[99.8,93.5,80.6,63.8]],
+    25:[[99.7,90.4,74.7,56.7],[99.8,94.6,83.5,68.2]],
+    26:[[99.8,91.8,77.9,61.1],[99.9,95.6,86.0,72.3]],
+    27:[[99.8,93.1,80.8,65.3],[99.9,96.4,88.3,76.0]],
+    28:[[99.9,94.2,83.4,69.2],[99.9,97.1,90.2,79.5]]
+  };
+  function landDrops(n){
+    const k=Math.max(17,Math.min(28,n));
+    return {play:LANDDROP[k][0], draw:LANDDROP[k][1], clamped:k!==n, used:k};
   }
 
   // ---- output --------------------------------------------------------------
@@ -535,16 +553,6 @@ function render(text){
   if(accel.length) h+=` &middot; <b>${accel.reduce((n,e)=>n+e.qty,0)}</b> other mana source${accel.length===1?"":"s"}`;
   if(!COSTS) h+=` &middot; card costs unavailable`;
   h+="</p>";
-  if(landAdvice){
-    const a=landAdvice;
-    h+=`<p class="estimate">Land count estimate <b>${a.lo} to ${a.hi}</b>`+
-       `<span class="est-note">average mana value ${a.amv.toFixed(2)}`+
-       (a.ramp?`, ${a.ramp} cheap accelerant${a.ramp===1?"":"s"} counted`:"")+
-       `. Subtract roughly one more land per three or four cheap card-draw spells, which this `+
-       `cannot identify for you. A regression, not a probability: its typical error is `+
-       `about three lands, so treat it as a sanity check rather than a target.</span></p>`;
-  }
-
   const present=COLORS.filter(([s])=>rounded[s]>0||worst[s]);
   const absent=COLORS.filter(([s])=>!rounded[s]&&!worst[s]);
   h+='<div class="grid">';
@@ -564,6 +572,29 @@ function render(text){
   if(absent.length){
     const n=absent.map(c=>c[1].toLowerCase());
     h+=`<p class="absent">No ${n.length===1?n[0]:n.slice(0,-1).join(", ")+" or "+n[n.length-1]} sources in this list.</p>`;
+  }
+
+  if(landCount>=1){
+    const d=landDrops(landCount);
+    const draw=drawMode;
+    const row=draw?d.draw:d.play;
+    const cells=row.map((pct,i)=>{
+      const turn=i+2;
+      return `<div class="drop"><div class="dt">${turn} by turn ${turn}</div>`+
+             `<div class="dp">${pct.toFixed(1)}%</div></div>`;
+    }).join("");
+    h+=`<h2>Landing your land drops</h2>`+
+       `<div class="toggle" role="tablist" aria-label="Play or draw">`+
+         `<button role="tab" class="tg ${draw?"":"on"}" data-draw="0" aria-selected="${!draw}">On the play</button>`+
+         `<button role="tab" class="tg ${draw?"on":""}" data-draw="1" aria-selected="${draw}">On the draw</button>`+
+       `</div>`+
+       `<p class="dropintro">With <b>${landCount}</b> lands, ${draw?"on the draw":"on the play"}, `+
+       `under a standard mulligan${d.clamped?` (read at ${d.used}, the nearest row Karsten published)`:""}:</p>`+
+       `<div class="drops">${cells}</div>`+
+       `<p class="dropnote">Exact hypergeometric probabilities, not an estimate. There is no single `+
+       `right answer: a deck that needs three lands to operate wants that turn-three figure high, `+
+       `while a low-curve deck can live with less. Karsten's own comfort line for a deck that needs `+
+       `its third land was around 90 percent.</p>`;
   }
 
   if(checks.length){
@@ -679,6 +710,10 @@ function reportHeight(){
 new ResizeObserver(reportHeight).observe(document.body);
 
 const $=id=>document.getElementById(id);
+$("out").addEventListener("click",e=>{
+  const b=e.target.closest(".tg"); if(!b) return;
+  drawMode=b.dataset.draw==="1"; render($("list").value);
+});
 $("run").onclick=()=>render($("list").value);
 $("clear").onclick=()=>{$("list").value="";render("");};
 let t;$("list").oninput=()=>{clearTimeout(t);t=setTimeout(()=>render($("list").value),350);};
