@@ -78,8 +78,14 @@ and one-shot effects at zero because a ritual multiplies mana you already have r
 colour available.
 
 Two conveniences worth knowing. A line reading `Sideboard` separates the sideboard, which is then
-marked but still checked. And a card you never hard-cast can carry the cost you do pay, written
-after the name as `4 Foil {0}`.
+marked but still checked. And a card you never hard-cast can carry the cost you actually pay,
+written after the name.
+
+That cost may be paid in lands rather than mana, which matters in this format. Gush free-cast
+wants two Islands on the battlefield, not two blue sources, and a Skycloud Expanse is blue and is
+not an Island. Write a land type as its own pip and it is counted against the lands that carry
+that type, plus any fetchland that can find one: `4 Gush {Island}{Island}`,
+`4 Snuff Out {Swamp}`, `4 Daze {Island}`.
 
 It does not simulate. Source counts checked against published targets, Monte Carlo later.
 
