@@ -65,7 +65,9 @@ button.quiet:hover{background:var(--edge);color:var(--ink)}
 .tally{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 22px}
 .tally b{color:var(--ink);font-weight:400}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:12px}
+.grid{display:flex;flex-wrap:wrap;gap:12px}
+.tile{flex:1 1 160px;max-width:240px}
+.absent{margin:14px 0 0;color:var(--muted);font-size:15px}
 .tile{background:var(--panel);border:1px solid var(--edge);border-top-width:2px;border-radius:2px;padding:16px 16px 14px}
 .tile .sym{font-family:Cinzel,serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
 .tile .big{font-family:var(--mono);font-size:38px;line-height:1.05;margin:8px 0 2px;font-variant-numeric:tabular-nums}
@@ -308,8 +310,9 @@ function render(text){
   if(unknown.length) h+=` &middot; ${unknown.length} unreadable line(s)`;
   h+=`</p>`;
 
+  const present=COLORS.filter(([s])=>any[s]>0), absent=COLORS.filter(([s])=>!any[s]);
   h+='<div class="grid">';
-  for(const [s,label,v] of COLORS){
+  for(const [s,label,v] of present){
     const f=first[s], a=any[s];
     h+=`<div class="tile ${f?"":"zero"}" style="border-top-color:var(${v})">
       <div class="sym" style="color:var(${v})">${label}</div>
@@ -319,6 +322,12 @@ function render(text){
     </div>`;
   }
   h+="</div>";
+  if(absent.length){
+    const names=absent.map(c=>c[1].toLowerCase());
+    const list=names.length===1?names[0]
+      :names.slice(0,-1).join(", ")+" or "+names[names.length-1];
+    h+=`<p class="absent">No ${list} sources in this list.</p>`;
+  }
 
   h+="<h2>Check a colour requirement</h2>";
   h+=checker(first,any,landCount);
@@ -335,7 +344,8 @@ function render(text){
         if(!seen.has(k)) seen.set(k,{qty:0,why:x.why,card:x.e.card});
         seen.get(k).qty+=x.e.qty;
       }
-      h+=`<details><summary><span style="color:var(${v})">${label}</span> &middot; ${seen.size} card${seen.size===1?"":"s"}</summary><div class="body">`;
+      const copies=[...seen.values()].reduce((n,d)=>n+d.qty,0);
+      h+=`<details><summary><span style="color:var(${v})">${label}</span> &middot; ${copies} land${copies===1?"":"s"}</summary><div class="body">`;
       for(const [name,d] of seen){
         h+=`<p><span class="qty">${d.qty}&times;</span> <b>${name}</b> — ${d.why}.</p>`;
       }
@@ -344,7 +354,8 @@ function render(text){
   }
 
   // deck-specific warnings straight off the data
-  const flags=[];
+  const flags=[]; const explained=new Set();
+  for(const s of Object.keys(excluded)) for(const x of excluded[s]) explained.add(x.e.card.name);
   for(const e of lands){
     const c=e.card;
     if(c.global_effect) flags.push([c.name,
@@ -368,7 +379,7 @@ function render(text){
         flags.push([c.name,`Dead until you control ${a.condition.value} lands, itself included.`]);
       if(a.variable_amount)
         flags.push([c.name,`Amount equals ${a.variable_amount.equals}, floor zero. Counted as zero here on purpose.`]);
-      if(!a.self_sufficient&&symbolsOf(a.produces))
+      if(!a.self_sufficient&&symbolsOf(a.produces)&&!explained.has(c.name))
         flags.push([c.name,`Costs mana to activate, so it cannot produce your first coloured mana.`]);
     }
   }
@@ -452,7 +463,7 @@ function runCheck(first,any,landCount){
     `<span style="color:var(--muted)">${label} source${have===1?"":"s"} ` +
     (onedrop?"untapped on turn one":"in total")+`, and a ${row[0]} spell wants ` +
     `<span class="n">${want}</span> at ${landCount} lands. ` +
-    (gap>=0?`<span class="ok">Clear by ${gap}.</span>`:`<span class="short">Short by ${-gap}.</span>`)+
+    (gap>0?`<span class="ok">Clear by ${gap}.</span>`:gap===0?`<span class="ok">Exactly enough.</span>`:`<span class="short">Short by ${-gap}.</span>`)+
     `</span><p style="margin:10px 0 0;color:var(--muted);font-size:15px">`+
     (onedrop
       ? "One-drops are held to untapped sources only, so taplands and anything with an entry cost are excluded from this number."
