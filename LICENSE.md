@@ -1,6 +1,6 @@
 # License
 
-Copyright 2026 Brian Siu / Squee's House of Pizza. All rights reserved except as
+Copyright 2026 Squee's House of Pizza. All rights reserved except as
 granted below.
 
 This project has two parts under two different licenses.
@@ -13,8 +13,7 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 You may share and adapt it, including commercially, on two conditions:
 
-- **Attribution.** Credit "Premodern Mana Sources by Brian Siu / Squee's House of
-  Pizza," link back to this repository, and note if you changed anything.
+- **Attribution.** Credit "Premodern Mana Sources by Squee's House of Pizza," link back to this repository, and note if you changed anything.
 - **ShareAlike.** If you build on the data, you must release your version under
   this same license. You cannot take this data into a closed or proprietary tool.
 
