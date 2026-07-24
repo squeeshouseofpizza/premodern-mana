@@ -1,0 +1,25 @@
+<!--
+  Paste this into a Fourthwall custom HTML section.
+  Replace USERNAME and REPO with your GitHub Pages URL, then never touch it again:
+  every future change to the calculator ships by pushing to the repo.
+-->
+<div style="max-width:1180px;margin:0 auto">
+  <iframe
+    id="premodern-mana"
+    src="https://USERNAME.github.io/REPO/"
+    title="Premodern mana source calculator"
+    loading="lazy"
+    style="width:100%;height:900px;border:0;display:block;background:#17120c"
+    scrolling="no"></iframe>
+</div>
+<script>
+(function(){
+  var frame=document.getElementById("premodern-mana");
+  var origin=new URL(frame.src).origin;
+  window.addEventListener("message",function(e){
+    if(e.origin!==origin) return;
+    if(!e.data||!e.data.premodernMana) return;
+    frame.style.height=Math.max(600,e.data.height+24)+"px";
+  });
+})();
+</script>

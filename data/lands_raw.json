@@ -1,0 +1,1594 @@
+[
+ {
+  "name": "Abandoned Outpost",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {W}.\n{T}, Sacrifice this land: Add one mana of any color."
+ },
+ {
+  "name": "Adarkar Wastes",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {U}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Ancient Spring",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {U}.\n{T}, Sacrifice this land: Add {W}{B}."
+ },
+ {
+  "name": "Ancient Tomb",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}{C}. This land deals 2 damage to you."
+ },
+ {
+  "name": "An-Havva Township",
+  "set": "HML",
+  "set_name": "Homelands",
+  "released": "1995-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add {G}.\n{2}, {T}: Add {R} or {W}."
+ },
+ {
+  "name": "Archaeological Dig",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice this land: Add one mana of any color."
+ },
+ {
+  "name": "Aysen Abbey",
+  "set": "HML",
+  "set_name": "Homelands",
+  "released": "1995-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add {W}.\n{2}, {T}: Add {G} or {U}."
+ },
+ {
+  "name": "Bad River",
+  "set": "MIR",
+  "set_name": "Mirage",
+  "released": "1996-10-08",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Balduvian Trading Post",
+  "set": "ALL",
+  "set_name": "Alliances",
+  "released": "1996-06-10",
+  "type_line": "Land",
+  "oracle_text": "If this land would enter, sacrifice an untapped Mountain instead. If you do, put this land onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{R}.\n{1}, {T}: This land deals 1 damage to target attacking creature."
+ },
+ {
+  "name": "Barbarian Ring",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {R}. This land deals 1 damage to you.\nThreshold \u2014 {R}, {T}, Sacrifice this land: It deals 2 damage to any target. Activate only if there are seven or more cards in your graveyard."
+ },
+ {
+  "name": "Barren Moor",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {B}.\nCycling {B} ({B}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Battlefield Forge",
+  "set": "APC",
+  "set_name": "Apocalypse",
+  "released": "2001-06-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {R} or {W}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Blasted Landscape",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\nCycling {2} ({2}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Bloodstained Mire",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Bog Wreckage",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {B}.\n{T}, Sacrifice this land: Add one mana of any color."
+ },
+ {
+  "name": "Bottomless Vault",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nYou may choose not to untap this land during your untap step.\nAt the beginning of your upkeep, if this land is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from this land: Add {B} for each storage counter removed this way."
+ },
+ {
+  "name": "Brushland",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {G} or {W}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Cabal Coffers",
+  "set": "TOR",
+  "set_name": "Torment",
+  "released": "2002-02-04",
+  "type_line": "Land",
+  "oracle_text": "{2}, {T}: Add {B} for each Swamp you control."
+ },
+ {
+  "name": "Cabal Pit",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {B}. This land deals 1 damage to you.\nThreshold \u2014 {B}, {T}, Sacrifice this land: Target creature gets -2/-2 until end of turn. Activate only if there are seven or more cards in your graveyard."
+ },
+ {
+  "name": "Caldera Lake",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{T}: Add {U} or {R}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Castle Sengir",
+  "set": "HML",
+  "set_name": "Homelands",
+  "released": "1995-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add {B}.\n{2}, {T}: Add {U} or {R}."
+ },
+ {
+  "name": "Caves of Koilos",
+  "set": "APC",
+  "set_name": "Apocalypse",
+  "released": "2001-06-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {B}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Centaur Garden",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {G}. This land deals 1 damage to you.\nThreshold \u2014 {G}, {T}, Sacrifice this land: Target creature gets +3/+3 until end of turn. Activate only if there are seven or more cards in your graveyard."
+ },
+ {
+  "name": "Cephalid Coliseum",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {U}. This land deals 1 damage to you.\nThreshold \u2014 {U}, {T}, Sacrifice this land: Target player draws three cards, then discards three cards. Activate only if there are seven or more cards in your graveyard."
+ },
+ {
+  "name": "Cinder Marsh",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This land doesn't untap during your next untap step."
+ },
+ {
+  "name": "City of Brass",
+  "set": "ARN",
+  "set_name": "Arabian Nights",
+  "released": "1993-12-17",
+  "type_line": "Land",
+  "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color."
+ },
+ {
+  "name": "City of Traitors",
+  "set": "EXO",
+  "set_name": "Exodus",
+  "released": "1998-06-15",
+  "type_line": "Land",
+  "oracle_text": "When you play another land, sacrifice this land.\n{T}: Add {C}{C}."
+ },
+ {
+  "name": "Coastal Tower",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {W} or {U}."
+ },
+ {
+  "name": "Contested Cliffs",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{R}{G}, {T}: Target Beast creature you control fights target creature an opponent controls. (Each deals damage equal to its power to the other.)"
+ },
+ {
+  "name": "Coral Atoll",
+  "set": "VIS",
+  "set_name": "Visions",
+  "released": "1997-02-03",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nWhen this land enters, sacrifice it unless you return an untapped Island you control to its owner's hand.\n{T}: Add {C}{U}."
+ },
+ {
+  "name": "Crosis's Catacombs",
+  "set": "PLS",
+  "set_name": "Planeshift",
+  "released": "2001-02-05",
+  "type_line": "Land \u2014 Lair",
+  "oracle_text": "When this land enters, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {U}, {B}, or {R}."
+ },
+ {
+  "name": "Crystal Quarry",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{5}, {T}: Add {W}{U}{B}{R}{G}."
+ },
+ {
+  "name": "Crystal Vein",
+  "set": "MIR",
+  "set_name": "Mirage",
+  "released": "1996-10-08",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice this land: Add {C}{C}."
+ },
+ {
+  "name": "Darigaaz's Caldera",
+  "set": "PLS",
+  "set_name": "Planeshift",
+  "released": "2001-02-05",
+  "type_line": "Land \u2014 Lair",
+  "oracle_text": "When this land enters, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {B}, {R}, or {G}."
+ },
+ {
+  "name": "Darkwater Catacombs",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{1}, {T}: Add {U}{B}."
+ },
+ {
+  "name": "Daru Encampment",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{W}, {T}: Target Soldier creature gets +1/+1 until end of turn."
+ },
+ {
+  "name": "Deserted Temple",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Untap target land."
+ },
+ {
+  "name": "Dormant Volcano",
+  "set": "VIS",
+  "set_name": "Visions",
+  "released": "1997-02-03",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nWhen this land enters, sacrifice it unless you return an untapped Mountain you control to its owner's hand.\n{T}: Add {C}{R}."
+ },
+ {
+  "name": "Drifting Meadow",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {W}.\nCycling {2} ({2}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Dromar's Cavern",
+  "set": "PLS",
+  "set_name": "Planeshift",
+  "released": "2001-02-05",
+  "type_line": "Land \u2014 Lair",
+  "oracle_text": "When this land enters, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {W}, {U}, or {B}."
+ },
+ {
+  "name": "Dust Bowl",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{3}, {T}, Sacrifice a land: Destroy target nonbasic land."
+ },
+ {
+  "name": "Dwarven Hold",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nYou may choose not to untap this land during your untap step.\nAt the beginning of your upkeep, if this land is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from this land: Add {R} for each storage counter removed this way."
+ },
+ {
+  "name": "Dwarven Ruins",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {R}.\n{T}, Sacrifice this land: Add {R}{R}."
+ },
+ {
+  "name": "Ebon Stronghold",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {B}.\n{T}, Sacrifice this land: Add {B}{B}."
+ },
+ {
+  "name": "Elfhame Palace",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {G} or {W}."
+ },
+ {
+  "name": "Everglades",
+  "set": "VIS",
+  "set_name": "Visions",
+  "released": "1997-02-03",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nWhen this land enters, sacrifice it unless you return an untapped Swamp you control to its owner's hand.\n{T}: Add {C}{B}."
+ },
+ {
+  "name": "Faerie Conclave",
+  "set": "ULG",
+  "set_name": "Urza's Legacy",
+  "released": "1999-02-15",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {U}.\n{1}{U}: This land becomes a 2/1 blue Faerie creature with flying until end of turn. It's still a land."
+ },
+ {
+  "name": "Flooded Strand",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Flood Plain",
+  "set": "MIR",
+  "set_name": "Mirage",
+  "released": "1996-10-08",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Forbidding Watchtower",
+  "set": "ULG",
+  "set_name": "Urza's Legacy",
+  "released": "1999-02-15",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {W}.\n{1}{W}: This land becomes a 1/5 white Soldier creature until end of turn. It's still a land."
+ },
+ {
+  "name": "Forest",
+  "set": "LEA",
+  "set_name": "Limited Edition Alpha",
+  "released": "1993-08-05",
+  "type_line": "Basic Land \u2014 Forest",
+  "oracle_text": "({T}: Add {G}.)"
+ },
+ {
+  "name": "Forgotten Cave",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {R}.\nCycling {R} ({R}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Forsaken City",
+  "set": "PLS",
+  "set_name": "Planeshift",
+  "released": "2001-02-05",
+  "type_line": "Land",
+  "oracle_text": "This land doesn't untap during your untap step.\nAt the beginning of your upkeep, you may exile a card from your hand. If you do, untap this land.\n{T}: Add one mana of any color."
+ },
+ {
+  "name": "Fountain of Cho",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Put a storage counter on this land.\n{T}, Remove any number of storage counters from this land: Add {W} for each storage counter removed this way."
+ },
+ {
+  "name": "Gaea's Cradle",
+  "set": "JGP",
+  "set_name": "Judge Gift Cards 1998",
+  "released": "1998-01-01",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {G} for each creature you control."
+ },
+ {
+  "name": "Gemstone Mine",
+  "set": "WTH",
+  "set_name": "Weatherlight",
+  "released": "1997-06-09",
+  "type_line": "Land",
+  "oracle_text": "This land enters with three mining counters on it.\n{T}, Remove a mining counter from this land: Add one mana of any color. If there are no mining counters on this land, sacrifice it."
+ },
+ {
+  "name": "Geothermal Crevice",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {R}.\n{T}, Sacrifice this land: Add {B}{G}."
+ },
+ {
+  "name": "Ghitu Encampment",
+  "set": "ULG",
+  "set_name": "Urza's Legacy",
+  "released": "1999-02-15",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {R}.\n{1}{R}: This land becomes a 2/1 red Warrior creature with first strike until end of turn. It's still a land. (It deals combat damage before creatures without first strike.)"
+ },
+ {
+  "name": "Ghost Town",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{0}: Return this land to its owner's hand. Activate only if it's not your turn."
+ },
+ {
+  "name": "Glacial Chasm",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "Cumulative upkeep\u2014Pay 2 life. (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nWhen this land enters, sacrifice a land.\nCreatures you control can't attack.\nPrevent all damage that would be dealt to you."
+ },
+ {
+  "name": "Goblin Burrows",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn."
+ },
+ {
+  "name": "Grand Coliseum",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{T}: Add one mana of any color. This land deals 1 damage to you."
+ },
+ {
+  "name": "Grasslands",
+  "set": "MIR",
+  "set_name": "Mirage",
+  "released": "1996-10-08",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}, Sacrifice this land: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Griffin Canyon",
+  "set": "VIS",
+  "set_name": "Visions",
+  "released": "1997-02-03",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Untap target Griffin. If it's a creature, it gets +1/+1 until end of turn."
+ },
+ {
+  "name": "Halls of Mist",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nCreatures that attacked during their controller's last turn can't attack."
+ },
+ {
+  "name": "Havenwood Battleground",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {G}.\n{T}, Sacrifice this land: Add {G}{G}."
+ },
+ {
+  "name": "Heart of Yavimaya",
+  "set": "ALL",
+  "set_name": "Alliances",
+  "released": "1996-06-10",
+  "type_line": "Land",
+  "oracle_text": "If this land would enter, sacrifice a Forest instead. If you do, put this land onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {G}.\n{T}: Target creature gets +1/+1 until end of turn."
+ },
+ {
+  "name": "Henge of Ramos",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{2}, {T}: Add one mana of any color."
+ },
+ {
+  "name": "Hickory Woodlot",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped with two depletion counters on it.\n{T}, Remove a depletion counter from this land: Add {G}{G}. If there are no depletion counters on this land, sacrifice it."
+ },
+ {
+  "name": "High Market",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice a creature: You gain 1 life."
+ },
+ {
+  "name": "Hollow Trees",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nYou may choose not to untap this land during your untap step.\nAt the beginning of your upkeep, if this land is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from this land: Add {G} for each storage counter removed this way."
+ },
+ {
+  "name": "Icatian Store",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nYou may choose not to untap this land during your untap step.\nAt the beginning of your upkeep, if this land is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from this land: Add {W} for each storage counter removed this way."
+ },
+ {
+  "name": "Ice Floe",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "You may choose not to untap this land during your untap step.\n{T}: Tap target creature without flying that's attacking you. It doesn't untap during its controller's untap step for as long as this land remains tapped."
+ },
+ {
+  "name": "Irrigation Ditch",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {W}.\n{T}, Sacrifice this land: Add {G}{U}."
+ },
+ {
+  "name": "Island",
+  "set": "LEA",
+  "set_name": "Limited Edition Alpha",
+  "released": "1993-08-05",
+  "type_line": "Basic Land \u2014 Island",
+  "oracle_text": "({T}: Add {U}.)"
+ },
+ {
+  "name": "Jungle Basin",
+  "set": "VIS",
+  "set_name": "Visions",
+  "released": "1997-02-03",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nWhen this land enters, sacrifice it unless you return an untapped Forest you control to its owner's hand.\n{T}: Add {C}{G}."
+ },
+ {
+  "name": "Karoo",
+  "set": "VIS",
+  "set_name": "Visions",
+  "released": "1997-02-03",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nWhen this land enters, sacrifice it unless you return an untapped Plains you control to its owner's hand.\n{T}: Add {C}{W}."
+ },
+ {
+  "name": "Karplusan Forest",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {R} or {G}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Keldon Necropolis",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {C}.\n{4}{R}, {T}, Sacrifice a creature: Keldon Necropolis deals 2 damage to any target."
+ },
+ {
+  "name": "Kjeldoran Outpost",
+  "set": "ALL",
+  "set_name": "Alliances",
+  "released": "1996-06-10",
+  "type_line": "Land",
+  "oracle_text": "If this land would enter, sacrifice a Plains instead. If you do, put this land onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {W}.\n{1}{W}, {T}: Create a 1/1 white Soldier creature token."
+ },
+ {
+  "name": "Kor Haven",
+  "set": "NEM",
+  "set_name": "Nemesis",
+  "released": "2000-02-14",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {C}.\n{1}{W}, {T}: Prevent all combat damage that would be dealt by target attacking creature this turn."
+ },
+ {
+  "name": "Koskun Keep",
+  "set": "HML",
+  "set_name": "Homelands",
+  "released": "1995-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add {R}.\n{2}, {T}: Add {B} or {G}."
+ },
+ {
+  "name": "Krosan Verge",
+  "set": "JUD",
+  "set_name": "Judgment",
+  "released": "2002-05-27",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{2}, {T}, Sacrifice this land: Search your library for a Forest card and a Plains card, put them onto the battlefield tapped, then shuffle."
+ },
+ {
+  "name": "Lake of the Dead",
+  "set": "ALL",
+  "set_name": "Alliances",
+  "released": "1996-06-10",
+  "type_line": "Land",
+  "oracle_text": "If this land would enter, sacrifice a Swamp instead. If you do, put this land onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {B}.\n{T}, Sacrifice a Swamp: Add {B}{B}{B}{B}."
+ },
+ {
+  "name": "Land Cap",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "This land doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from this land.\n{T}: Add {W} or {U}. Put a depletion counter on this land."
+ },
+ {
+  "name": "Lava Tubes",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "This land doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from this land.\n{T}: Add {B} or {R}. Put a depletion counter on this land."
+ },
+ {
+  "name": "Llanowar Wastes",
+  "set": "APC",
+  "set_name": "Apocalypse",
+  "released": "2001-06-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {G}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Lonely Sandbar",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {U}.\nCycling {U} ({U}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Lotus Vale",
+  "set": "WTH",
+  "set_name": "Weatherlight",
+  "released": "1997-06-09",
+  "type_line": "Land",
+  "oracle_text": "If this land would enter, sacrifice two untapped lands instead. If you do, put this land onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add three mana of any one color."
+ },
+ {
+  "name": "Maze of Shadows",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Untap target attacking creature with shadow. Prevent all combat damage that would be dealt to and dealt by that creature this turn."
+ },
+ {
+  "name": "Mercadian Bazaar",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Put a storage counter on this land.\n{T}, Remove any number of storage counters from this land: Add {R} for each storage counter removed this way."
+ },
+ {
+  "name": "Meteor Crater",
+  "set": "PLS",
+  "set_name": "Planeshift",
+  "released": "2001-02-05",
+  "type_line": "Land",
+  "oracle_text": "{T}: Choose a color of a permanent you control. Add one mana of that color."
+ },
+ {
+  "name": "Mishra's Factory",
+  "set": "ATQ",
+  "set_name": "Antiquities",
+  "released": "1994-03-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}: This land becomes a 2/2 Assembly-Worker artifact creature until end of turn. It's still a land.\n{T}: Target Assembly-Worker creature gets +1/+1 until end of turn."
+ },
+ {
+  "name": "Mogg Hollows",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {R} or {G}. This land doesn't untap during your next untap step."
+ },
+ {
+  "name": "Mossfire Valley",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{1}, {T}: Add {R}{G}."
+ },
+ {
+  "name": "Mountain",
+  "set": "LEA",
+  "set_name": "Limited Edition Alpha",
+  "released": "1993-08-05",
+  "type_line": "Basic Land \u2014 Mountain",
+  "oracle_text": "({T}: Add {R}.)"
+ },
+ {
+  "name": "Mountain Valley",
+  "set": "MIR",
+  "set_name": "Mirage",
+  "released": "1996-10-08",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}, Sacrifice this land: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Nantuko Monastery",
+  "set": "JUD",
+  "set_name": "Judgment",
+  "released": "2002-05-27",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\nThreshold \u2014 {G}{W}: This land becomes a 4/4 green and white Insect Monk creature with first strike until end of turn. It's still a land. Activate only if there are seven or more cards in your graveyard."
+ },
+ {
+  "name": "Nomad Stadium",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {W}. This land deals 1 damage to you.\nThreshold \u2014 {W}, {T}, Sacrifice this land: You gain 4 life. Activate only if there are seven or more cards in your graveyard."
+ },
+ {
+  "name": "Oasis",
+  "set": "ARN",
+  "set_name": "Arabian Nights",
+  "released": "1993-12-17",
+  "type_line": "Land",
+  "oracle_text": "{T}: Prevent the next 1 damage that would be dealt to target creature this turn."
+ },
+ {
+  "name": "Peat Bog",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped with two depletion counters on it.\n{T}, Remove a depletion counter from this land: Add {B}{B}. If there are no depletion counters on this land, sacrifice it."
+ },
+ {
+  "name": "Petrified Field",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice this land: Return target land card from your graveyard to your hand."
+ },
+ {
+  "name": "Phyrexian Tower",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice a creature: Add {B}{B}."
+ },
+ {
+  "name": "Pine Barrens",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{T}: Add {B} or {G}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Plains",
+  "set": "LEA",
+  "set_name": "Limited Edition Alpha",
+  "released": "1993-08-05",
+  "type_line": "Basic Land \u2014 Plains",
+  "oracle_text": "({T}: Add {W}.)"
+ },
+ {
+  "name": "Polluted Delta",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Polluted Mire",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {B}.\nCycling {2} ({2}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Quicksand",
+  "set": "VIS",
+  "set_name": "Visions",
+  "released": "1997-02-03",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice this land: Target attacking creature without flying gets -1/-2 until end of turn."
+ },
+ {
+  "name": "Rath's Edge",
+  "set": "NEM",
+  "set_name": "Nemesis",
+  "released": "2000-02-14",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {C}.\n{4}, {T}, Sacrifice a land: Rath's Edge deals 1 damage to any target."
+ },
+ {
+  "name": "Ravaged Highlands",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {R}.\n{T}, Sacrifice this land: Add one mana of any color."
+ },
+ {
+  "name": "Reflecting Pool",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add one mana of any type that a land you control could produce."
+ },
+ {
+  "name": "Remote Farm",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped with two depletion counters on it.\n{T}, Remove a depletion counter from this land: Add {W}{W}. If there are no depletion counters on this land, sacrifice it."
+ },
+ {
+  "name": "Remote Isle",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {U}.\nCycling {2} ({2}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Rhystic Cave",
+  "set": "PCY",
+  "set_name": "Prophecy",
+  "released": "2000-06-05",
+  "type_line": "Land",
+  "oracle_text": "{T}: Choose a color. Add one mana of that color unless any player pays {1}. Activate only as an instant."
+ },
+ {
+  "name": "Riftstone Portal",
+  "set": "JUD",
+  "set_name": "Judgment",
+  "released": "2002-05-27",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\nAs long as this card is in your graveyard, lands you control have \"{T}: Add {G} or {W}.\""
+ },
+ {
+  "name": "Riptide Laboratory",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}{U}, {T}: Return target Wizard you control to its owner's hand."
+ },
+ {
+  "name": "Rishadan Port",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Tap target land."
+ },
+ {
+  "name": "Rith's Grove",
+  "set": "PLS",
+  "set_name": "Planeshift",
+  "released": "2001-02-05",
+  "type_line": "Land \u2014 Lair",
+  "oracle_text": "When this land enters, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {R}, {G}, or {W}."
+ },
+ {
+  "name": "River Delta",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "This land doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from this land.\n{T}: Add {U} or {B}. Put a depletion counter on this land."
+ },
+ {
+  "name": "Rocky Tar Pit",
+  "set": "MIR",
+  "set_name": "Mirage",
+  "released": "1996-10-08",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}, Sacrifice this land: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Rootwater Depths",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This land doesn't untap during your next untap step."
+ },
+ {
+  "name": "Ruins of Trokair",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {W}.\n{T}, Sacrifice this land: Add {W}{W}."
+ },
+ {
+  "name": "Rushwood Grove",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Put a storage counter on this land.\n{T}, Remove any number of storage counters from this land: Add {G} for each storage counter removed this way."
+ },
+ {
+  "name": "Safe Haven",
+  "set": "DRK",
+  "set_name": "The Dark",
+  "released": "1994-08-01",
+  "type_line": "Land",
+  "oracle_text": "{2}, {T}: Exile target creature you control.\nAt the beginning of your upkeep, you may sacrifice this land. If you do, return each card exiled with this land to the battlefield under its owner's control."
+ },
+ {
+  "name": "Salt Flats",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{T}: Add {W} or {B}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Salt Marsh",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {U} or {B}."
+ },
+ {
+  "name": "Sand Silos",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\nYou may choose not to untap this land during your untap step.\nAt the beginning of your upkeep, if this land is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from this land: Add {U} for each storage counter removed this way."
+ },
+ {
+  "name": "Sandstone Needle",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped with two depletion counters on it.\n{T}, Remove a depletion counter from this land: Add {R}{R}. If there are no depletion counters on this land, sacrifice it."
+ },
+ {
+  "name": "Saprazzan Cove",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Put a storage counter on this land.\n{T}, Remove any number of storage counters from this land: Add {U} for each storage counter removed this way."
+ },
+ {
+  "name": "Saprazzan Skerry",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped with two depletion counters on it.\n{T}, Remove a depletion counter from this land: Add {U}{U}. If there are no depletion counters on this land, sacrifice it."
+ },
+ {
+  "name": "Scabland",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{T}: Add {R} or {W}. This land deals 1 damage to you."
+ },
+ {
+  "name": "School of the Unseen",
+  "set": "ALL",
+  "set_name": "Alliances",
+  "released": "1996-06-10",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{2}, {T}: Add one mana of any color."
+ },
+ {
+  "name": "Scorched Ruins",
+  "set": "WTH",
+  "set_name": "Weatherlight",
+  "released": "1997-06-09",
+  "type_line": "Land",
+  "oracle_text": "If this land would enter, sacrifice two untapped lands instead. If you do, put this land onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{C}{C}{C}."
+ },
+ {
+  "name": "Seafloor Debris",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {U}.\n{T}, Sacrifice this land: Add one mana of any color."
+ },
+ {
+  "name": "Seaside Haven",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{W}{U}, {T}, Sacrifice a Bird: Draw a card."
+ },
+ {
+  "name": "Secluded Steppe",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {W}.\nCycling {W} ({W}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Serra's Sanctum",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {W} for each enchantment you control."
+ },
+ {
+  "name": "Shadowblood Ridge",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{1}, {T}: Add {B}{R}."
+ },
+ {
+  "name": "Sheltered Valley",
+  "set": "ALL",
+  "set_name": "Alliances",
+  "released": "1996-06-10",
+  "type_line": "Land",
+  "oracle_text": "If this land would enter, instead sacrifice each other permanent named Sheltered Valley you control, then put this land onto the battlefield.\nAt the beginning of your upkeep, if you control three or fewer lands, you gain 1 life.\n{T}: Add {C}."
+ },
+ {
+  "name": "Shivan Gorge",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {C}.\n{2}{R}, {T}: Shivan Gorge deals 1 damage to each opponent."
+ },
+ {
+  "name": "Shivan Oasis",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {R} or {G}."
+ },
+ {
+  "name": "Shivan Reef",
+  "set": "APC",
+  "set_name": "Apocalypse",
+  "released": "2001-06-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Skycloud Expanse",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{1}, {T}: Add {W}{U}."
+ },
+ {
+  "name": "Skyshroud Forest",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{T}: Add {G} or {U}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Slippery Karst",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {G}.\nCycling {2} ({2}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Smoldering Crater",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {R}.\nCycling {2} ({2}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Snow-Covered Forest",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Basic Snow Land \u2014 Forest",
+  "oracle_text": "({T}: Add {G}.)"
+ },
+ {
+  "name": "Snow-Covered Island",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Basic Snow Land \u2014 Island",
+  "oracle_text": "({T}: Add {U}.)"
+ },
+ {
+  "name": "Snow-Covered Mountain",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Basic Snow Land \u2014 Mountain",
+  "oracle_text": "({T}: Add {R}.)"
+ },
+ {
+  "name": "Snow-Covered Plains",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Basic Snow Land \u2014 Plains",
+  "oracle_text": "({T}: Add {W}.)"
+ },
+ {
+  "name": "Snow-Covered Swamp",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Basic Snow Land \u2014 Swamp",
+  "oracle_text": "({T}: Add {B}.)"
+ },
+ {
+  "name": "Soldevi Excavations",
+  "set": "ALL",
+  "set_name": "Alliances",
+  "released": "1996-06-10",
+  "type_line": "Land",
+  "oracle_text": "If this land would enter, sacrifice an untapped Island instead. If you do, put this land onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{U}.\n{1}, {T}: Scry 1."
+ },
+ {
+  "name": "Spawning Pool",
+  "set": "ULG",
+  "set_name": "Urza's Legacy",
+  "released": "1999-02-15",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {B}.\n{1}{B}: This land becomes a 1/1 black Skeleton creature with \"{B}: Regenerate this creature\" until end of turn. It's still a land. (If it regenerates, the next time it would be destroyed this turn, instead tap it, remove it from combat, and heal all damage on it.)"
+ },
+ {
+  "name": "Stalking Stones",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{6}: This land becomes a 3/3 Elemental artifact creature that's still a land. (This effect lasts indefinitely.)"
+ },
+ {
+  "name": "Starlit Sanctum",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{W}, {T}, Sacrifice a Cleric creature: You gain life equal to the sacrificed creature's toughness.\n{B}, {T}, Sacrifice a Cleric creature: Target player loses life equal to the sacrificed creature's power."
+ },
+ {
+  "name": "Subterranean Hangar",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Put a storage counter on this land.\n{T}, Remove any number of storage counters from this land: Add {B} for each storage counter removed this way."
+ },
+ {
+  "name": "Sulfurous Springs",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Sulfur Vent",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {B}.\n{T}, Sacrifice this land: Add {U}{R}."
+ },
+ {
+  "name": "Sungrass Prairie",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{1}, {T}: Add {G}{W}."
+ },
+ {
+  "name": "Svyelunite Temple",
+  "set": "FEM",
+  "set_name": "Fallen Empires",
+  "released": "1994-11-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {U}.\n{T}, Sacrifice this land: Add {U}{U}."
+ },
+ {
+  "name": "Swamp",
+  "set": "LEA",
+  "set_name": "Limited Edition Alpha",
+  "released": "1993-08-05",
+  "type_line": "Basic Land \u2014 Swamp",
+  "oracle_text": "({T}: Add {B}.)"
+ },
+ {
+  "name": "Tainted Field",
+  "set": "TOR",
+  "set_name": "Torment",
+  "released": "2002-02-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {B}. Activate only if you control a Swamp."
+ },
+ {
+  "name": "Tainted Isle",
+  "set": "TOR",
+  "set_name": "Torment",
+  "released": "2002-02-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. Activate only if you control a Swamp."
+ },
+ {
+  "name": "Tainted Peak",
+  "set": "TOR",
+  "set_name": "Torment",
+  "released": "2002-02-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {R}. Activate only if you control a Swamp."
+ },
+ {
+  "name": "Tainted Wood",
+  "set": "TOR",
+  "set_name": "Torment",
+  "released": "2002-02-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {B} or {G}. Activate only if you control a Swamp."
+ },
+ {
+  "name": "Tarnished Citadel",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add one mana of any color. This land deals 3 damage to you."
+ },
+ {
+  "name": "Teferi's Isle",
+  "set": "MIR",
+  "set_name": "Mirage",
+  "released": "1996-10-08",
+  "type_line": "Legendary Land",
+  "oracle_text": "Phasing (This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.)\nTeferi's Isle enters tapped.\n{T}: Add {U}{U}."
+ },
+ {
+  "name": "Temple of the False God",
+  "set": "SCG",
+  "set_name": "Scourge",
+  "released": "2003-05-26",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}{C}. Activate only if you control five or more lands."
+ },
+ {
+  "name": "Terminal Moraine",
+  "set": "PLS",
+  "set_name": "Planeshift",
+  "released": "2001-02-05",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{2}, {T}, Sacrifice this land: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle."
+ },
+ {
+  "name": "Terrain Generator",
+  "set": "NEM",
+  "set_name": "Nemesis",
+  "released": "2000-02-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{2}, {T}: You may put a basic land card from your hand onto the battlefield tapped."
+ },
+ {
+  "name": "Thalakos Lowlands",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {U}. This land doesn't untap during your next untap step."
+ },
+ {
+  "name": "Thawing Glaciers",
+  "set": "ALL",
+  "set_name": "Alliances",
+  "released": "1996-06-10",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{1}, {T}: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle. Return this land to its owner's hand at the beginning of the next cleanup step."
+ },
+ {
+  "name": "Thran Quarry",
+  "set": "USG",
+  "set_name": "Urza's Saga",
+  "released": "1998-10-12",
+  "type_line": "Land",
+  "oracle_text": "At the beginning of the end step, if you control no creatures, sacrifice this land.\n{T}: Add one mana of any color."
+ },
+ {
+  "name": "Timberland Ruins",
+  "set": "ODY",
+  "set_name": "Odyssey",
+  "released": "2001-10-01",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {G}.\n{T}, Sacrifice this land: Add one mana of any color."
+ },
+ {
+  "name": "Timberline Ridge",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "This land doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from this land.\n{T}: Add {R} or {G}. Put a depletion counter on this land."
+ },
+ {
+  "name": "Tinder Farm",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {G}.\n{T}, Sacrifice this land: Add {R}{W}."
+ },
+ {
+  "name": "Tower of the Magistrate",
+  "set": "MMQ",
+  "set_name": "Mercadian Masques",
+  "released": "1999-10-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Target creature gains protection from artifacts until end of turn."
+ },
+ {
+  "name": "Tranquil Thicket",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {G}.\nCycling {G} ({G}, Discard this card: Draw a card.)"
+ },
+ {
+  "name": "Treetop Village",
+  "set": "ULG",
+  "set_name": "Urza's Legacy",
+  "released": "1999-02-15",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {G}.\n{1}{G}: This land becomes a 3/3 green Ape creature with trample until end of turn. It's still a land. (It can deal excess combat damage to the player or planeswalker it's attacking.)"
+ },
+ {
+  "name": "Treva's Ruins",
+  "set": "PLS",
+  "set_name": "Planeshift",
+  "released": "2001-02-05",
+  "type_line": "Land \u2014 Lair",
+  "oracle_text": "When this land enters, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {G}, {W}, or {U}."
+ },
+ {
+  "name": "Underground River",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {B}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Undiscovered Paradise",
+  "set": "VIS",
+  "set_name": "Visions",
+  "released": "1997-02-03",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add one mana of any color. During your next untap step, as you untap your permanents, return this land to its owner's hand."
+ },
+ {
+  "name": "Unholy Grotto",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{B}, {T}: Put target Zombie card from your graveyard on top of your library."
+ },
+ {
+  "name": "Urborg Volcano",
+  "set": "INV",
+  "set_name": "Invasion",
+  "released": "2000-10-02",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {B} or {R}."
+ },
+ {
+  "name": "Urza's Mine",
+  "set": "ATQ",
+  "set_name": "Antiquities",
+  "released": "1994-03-04",
+  "type_line": "Land \u2014 Urza's Mine",
+  "oracle_text": "{T}: Add {C}. If you control an Urza's Power-Plant and an Urza's Tower, add {C}{C} instead."
+ },
+ {
+  "name": "Urza's Power Plant",
+  "set": "ATQ",
+  "set_name": "Antiquities",
+  "released": "1994-03-04",
+  "type_line": "Land \u2014 Urza's Power-Plant",
+  "oracle_text": "{T}: Add {C}. If you control an Urza's Mine and an Urza's Tower, add {C}{C} instead."
+ },
+ {
+  "name": "Urza's Tower",
+  "set": "ATQ",
+  "set_name": "Antiquities",
+  "released": "1994-03-04",
+  "type_line": "Land \u2014 Urza's Tower",
+  "oracle_text": "{T}: Add {C}. If you control an Urza's Mine and an Urza's Power-Plant, add {C}{C}{C} instead."
+ },
+ {
+  "name": "Vec Townships",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {G} or {W}. This land doesn't untap during your next untap step."
+ },
+ {
+  "name": "Veldt",
+  "set": "ICE",
+  "set_name": "Ice Age",
+  "released": "1995-06-03",
+  "type_line": "Land",
+  "oracle_text": "This land doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from this land.\n{T}: Add {G} or {W}. Put a depletion counter on this land."
+ },
+ {
+  "name": "Volrath's Stronghold",
+  "set": "STH",
+  "set_name": "Stronghold",
+  "released": "1998-03-02",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {C}.\n{1}{B}, {T}: Put target creature card from your graveyard on top of your library."
+ },
+ {
+  "name": "Wasteland",
+  "set": "TMP",
+  "set_name": "Tempest",
+  "released": "1997-10-14",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice this land: Destroy target nonbasic land."
+ },
+ {
+  "name": "Winding Canyons",
+  "set": "WTH",
+  "set_name": "Weatherlight",
+  "released": "1997-06-09",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{2}, {T}: You may cast creature spells this turn as though they had flash."
+ },
+ {
+  "name": "Windswept Heath",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Wintermoon Mesa",
+  "set": "PCY",
+  "set_name": "Prophecy",
+  "released": "2000-06-05",
+  "type_line": "Land",
+  "oracle_text": "This land enters tapped.\n{T}: Add {C}.\n{2}, {T}, Sacrifice this land: Tap two target lands."
+ },
+ {
+  "name": "Wirewood Lodge",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{G}, {T}: Untap target Elf."
+ },
+ {
+  "name": "Wizards' School",
+  "set": "HML",
+  "set_name": "Homelands",
+  "released": "1995-10-01",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add {U}.\n{2}, {T}: Add {W} or {B}."
+ },
+ {
+  "name": "Wooded Foothills",
+  "set": "ONS",
+  "set_name": "Onslaught",
+  "released": "2002-10-07",
+  "type_line": "Land",
+  "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle."
+ },
+ {
+  "name": "Yavimaya Coast",
+  "set": "APC",
+  "set_name": "Apocalypse",
+  "released": "2001-06-04",
+  "type_line": "Land",
+  "oracle_text": "{T}: Add {C}.\n{T}: Add {G} or {U}. This land deals 1 damage to you."
+ },
+ {
+  "name": "Yavimaya Hollow",
+  "set": "UDS",
+  "set_name": "Urza's Destiny",
+  "released": "1999-06-07",
+  "type_line": "Legendary Land",
+  "oracle_text": "{T}: Add {C}.\n{G}, {T}: Regenerate target creature."
+ }
+]
