@@ -143,9 +143,11 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
       <button id="run">Analyse</button>
       <button id="clear" class="quiet">Clear</button>
     </div>
-    <p class="hint">Put <code>Sideboard</code> on its own line to separate it. For a card you
-    never hard-cast, write the cost you do pay after the name. A land type counts as its own
-    requirement, so Gush is <code>4 Gush {Island}{Island}</code> and Snuff Out is
+    <p class="hint">Put <code>Sideboard</code> on its own line to separate it. For a card you never
+    hard-cast, write the cost you do pay in braces after the name, one pair of braces per symbol.
+    <code>4 Foil {0}</code> is a free cast; <code>4 Ray of Revelation {G}</code> is its flashback
+    cost, for a deck that casts it from the graveyard. If the real cost is lands rather than mana,
+    name the land type instead: <code>4 Gush {Island}{Island}</code>,
     <code>4 Snuff Out {Swamp}</code>.</p>
   </div>
   <div id="out"><p class="empty">Paste a decklist on the left.</p></div>
@@ -163,9 +165,11 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
     <li><b>Mark the sideboard</b> by putting <code>Sideboard</code> on its own line before it.
     Sideboard cards are still checked, but they are labeled and they do not drive the headline
     number for a color, since you are not casting them in every game.</li>
-    <li><b>Fix any card you never hard-cast</b> by writing the cost you do pay after the name:
-    <code>4 Foil {0}</code>. If that cost is lands rather than mana, name the type:
-    <code>4 Gush {Island}{Island}</code>, <code>4 Snuff Out {Swamp}</code>.</li>
+    <li><b>Fix any card you never hard-cast</b> by writing the cost you do pay in braces after the
+    name, one pair of braces per symbol. <code>4 Foil {0}</code> is a free cast;
+    <code>4 Ray of Revelation {G}</code> is its <code>{G}</code> flashback cost, for a deck that
+    casts it from the graveyard rather than for <code>{1}{W}</code>. If the cost is lands rather than
+    mana, name the type: <code>4 Gush {Island}{Island}</code>, <code>4 Snuff Out {Swamp}</code>.</li>
     <li><b>Press Analyse</b>, or just stop typing and wait a moment.</li>
   </ol>
 
