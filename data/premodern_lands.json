@@ -28,7 +28,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -65,7 +68,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -102,7 +108,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -139,7 +148,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -176,7 +188,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -213,7 +228,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -277,7 +295,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -327,7 +348,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -351,7 +375,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -386,7 +413,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -410,7 +440,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -445,7 +478,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -470,7 +506,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -533,7 +572,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -551,7 +593,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -584,7 +629,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -602,7 +650,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -635,7 +686,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -653,7 +707,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -686,7 +743,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -704,7 +764,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -737,7 +800,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -755,7 +821,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -790,7 +859,10 @@
           "accrual": "one counter at the beginning of each of your upkeeps while this land is tapped",
           "requires_untap_before_use": true
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -840,7 +912,10 @@
           "accrual": "one counter at the beginning of each of your upkeeps while this land is tapped",
           "requires_untap_before_use": true
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -890,7 +965,10 @@
           "accrual": "one counter at the beginning of each of your upkeeps while this land is tapped",
           "requires_untap_before_use": true
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -940,7 +1018,10 @@
           "accrual": "one counter at the beginning of each of your upkeeps while this land is tapped",
           "requires_untap_before_use": true
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -990,7 +1071,10 @@
           "accrual": "one counter at the beginning of each of your upkeeps while this land is tapped",
           "requires_untap_before_use": true
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -1038,7 +1122,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1056,7 +1143,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1089,7 +1179,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1107,7 +1200,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1140,7 +1236,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1158,7 +1257,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1191,7 +1293,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1209,7 +1314,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1242,7 +1350,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1260,7 +1371,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1297,7 +1411,10 @@
         "availability": {
           "pattern": "every_other_turn",
           "reason": "Tapping for mana puts a depletion counter on it. It does not untap on your next untap step because the counter is still there; the counter is removed at that turn's upkeep, by which point it is already past untapping. It untaps normally the turn after."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -1349,7 +1466,10 @@
         "availability": {
           "pattern": "every_other_turn",
           "reason": "See Land Cap. Depletion counter placed by the mana ability blocks the next untap step."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -1401,7 +1521,10 @@
         "availability": {
           "pattern": "every_other_turn",
           "reason": "See Land Cap. Depletion counter placed by the mana ability blocks the next untap step."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -1453,7 +1576,10 @@
         "availability": {
           "pattern": "every_other_turn",
           "reason": "See Land Cap. Depletion counter placed by the mana ability blocks the next untap step."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -1505,7 +1631,10 @@
         "availability": {
           "pattern": "every_other_turn",
           "reason": "See Land Cap. Depletion counter placed by the mana ability blocks the next untap step."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -1662,7 +1791,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1700,7 +1832,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1738,7 +1873,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1776,7 +1914,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1814,7 +1955,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1847,7 +1991,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1864,7 +2011,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1882,7 +2032,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1915,7 +2068,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1932,7 +2088,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -1950,7 +2109,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -1983,7 +2145,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2000,7 +2165,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2018,7 +2186,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2051,7 +2222,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2068,7 +2242,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2086,7 +2263,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2119,7 +2299,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2136,7 +2319,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2154,7 +2340,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2195,7 +2384,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -2244,7 +2436,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -2292,7 +2487,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -2340,7 +2538,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -2388,7 +2589,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2412,7 +2616,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2445,7 +2652,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2466,7 +2676,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2506,7 +2719,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -2763,7 +2979,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -2781,7 +3000,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2820,7 +3042,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -2869,7 +3094,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2910,7 +3138,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2951,7 +3182,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -2992,7 +3226,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3033,7 +3270,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3066,7 +3306,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -3107,7 +3350,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -3155,7 +3401,10 @@
         "availability": {
           "pattern": "one_activation_per_land_drop",
           "reason": "Instead of untapping it returns to your hand during your next untap step, so each use costs a land drop to replay."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -3200,7 +3449,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3245,7 +3497,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3288,7 +3543,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3321,7 +3579,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -3362,7 +3623,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3380,7 +3644,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3413,7 +3680,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3431,7 +3701,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3464,7 +3737,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3482,7 +3758,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3515,7 +3794,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3533,7 +3815,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3566,7 +3851,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3584,7 +3872,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3617,7 +3908,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3638,7 +3932,10 @@
         "availability": {
           "pattern": "skips_next_untap",
           "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3671,7 +3968,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3692,7 +3992,10 @@
         "availability": {
           "pattern": "skips_next_untap",
           "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3725,7 +4028,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3746,7 +4052,10 @@
         "availability": {
           "pattern": "skips_next_untap",
           "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3779,7 +4088,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3800,7 +4112,10 @@
         "availability": {
           "pattern": "skips_next_untap",
           "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3833,7 +4148,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -3854,7 +4172,10 @@
         "availability": {
           "pattern": "skips_next_untap",
           "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3888,7 +4209,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3921,7 +4245,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -3962,7 +4289,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -3995,7 +4325,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4036,7 +4369,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4077,7 +4413,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4120,7 +4459,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4162,7 +4504,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4203,7 +4548,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4244,7 +4592,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4285,7 +4636,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4326,7 +4680,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4367,7 +4724,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4408,7 +4768,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4453,7 +4816,10 @@
           "accrual": null,
           "requires_untap_before_use": false
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -4490,7 +4856,10 @@
           "accrual": null,
           "requires_untap_before_use": false
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -4525,7 +4894,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -4547,7 +4919,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -4584,7 +4959,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4627,7 +5005,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4668,7 +5049,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4709,7 +5093,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4750,7 +5137,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4791,7 +5181,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4832,7 +5225,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4875,7 +5271,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -4917,7 +5316,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -4951,7 +5353,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -4985,7 +5390,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5019,7 +5427,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5053,7 +5464,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5088,7 +5502,10 @@
           "accrual": "one counter per activation of the charge ability, which taps this land",
           "requires_untap_before_use": false
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5131,7 +5548,10 @@
           "accrual": "one counter per activation of the charge ability, which taps this land",
           "requires_untap_before_use": false
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5174,7 +5594,10 @@
           "accrual": "one counter per activation of the charge ability, which taps this land",
           "requires_untap_before_use": false
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5217,7 +5640,10 @@
           "accrual": "one counter per activation of the charge ability, which taps this land",
           "requires_untap_before_use": false
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5260,7 +5686,10 @@
           "accrual": "one counter per activation of the charge ability, which taps this land",
           "requires_untap_before_use": false
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5301,7 +5730,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5345,7 +5777,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5386,7 +5821,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5427,7 +5865,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5468,7 +5909,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -5489,7 +5933,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5524,7 +5971,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5567,7 +6017,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5611,7 +6064,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5670,7 +6126,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5703,7 +6162,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -5745,7 +6207,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5779,7 +6244,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5813,7 +6281,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5847,7 +6318,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5881,7 +6355,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5914,7 +6391,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -5932,7 +6412,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -5965,7 +6448,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -5983,7 +6469,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6016,7 +6505,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6034,7 +6526,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6067,7 +6562,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6085,7 +6583,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6118,7 +6619,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6136,7 +6640,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6169,7 +6676,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6190,7 +6700,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6225,7 +6738,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -6277,7 +6793,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6321,7 +6840,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6365,7 +6887,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6409,7 +6934,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6453,7 +6981,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6493,7 +7024,10 @@
         "availability": {
           "pattern": "requires_upkeep_payment",
           "reason": "Does not untap during your untap step. Untapping requires exiling a card from your hand at the beginning of your upkeep."
-        }
+        },
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -6541,7 +7075,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6574,7 +7111,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -6625,7 +7165,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6643,7 +7186,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6676,7 +7222,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6694,7 +7243,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6727,7 +7279,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6745,7 +7300,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6778,7 +7336,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6796,7 +7357,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6829,7 +7393,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -6847,7 +7414,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6881,7 +7451,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6915,7 +7488,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6949,7 +7525,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -6983,7 +7562,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7017,7 +7599,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7050,7 +7635,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7071,7 +7659,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7104,7 +7695,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7125,7 +7719,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7158,7 +7755,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7179,7 +7779,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7212,7 +7815,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7233,7 +7839,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7266,7 +7875,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7287,7 +7899,10 @@
         "condition": null,
         "sacrifices_self": true,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7320,7 +7935,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -7361,7 +7979,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -7402,7 +8023,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -7443,7 +8067,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -7484,7 +8111,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -7525,7 +8155,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7546,7 +8179,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7579,7 +8215,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -7620,7 +8259,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -7661,7 +8303,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7682,7 +8327,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7717,7 +8365,10 @@
           "accrual": null,
           "requires_untap_before_use": false
         },
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7750,7 +8401,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7773,7 +8427,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7806,7 +8463,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7829,7 +8489,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7862,7 +8525,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7885,7 +8551,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7918,7 +8587,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -7941,7 +8613,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -7974,7 +8649,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8028,7 +8706,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8069,7 +8750,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8294,7 +8978,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8335,7 +9022,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8376,7 +9066,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8417,7 +9110,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8458,7 +9154,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8499,7 +9198,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8540,7 +9242,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8581,7 +9286,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8622,7 +9330,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8663,7 +9374,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8704,7 +9418,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8745,7 +9462,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8786,7 +9506,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [
@@ -8834,7 +9557,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       },
       {
         "produces": {
@@ -8855,7 +9581,10 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
@@ -8892,7 +9621,10 @@
         },
         "sacrifices_self": false,
         "variable_amount": null,
-        "availability": null
+        "availability": null,
+        "requires_tap": true,
+        "restriction": null,
+        "zone": "battlefield"
       }
     ],
     "other_abilities": [],
