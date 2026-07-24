@@ -87,11 +87,11 @@ not an Island. Write a land type as its own pip and it is counted against the la
 that type, plus any fetchland that can find one: `4 Gush {Island}{Island}`,
 `4 Snuff Out {Swamp}`, `4 Daze {Island}`.
 
-It also estimates a land count from Karsten's regression, shown as a band rather than a number.
-That model has an R-squared of 0.395 and a root mean square error of 2.75 lands, so it is presented
-as a sanity check and labelled as a different kind of number from the source requirements, which are
-exact probability. Average mana value honours any alternative cost supplied on a line, so a deck
-that pitches its Foil is not charged for four-drops it never casts.
+It also reports how often your land count hits its land drops, from Karsten's 2017 hypergeometric
+table: the probability of playing a land on each of your first turns, at whatever land count you
+pasted, with a toggle between playing and drawing first. These are exact probabilities rather than a
+regression, shown as a set of numbers rather than a single recommendation, since the right land
+count depends on how many you need to operate and that is your call to make.
 
 It does not simulate. Source counts checked against published targets, Monte Carlo later.
 
