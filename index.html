@@ -10,7 +10,7 @@
 <style>
 :root{
   --ground:#17120c;
-  --panel:#1c1d21;
+  --panel:rgba(28,29,33,.66);
   --edge:#2e2a24;
   --gold:#d6a34a;
   --ink:#e6ddcd;
@@ -30,6 +30,8 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:1120px;margin:0 auto;padding:40px 24px 80px}
+body.embedded .wrap{padding-top:8px}
+body.embedded header{border-bottom-color:transparent;padding-bottom:10px}
 
 header{border-bottom:1px solid var(--edge);padding-bottom:22px;margin-bottom:32px}
 h1{
@@ -469,6 +471,13 @@ function runCheck(first,any,landCount){
       ? "One-drops are held to untapped sources only, so taplands and anything with an entry cost are excluded from this number."
       : "From turn two onward every source counts, tapped or not, on the assumption you could have played the tapland earlier.")+
     "</p>";
+}
+
+// Embedded, the host page owns the background. Standalone, we paint our own.
+if(window.parent!==window){
+  document.documentElement.style.background="transparent";
+  document.body.style.background="transparent";
+  document.body.classList.add("embedded");
 }
 
 // Let a host page (the Fourthwall embed) size its iframe to fit.
