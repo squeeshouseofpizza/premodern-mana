@@ -59,13 +59,13 @@ new.append(card("Lake of the Dead","ALL",[],[],False,
      ab(fixed("B","B","B","B"),4,4,"{T}, Sacrifice a Swamp",True,
         addl={"action":"sacrifice","count":1,"target":"Swamp"})],
     [], None,
-    "The big ability sacrifices a Swamp, not itself, so sacrifices_self is false and additional_cost carries the real price. Lake of the Dead survives; your Swamp does not. It is repeatable as long as you keep feeding it Swamps, which is why it is not modelled as a one-shot. Entry cost eats a Swamp too, so getting to the four-mana turn costs two Swamps in total. Net mana on the turn you fire it is plus four, but land count drops by one each time and the file does not model that decay anywhere except here."))
+    "The big ability sacrifices a Swamp, not itself, so sacrifices_self is false and additional_cost carries the real price. Lake of the Dead survives; your Swamp does not. It is repeatable as long as you keep feeding it Swamps, which is why it is not modeled as a one-shot. Entry cost eats a Swamp too, so getting to the four-mana turn costs two Swamps in total. Net mana on the turn you fire it is plus four, but land count drops by one each time and the file does not model that decay anywhere except here."))
 
 new.append(card("School of the Unseen","ALL",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True),
      ab(choice(*WUBRG),1,-1,"{2}, {T}",False)],
     [], None,
-    "Same family as the Homelands castles. Reads as a five-colour source and is not one: the coloured mode nets minus one and is not self-sufficient, so it can never be your first coloured mana and never accelerates you. It is a colourless land with an expensive late-game fixing button."))
+    "Same family as the Homelands castles. Reads as a five-color source and is not one: the colored mode nets minus one and is not self-sufficient, so it can never be your first colored mana and never accelerates you. It is a colorless land with an expensive late-game fixing button."))
 
 new.append(card("Sheltered Valley","ALL",[],[],False,
     entry("sacrifice","all others","Sheltered Valley",False,"replacement",None),None,None,
@@ -81,14 +81,14 @@ new.append(card("Thawing Glaciers","ALL",[],[],True,None,
     [oa("activated","{1}, {T}","Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. Return this land to its owner's hand at the beginning of the next cleanup step.",False)],
     {"land_types": None, "basic_only": True, "enters_tapped": True, "life_cost": 0,
      "shuffles": True, "returns_self_to_hand": True},
-    "Produces no mana itself, so abilities is empty. Three costs a naive reading misses. It enters tapped, so it cannot fetch the turn it lands. The fetched land arrives tapped, so it gives no mana that turn either. And it bounces itself every turn, which means replaying it consumes your land drop, so the engine only nets you a land per turn if you would otherwise have had nothing to play. Fetches any basic, so its colours resolve against the decklist, not the card."))
+    "Produces no mana itself, so abilities is empty. Three costs a naive reading misses. It enters tapped, so it cannot fetch the turn it lands. The fetched land arrives tapped, so it gives no mana that turn either. And it bounces itself every turn, which means replaying it consumes your land drop, so the engine only nets you a land per turn if you would otherwise have had nothing to play. Fetches any basic, so its colors resolve against the decklist, not the card."))
 
 # --- Mirage fetchlands -----------------------------------------------------
 mir = [("Bad River",["Island","Swamp"]), ("Flood Plain",["Plains","Island"]),
        ("Grasslands",["Forest","Plains"]), ("Mountain Valley",["Mountain","Forest"]),
        ("Rocky Tar Pit",["Swamp","Mountain"])]
 for i,(n,types) in enumerate(mir):
-    note = ("Produces no mana of its own, so abilities is empty and produces is null. Its colours are a property of "
+    note = ("Produces no mana of its own, so abilities is empty and produces is null. Its colors are a property of "
             "the decklist, not the card: it finds any card with the listed land types, which in this pool means the "
             "basics and the snow basics. Note basic_only is false because the printed text says card, not basic card, "
             "so anything that ever gains one of these types is a legal target. Two timing costs that separate this "
@@ -107,7 +107,7 @@ new.append(card("Crystal Vein","MIR",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True),
      ab(fixed("C","C"),2,2,"{T}, Sacrifice",True,sac=True)],
     [], None,
-    "The card that motivated the abilities array. One object, two genuinely different modes: a normal colourless land, or two colourless once. A single amount_per_activation and a single sacrifices_self cannot hold both without lying about one of them."))
+    "The card that motivated the abilities array. One object, two genuinely different modes: a normal colorless land, or two colorless once. A single amount_per_activation and a single sacrifices_self cannot hold both without lying about one of them."))
 
 new.append(card("Teferi's Isle","MIR",["Legendary"],[],True,None,
     {"pattern":"every_other_turn",
@@ -138,13 +138,13 @@ new.append(card("Griffin Canyon","VIS",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{T}","Untap target Griffin. If it's a creature, it gets +1/+1 until end of turn.")],
     None,
-    "Plain colourless land for mana purposes. The Griffin ability costs {T} and competes with the mana ability."))
+    "Plain colorless land for mana purposes. The Griffin ability costs {T} and competes with the mana ability."))
 
 new.append(card("Quicksand","VIS",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{T}, Sacrifice","Target attacking creature without flying gets -1/-2 until end of turn.",True)],
     None,
-    "Colourless source that doubles as removal. The sacrifice is on a non-mana ability, which is why other_abilities carries its own sacrifices_self: a deck expecting to use Quicksand as removal should not count it as a land for the rest of the game."))
+    "Colorless source that doubles as removal. The sacrifice is on a non-mana ability, which is why other_abilities carries its own sacrifices_self: a deck expecting to use Quicksand as removal should not count it as a land for the rest of the game."))
 
 new.append(card("Undiscovered Paradise","VIS",[],[],False,None,
     {"pattern":"one_activation_per_land_drop",
@@ -153,31 +153,31 @@ new.append(card("Undiscovered Paradise","VIS",[],[],False,None,
     [ab(choice(*WUBRG),1,1,"{T}",True)],
     [oa("triggered",None,"During your next untap step, as you untap your permanents, return this land to its owner's hand.")],
     None,
-    "Enters untapped and taps for any colour immediately, so unlike most fixing in this era it is a genuine turn-one coloured source. The price is that it never untaps; it bounces instead. It is one mana per land drop, so in a deck that wants to develop its mana base every turn it is not free fixing, it is a tax on growth. It can still be tapped during an opponent's turn before it returns."))
+    "Enters untapped and taps for any color immediately, so unlike most fixing in this era it is a genuine turn-one colored source. The price is that it never untaps; it bounces instead. It is one mana per land drop, so in a deck that wants to develop its mana base every turn it is not free fixing, it is a tax on growth. It can still be tapped during an opponent's turn before it returns."))
 
 # --- Weatherlight ----------------------------------------------------------
 new.append(card("Gemstone Mine","WTH",[],[],False,None,None,3,
     [ab(choice(*WUBRG),1,1,"{T}, Remove a mining counter",True,sac=True)],
     [], None,
-    "Three activations total, then it sacrifices itself. total_activations is 3 and it is the field that matters more than anything else on this card: treated as an unlimited five-colour source it is one of the best lands in the format, and treated correctly it is three mana spread across a game. The sacrifice happens after the third use, when the last counter is gone, so you do get all three. sacrifices_self is true on the ability because using it is what eventually kills it."))
+    "Three activations total, then it sacrifices itself. total_activations is 3 and it is the field that matters more than anything else on this card: treated as an unlimited five-color source it is one of the best lands in the format, and treated correctly it is three mana spread across a game. The sacrifice happens after the third use, when the last counter is gone, so you do get all three. sacrifices_self is true on the ability because using it is what eventually kills it."))
 
 new.append(card("Lotus Vale","WTH",[],[],False,
     entry("sacrifice",2,"land",True,"replacement","graveyard"),None,None,
     [ab({"mode":"choice_uniform","options":WUBRG,"count":3},3,3,"{T}",True)],
     [], None,
-    "Three mana of any one colour, all the same colour, which is why produces needs the choice_uniform mode rather than choice: you do not get to spread it across three colours. Entry cost is two untapped lands, and it is a replacement effect, so if you cannot pay it goes straight to the graveyard and you have lost the card and your land drop for nothing. Board arithmetic: two lands and a land drop become one land. Mana per turn is roughly break even, card economy is not, and the whole thing dies to one Wasteland."))
+    "Three mana of any one color, all the same color, which is why produces needs the choice_uniform mode rather than choice: you do not get to spread it across three colors. Entry cost is two untapped lands, and it is a replacement effect, so if you cannot pay it goes straight to the graveyard and you have lost the card and your land drop for nothing. Board arithmetic: two lands and a land drop become one land. Mana per turn is roughly break even, card economy is not, and the whole thing dies to one Wasteland."))
 
 new.append(card("Scorched Ruins","WTH",[],[],False,
     entry("sacrifice",2,"land",True,"replacement","graveyard"),None,None,
     [ab(fixed("C","C","C","C"),4,4,"{T}",True)],
     [], None,
-    "See Lotus Vale for the entry cost. Four colourless from one land is the largest single activation in the pool so far, and it is colourless, so it accelerates but never fixes."))
+    "See Lotus Vale for the entry cost. Four colorless from one land is the largest single activation in the pool so far, and it is colorless, so it accelerates but never fixes."))
 
 new.append(card("Winding Canyons","WTH",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{2}, {T}","You may cast creature spells this turn as though they had flash.")],
     None,
-    "Colourless source. The flash ability costs {T} plus two, so any turn it is used this land is a net drain of two rather than a source."))
+    "Colorless source. The flash ability costs {T} plus two, so any turn it is used this land is a net drain of two rather than a source."))
 
 d = json.load(open("premodern_lands.json"))
 have = {c["name"] for c in d}

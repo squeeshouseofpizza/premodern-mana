@@ -22,17 +22,17 @@ new = []
 cyc = [("Drifting Meadow","W"),("Remote Isle","U"),("Polluted Mire","B"),
        ("Smoldering Crater","R"),("Slippery Karst","G")]
 for i,(n,col) in enumerate(cyc):
-    note = ("Enters tapped, produces one mana of its colour, and carries an ability that is only usable from hand. "
+    note = ("Enters tapped, produces one mana of its color, and carries an ability that is only usable from hand. "
             "Cycling is recorded with type activated_from_hand because it has no bearing on mana once the card is on "
-            "the battlefield; what it changes is the decision to play the land at all. A calculator counting coloured "
-            "sources in a decklist should count this at full weight, but a calculator modelling opening hands should "
+            "the battlefield; what it changes is the decision to play the land at all. A calculator counting colored "
+            "sources in a decklist should count this at full weight, but a calculator modeling opening hands should "
             "know the card has a second use as a cantrip and will sometimes never be a land."
             if i == 0 else "See Drifting Meadow. Same cycle.")
     new.append(card(n,"USG",[],[],True,None,None,None,[ab(fixed(col),1,1,"{T}",True)],[CYCLE],None,note))
 
 new.append(card("Blasted Landscape","USG",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],[CYCLE],None,
-    "The colourless member of the cycling cycle and the only one that does not enter tapped. Easy to lose that difference if the six are treated as one group."))
+    "The colorless member of the cycling cycle and the only one that does not enter tapped. Easy to lose that difference if the six are treated as one group."))
 
 new.append(card("Gaea's Cradle","JGP",["Legendary"],[],False,None,None,None,
     [ab({"mode":"fixed_variable","unit":"G"},0,None,"{T}",True,var=var("creatures you control"))],
@@ -49,19 +49,19 @@ new.append(card("Phyrexian Tower","USG",["Legendary"],[],False,None,None,None,
      ab(fixed("B","B"),2,2,"{T}, Sacrifice a creature",True,
         addl={"action":"sacrifice","count":1,"target":"creature"})],
     [], None,
-    "The second ability sacrifices a creature, not the land, so sacrifices_self is false and additional_cost carries the price. Repeatable as long as you have creatures. Like Gaea's Cradle it converts a board into mana, but unlike the Cradle it always has a floor: the colourless mode works on an empty board."))
+    "The second ability sacrifices a creature, not the land, so sacrifices_self is false and additional_cost carries the price. Repeatable as long as you have creatures. Like Gaea's Cradle it converts a board into mana, but unlike the Cradle it always has a floor: the colorless mode works on an empty board."))
 
 new.append(card("Thran Quarry","USG",[],[],False,None,None,None,
     [ab(choice(*WUBRG),1,1,"{T}",True)],
     [oa("triggered",None,"At the beginning of the end step, if you control no creatures, sacrifice this land.",True)],
     None,
-    "Untapped, free, any colour, unlimited. On raw mana production this is the best fixing in the pool so far, and the entire cost is the survival clause. The condition on the mana ability is null on purpose: you can tap it for any colour even with no creatures, it simply dies at the end step. Note the trigger checks at the beginning of the end step of every turn, not only yours, so losing your last creature on an opponent's turn kills it before you untap."))
+    "Untapped, free, any color, unlimited. On raw mana production this is the best fixing in the pool so far, and the entire cost is the survival clause. The condition on the mana ability is null on purpose: you can tap it for any color even with no creatures, it simply dies at the end step. Note the trigger checks at the beginning of the end step of every turn, not only yours, so losing your last creature on an opponent's turn kills it before you untap."))
 
 new.append(card("Shivan Gorge","USG",["Legendary"],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{2}{R}, {T}","Deals 1 damage to each opponent.")],
     None,
-    "Colourless source. The damage ability costs {T} plus three mana, so any turn it is used this land is a net drain of three."))
+    "Colorless source. The damage ability costs {T} plus three mana, so any turn it is used this land is a net drain of three."))
 
 man = [("Faerie Conclave","U","{1}{U}","2/1 blue Faerie with flying"),
        ("Forbidding Watchtower","W","{1}{W}","1/5 white Soldier"),
@@ -69,7 +69,7 @@ man = [("Faerie Conclave","U","{1}{U}","2/1 blue Faerie with flying"),
        ("Spawning Pool","B","{1}{B}","1/1 black Skeleton with a regenerate ability"),
        ("Treetop Village","G","{1}{G}","3/3 green Ape with trample")]
 for i,(n,col,cost,body) in enumerate(man):
-    note = ("Enters tapped, so it is never a turn-one source of its colour, and that is the real cost of the cycle. "
+    note = ("Enters tapped, so it is never a turn-one source of its color, and that is the real cost of the cycle. "
             "Animation does not tap it, so it can be tapped for mana and animated in the same turn, but the animation "
             "cost is mana out of the same pool, and a land that attacks is tapped and produces nothing on your next "
             "turn until it untaps. Still a land while animated, so it keeps its mana ability."
@@ -83,7 +83,7 @@ new.append(card("Yavimaya Hollow","UDS",["Legendary"],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{G}, {T}","Regenerate target creature.")],
     None,
-    "Colourless source. The regeneration ability costs {T} plus a green mana, so it competes with the mana ability and requires green from elsewhere. Legendary."))
+    "Colorless source. The regeneration ability costs {T} plus a green mana, so it competes with the mana ability and requires green from elsewhere. Legendary."))
 
 have={c["name"] for c in d}
 assert not (have & {c["name"] for c in new})

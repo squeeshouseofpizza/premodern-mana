@@ -35,9 +35,9 @@ new = []
 filt = [("Skycloud Expanse",["W","U"]),("Darkwater Catacombs",["U","B"]),("Shadowblood Ridge",["B","R"]),
         ("Mossfire Valley",["R","G"]),("Sungrass Prairie",["G","W"])]
 for i,(n,cols) in enumerate(filt):
-    note = ("The card that started this project. One ability, no colourless mode, and it costs a mana to use, so "
-            "self_sufficient is false and this can never be your first coloured source. Alone on the battlefield it "
-            "produces nothing at all. What it does do is convert one generic mana into two coloured, which is net plus "
+    note = ("The card that started this project. One ability, no colorless mode, and it costs a mana to use, so "
+            "self_sufficient is false and this can never be your first colored source. Alone on the battlefield it "
+            "produces nothing at all. What it does do is convert one generic mana into two colored, which is net plus "
             "one and genuinely good in a deck that already has a mana base, so it should not be written off either. "
             "produces is mode fixed with both symbols: you get {W} and {U} together, never a choice between them."
             if i == 0 else "See Skycloud Expanse. Same cycle.")
@@ -47,7 +47,7 @@ for i,(n,cols) in enumerate(filt):
 sacany = [("Abandoned Outpost","W"),("Seafloor Debris","U"),("Bog Wreckage","B"),
           ("Ravaged Highlands","R"),("Timberland Ruins","G")]
 for i,(n,col) in enumerate(sacany):
-    note = ("Enters tapped, taps for its colour, or cashes itself in for any single colour. Both modes are free and "
+    note = ("Enters tapped, taps for its color, or cashes itself in for any single color. Both modes are free and "
             "self-sufficient, so the fixing here is real in a way the Odyssey filter cycle's is not, at the price of "
             "the land itself and a turn of tempo."
             if i == 0 else "See Abandoned Outpost. Same cycle.")
@@ -61,7 +61,7 @@ thr = [("Nomad Stadium","W","{W}","You gain 4 life."),
        ("Barbarian Ring","R","{R}","It deals 2 damage to any target."),
        ("Centaur Garden","G","{G}","Target creature gets +3/+3 until end of turn.")]
 for i,(n,col,cost,eff) in enumerate(thr):
-    note = ("No colourless mode, so unlike every painland cycle every single tap for mana costs you a life. Enters "
+    note = ("No colorless mode, so unlike every painland cycle every single tap for mana costs you a life. Enters "
             "untapped and is otherwise unrestricted. The threshold ability sacrifices it and is gated on seven cards "
             "in your graveyard, which is a condition the mana base cannot supply on its own. Behaviourally this is the "
             "opposite of Wasteland despite both sacrificing themselves: Wasteland is cracked early and proactively, "
@@ -76,25 +76,25 @@ new.append(card("Crystal Quarry","ODY",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True),
      ab(fixed("W","U","B","R","G"),5,0,"{5}, {T}",False)],
     [],None,
-    "The five-colour mode is net zero: five mana in, five mana out, one of each colour. It is a colour converter, not acceleration, and it is not self-sufficient. Useful only in a deck that already produces five generic and needs all five colours in one turn, which is a narrow ask."))
+    "The five-color mode is net zero: five mana in, five mana out, one of each color. It is a color converter, not acceleration, and it is not self-sufficient. Useful only in a deck that already produces five generic and needs all five colors in one turn, which is a narrow ask."))
 
 new.append(card("Deserted Temple","ODY",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{1}, {T}","Untap target land.")],
     None,
-    "Colourless source whose second ability can target itself, since the tap is paid as a cost before the ability resolves, so for one mana it can reset itself. More usefully it untaps a land that produces more than one mana, which is why it is played alongside Cabal Coffers and the storage lands rather than as a mana source in its own right."))
+    "Colorless source whose second ability can target itself, since the tap is paid as a cost before the ability resolves, so for one mana it can reset itself. More usefully it untaps a land that produces more than one mana, which is why it is played alongside Cabal Coffers and the storage lands rather than as a mana source in its own right."))
 
 new.append(card("Petrified Field","ODY",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{T}, Sacrifice","Return target land card from your graveyard to your hand.",True)],
     None,
-    "Colourless source that trades itself for a land in the graveyard, so it is roughly land-count neutral and card-count neutral, buying back whatever was killed or sacrificed earlier."))
+    "Colorless source that trades itself for a land in the graveyard, so it is roughly land-count neutral and card-count neutral, buying back whatever was killed or sacrificed earlier."))
 
 new.append(card("Tarnished Citadel","ODY",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True),
      ab(choice(*WUBRG),1,1,"{T}",True)],
     [],None,
-    "Painland structure with a five-colour coloured mode and a much steeper price: 3 damage per activation, part of the ability's effect rather than a cost, so it cannot be declined. The colourless mode is free. Untapped and unlimited, so as raw fixing it is excellent and the life total is the constraint."))
+    "Painland structure with a five-color colored mode and a much steeper price: 3 damage per activation, part of the ability's effect rather than a cost, so it cannot be declined. The colorless mode is free. Untapped and unlimited, so as raw fixing it is excellent and the life total is the constraint."))
 
 new.append(card("Cabal Coffers","TOR",[],[],False,None,None,None,
     [ab({"mode":"fixed_variable","unit":"B"},0,None,"{2}, {T}",False,
@@ -105,9 +105,9 @@ new.append(card("Cabal Coffers","TOR",[],[],False,None,None,None,
 tainted = [("Tainted Field",["W","B"]),("Tainted Isle",["U","B"]),
            ("Tainted Peak",["B","R"]),("Tainted Wood",["B","G"])]
 for i,(n,cols) in enumerate(tainted):
-    note = ("The colourless mode is free and unconditional; only the coloured mode requires a Swamp, so the condition "
+    note = ("The colorless mode is free and unconditional; only the colored mode requires a Swamp, so the condition "
             "sits on that ability alone. It checks the Swamp land type, so Snow-Covered Swamp turns it on and this "
-            "land does not count itself. In a deck with no Swamps at all it is simply a colourless land. Worth noting "
+            "land does not count itself. In a deck with no Swamps at all it is simply a colorless land. Worth noting "
             "against Reflecting Pool: the Pool ignores activation conditions, so a Tainted Field with no Swamp in play "
             "still lets a Reflecting Pool produce white or black."
             if i == 0 else "See Tainted Field. Same cycle.")
@@ -121,19 +121,19 @@ new.append(card("Krosan Verge","JUD",[],[],True,None,None,None,
     [oa("activated","{2}, {T}, Sacrifice","Search your library for a Forest card and a Plains card, put them onto the battlefield tapped, then shuffle.",True)],
     {"source":"library","selection":"one_each","count":2,"land_types":["Forest","Plains"],
      "basic_only":False,"enters_tapped":True,"life_cost":0,"shuffles":True,"returns_self_to_hand":False},
-    "The first fetch in the file that gets two lands, and it gets one of each type rather than a choice, which is why the fetches object gained a selection key. Both arrive tapped and it costs {2} plus the land, so the turn you use it is heavily negative and the payoff is a land ahead plus fixed colours from the following turn. Searches by land type, not for basics, so it can find any Forest or Plains card."))
+    "The first fetch in the file that gets two lands, and it gets one of each type rather than a choice, which is why the fetches object gained a selection key. Both arrive tapped and it costs {2} plus the land, so the turn you use it is heavily negative and the payoff is a land ahead plus fixed colors from the following turn. Searches by land type, not for basics, so it can find any Forest or Plains card."))
 
 new.append(card("Nantuko Monastery","JUD",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{G}{W}","This land becomes a 4/4 green and white Insect Monk creature with first strike until end of turn. It's still a land. Activate only if there are seven or more cards in your graveyard.")],
     None,
-    "Colourless source. Animation does not tap it, so mana and animation are compatible on the same turn, but it needs green and white from elsewhere and seven cards in the graveyard."))
+    "Colorless source. Animation does not tap it, so mana and animation are compatible on the same turn, but it needs green and white from elsewhere and seven cards in the graveyard."))
 
 new.append(card("Riftstone Portal","JUD",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("static_from_graveyard",None,"As long as this card is in your graveyard, lands you control have \"{T}: Add {G} or {W}.\"")],
     None,
-    "Unique in this file and the one card here that cannot be evaluated in isolation. On the battlefield it is a colourless land. In the graveyard it grants every land you control the ability to tap for green or white, which means a deck's entire mana base changes colour identity based on whether this card has been discarded or milled. Any calculator that sums per-card colours will be wrong about every other land in the deck while this sits in the graveyard, so global_effect is set to make it findable rather than leaving the fact buried in a note.",
+    "Unique in this file and the one card here that cannot be evaluated in isolation. On the battlefield it is a colorless land. In the graveyard it grants every land you control the ability to tap for green or white, which means a deck's entire mana base changes color identity based on whether this card has been discarded or milled. Any calculator that sums per-card colors will be wrong about every other land in the deck while this sits in the graveyard, so global_effect is set to make it findable rather than leaving the fact buried in a note.",
     {"applies_to":"all lands you control","grants":"{T}: Add {G} or {W}","active_zone":"graveyard"}))
 
 have={c["name"] for c in d}

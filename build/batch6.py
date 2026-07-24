@@ -4,10 +4,10 @@ d = json.load(open("premodern_lands.json"))
 # --- correction: Reflecting Pool note was wrong about costs/conditions -------
 for c in d:
     if c["name"] == "Reflecting Pool":
-        c["notes"] = ("Colours resolve against the board, not the card, so produces gets its own mode rather than a "
+        c["notes"] = ("Colors resolve against the board, not the card, so produces gets its own mode rather than a "
             "list. Per the Gatherer rulings the ability checks the effects of your other lands' mana abilities but "
             "not their costs, their activation conditions, or whether they are untapped: a Homelands castle you "
-            "cannot afford to activate still feeds it, as does a tapped land. Mana types include colourless, so a "
+            "cannot afford to activate still feeds it, as does a tapped land. Mana types include colorless, so a "
             "land that could add {C} lets this add {C}. What it cannot do is bootstrap. If every other land you "
             "control either lacks a mana ability or is another Reflecting Pool, you may activate it and it produces "
             "nothing, so a hand of Reflecting Pools makes zero mana. An earlier revision of this note claimed the "
@@ -38,7 +38,7 @@ dep = [("Peat Bog","B"),("Hickory Woodlot","G"),("Remote Farm","W"),
 for i,(n,col) in enumerate(dep):
     note = ("Two activations total, then it sacrifices itself, so total_activations is 2 and the lifetime output is "
             "four mana. Enters tapped, so nothing on the turn it lands. This is the cycle most likely to be misread as "
-            "a normal dual-producing land: it taps for two of its colour, which looks like acceleration, but it is a "
+            "a normal dual-producing land: it taps for two of its color, which looks like acceleration, but it is a "
             "four-mana card that occupies a land slot and then disappears. Contrast the Fallen Empires storage lands, "
             "which are also slow but never run out."
             if i == 0 else "See Peat Bog. Same cycle.")
@@ -69,37 +69,37 @@ new.append(card("Dust Bowl","MMQ",[],[],False,None,None,None,
     [oa("activated","{3}, {T}, Sacrifice a land","Destroy target nonbasic land.",False,
         {"pattern":"consumes_a_land_per_use","reason":"Each activation eats a land from your board, which may be this one."})],
     None,
-    "Colourless source with repeatable land destruction. The sacrifice is a land, not necessarily this one, so sacrifices_self is false; you can feed it another land and keep Dust Bowl. Each use costs three mana plus a land plus this land's tap, so a turn spent activating it is deeply negative on mana."))
+    "Colorless source with repeatable land destruction. The sacrifice is a land, not necessarily this one, so sacrifices_self is false; you can feed it another land and keep Dust Bowl. Each use costs three mana plus a land plus this land's tap, so a turn spent activating it is deeply negative on mana."))
 
 new.append(card("High Market","MMQ",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{T}, Sacrifice a creature","You gain 1 life.")],
     None,
-    "Colourless source. The sacrifice outlet costs {T} and competes with the mana ability, and it eats a creature rather than the land."))
+    "Colorless source. The sacrifice outlet costs {T} and competes with the mana ability, and it eats a creature rather than the land."))
 
 new.append(card("Rishadan Port","MMQ",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{1}, {T}","Tap target land.")],
     None,
-    "Colourless source. Any turn it is used to tap a land it is a net drain of one and produces nothing itself, which is the whole tension in playing it: it is either your mana or their mana, never both."))
+    "Colorless source. Any turn it is used to tap a land it is a net drain of one and produces nothing itself, which is the whole tension in playing it: it is either your mana or their mana, never both."))
 
 new.append(card("Tower of the Magistrate","MMQ",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{1}, {T}","Target creature gains protection from artifacts until end of turn.")],
     None,
-    "Colourless source with a non-mana ability that competes for the tap."))
+    "Colorless source with a non-mana ability that competes for the tap."))
 
 new.append(card("Henge of Ramos","MMQ",[],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True),
      ab(choice(*WUBRG),1,-1,"{2}, {T}",False)],
     [], None,
-    "Same trap as School of the Unseen and the Homelands castles. Reads as five-colour fixing; the coloured mode nets minus one and is not self-sufficient, so it can never produce your first coloured mana."))
+    "Same trap as School of the Unseen and the Homelands castles. Reads as five-color fixing; the colored mode nets minus one and is not self-sufficient, so it can never produce your first colored mana."))
 
 new.append(card("Kor Haven","NEM",["Legendary"],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{1}{W}, {T}","Prevent all combat damage that would be dealt by target attacking creature this turn.")],
     None,
-    "Colourless source. Legendary. The prevention ability needs white from elsewhere and taps the land, so it is never both mana and defence on the same turn."))
+    "Colorless source. Legendary. The prevention ability needs white from elsewhere and taps the land, so it is never both mana and defence on the same turn."))
 
 new.append(card("Rath's Edge","NEM",["Legendary"],[],False,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
@@ -119,13 +119,13 @@ new.append(card("Rhystic Cave","PCY",[],[],False,None,None,None,
     [ab(choice(*WUBRG),1,1,"{T}",True,
         cond={"type":"opponent_may_prevent","cost_to_prevent":"{1}","who":"any player"})],
     [], None,
-    "Five-colour fixing that an opponent can switch off for one mana, so a calculator should not count it as a reliable coloured source in any matchup where the opponent holds mana up. Flagged: the printed line 'Activate only as an instant' and the unless-any-player-pays clause together suggest the ability uses the stack rather than being an ordinary mana ability, which would mean it cannot be activated while paying for a spell and must be floated in advance. I have not verified that against the rulings and the note should not be trusted on it until someone does."))
+    "Five-color fixing that an opponent can switch off for one mana, so a calculator should not count it as a reliable colored source in any matchup where the opponent holds mana up. Flagged: the printed line 'Activate only as an instant' and the unless-any-player-pays clause together suggest the ability uses the stack rather than being an ordinary mana ability, which would mean it cannot be activated while paying for a spell and must be floated in advance. I have not verified that against the rulings and the note should not be trusted on it until someone does."))
 
 new.append(card("Wintermoon Mesa","PCY",[],[],True,None,None,None,
     [ab(fixed("C"),1,1,"{T}",True)],
     [oa("activated","{2}, {T}, Sacrifice","Tap two target lands.",True)],
     None,
-    "Enters tapped, taps for colourless, and the ability sacrifices it, so it is a land that converts itself into a one-shot double Rishadan Port activation for two mana."))
+    "Enters tapped, taps for colorless, and the ability sacrifices it, so it is a land that converts itself into a one-shot double Rishadan Port activation for two mana."))
 
 have={c["name"] for c in d}
 assert not (have & {c["name"] for c in new})
