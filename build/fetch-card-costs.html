@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Build premodern_card_costs.json</title>
+<style>
+body{background:#17120c;color:#e6ddcd;font:16px/1.5 Georgia,serif;max-width:60ch;margin:0 auto;padding:48px 24px}
+h1{font-size:22px;letter-spacing:.04em;color:#d6a34a;margin:0 0 16px}
+p{color:#8d8172}
+button{background:transparent;color:#d6a34a;border:1px solid #d6a34a;padding:10px 18px;
+  border-radius:2px;font:13px/1 Georgia,serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+button:hover{background:#d6a34a;color:#17120c}
+button:disabled{opacity:.4;cursor:default}
+#log{font:12px/1.7 ui-monospace,Menlo,monospace;background:#1c1d21;border:1px solid #2e2a24;
+  border-radius:2px;padding:14px;margin-top:20px;white-space:pre-wrap;min-height:80px}
+</style>
+</head>
+<body>
+<h1>Build the card cost table</h1>
+<p>This pulls the mana cost of every Premodern-legal nonland card from Scryfall and saves it as
+one file. It pages through the results on its own, waits between requests to stay inside
+Scryfall's rate limits, and takes about a minute. Run it once. The card pool is frozen, so the
+file never needs rebuilding.</p>
+
+<button id="go">Build the file</button>
+<div id="log">Ready.</div>
+
+<script>
+const log = m => { const d=document.getElementById("log"); d.textContent += "\n"+m; d.scrollTop=1e6; };
+const wait = ms => new Promise(r=>setTimeout(r,ms));
+
+document.getElementById("go").onclick = async () => {
+  const btn=document.getElementById("go"); btn.disabled=true;
+  document.getElementById("log").textContent="Starting.";
+  const q = encodeURIComponent("f:premodern -t:land");
+  const out = {};
+  let page = 1, total = null;
+  try{
+    while(true){
+      const url = `https://api.scryfall.com/cards/search?q=${q}&unique=cards&order=name&page=${page}`;
+      const r = await fetch(url);
+      if(!r.ok) throw new Error("Scryfall returned "+r.status+" on page "+page);
+      const j = await r.json();
+      if(total===null){ total=j.total_cards; log(total+" cards to fetch."); }
+      for(const c of j.data){
+        // mana_cost is empty on split/flip backs; cmc still applies. Skip anything with no cost.
+        if(typeof c.mana_cost === "string" && c.mana_cost !== "")
+          out[c.name] = c.mana_cost;
+      }
+      log("page "+page+": "+Object.keys(out).length+" collected");
+      if(!j.has_more) break;
+      page++;
+      await wait(120);
+    }
+    const blob = new Blob([JSON.stringify(out)], {type:"application/json"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "premodern_card_costs.json";
+    a.click();
+    log("\nDone. "+Object.keys(out).length+" cards saved to premodern_card_costs.json.");
+    log("Put it in the repo's data folder next to premodern_lands.json.");
+  }catch(e){
+    log("\nFailed: "+e.message);
+    log("Nothing was saved. Reload and try again; if Scryfall returned 429 you were rate limited, so wait a minute first.");
+  }
+  btn.disabled=false;
+};
+</script>
+</body>
+</html>

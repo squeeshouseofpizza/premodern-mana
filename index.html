@@ -9,119 +9,82 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ground:#17120c;
-  --panel:rgba(28,29,33,.66);
-  --edge:#2e2a24;
-  --gold:#d6a34a;
-  --ink:#e6ddcd;
-  --muted:#8d8172;
-  --flag:#b5573c;
+  --ground:#17120c; --panel:rgba(28,29,33,.66); --edge:#2e2a24;
+  --gold:#d6a34a; --ink:#e6ddcd; --muted:#8d8172; --flag:#b5573c; --ok:#7d9e6a;
   --w:#ece3ca; --u:#7fa8c9; --b:#a08fae; --r:#c4694a; --g:#7d9e6a; --c:#9a8f7d;
   --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{
-  background:var(--ground);
-  color:var(--ink);
-  font-family:"EB Garamond",Georgia,serif;
-  font-size:17px;
-  line-height:1.5;
-  -webkit-font-smoothing:antialiased;
-}
+body{background:var(--ground);color:var(--ink);font-family:"EB Garamond",Georgia,serif;
+  font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1120px;margin:0 auto;padding:40px 24px 80px}
 body.embedded .wrap{padding-top:8px}
 body.embedded header{border-bottom-color:transparent;padding-bottom:10px}
-
 header{border-bottom:1px solid var(--edge);padding-bottom:22px;margin-bottom:32px}
-h1{
-  font-family:Cinzel,serif;font-weight:600;
-  font-size:clamp(26px,3.4vw,38px);letter-spacing:.04em;
-  color:var(--gold);margin:0 0 8px;
-}
-.thesis{margin:0;max-width:62ch;color:var(--muted);font-size:17px}
-
-.cols{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:36px;align-items:start}
-@media(max-width:840px){.cols{grid-template-columns:1fr}}
-
+h1{font-family:Cinzel,serif;font-weight:600;font-size:clamp(26px,3.4vw,38px);
+  letter-spacing:.04em;color:var(--gold);margin:0 0 8px}
+.thesis{margin:0;max-width:64ch;color:var(--muted)}
+.cols{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:36px;align-items:start}
+@media(max-width:900px){.cols{grid-template-columns:1fr}}
 label.field{display:block;font-family:Cinzel,serif;font-size:12px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-textarea{
-  width:100%;height:340px;resize:vertical;
-  background:var(--panel);color:var(--ink);
-  border:1px solid var(--edge);border-radius:2px;
-  font-family:var(--mono);font-size:13px;line-height:1.7;padding:14px;
-}
-textarea:focus-visible,button:focus-visible,summary:focus-visible{
-  outline:2px solid var(--gold);outline-offset:2px}
+textarea{width:100%;height:360px;resize:vertical;background:rgba(28,29,33,.66);color:var(--ink);
+  border:1px solid var(--edge);border-radius:2px;font-family:var(--mono);font-size:13px;
+  line-height:1.7;padding:14px}
+textarea:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .row{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
-button{
-  font-family:Cinzel,serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;
-  background:transparent;color:var(--gold);border:1px solid var(--gold);
-  padding:9px 16px;border-radius:2px;cursor:pointer;
-}
+button{font-family:Cinzel,serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  background:transparent;color:var(--gold);border:1px solid var(--gold);padding:9px 16px;
+  border-radius:2px;cursor:pointer}
 button:hover{background:var(--gold);color:var(--ground)}
 button.quiet{color:var(--muted);border-color:var(--edge)}
 button.quiet:hover{background:var(--edge);color:var(--ink)}
-
-.tally{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 22px}
+.hint{margin:10px 0 0;font-size:14px;color:var(--muted)}
+.hint code{font-family:var(--mono);font-size:12px;color:var(--gold)}
+.tally{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 20px}
 .tally b{color:var(--ink);font-weight:400}
-
 .grid{display:flex;flex-wrap:wrap;gap:12px}
-.tile{flex:1 1 160px;max-width:240px}
-.absent{margin:14px 0 0;color:var(--muted);font-size:15px}
-.tile{background:var(--panel);border:1px solid var(--edge);border-top-width:2px;border-radius:2px;padding:16px 16px 14px}
+.tile{flex:1 1 168px;max-width:250px;background:var(--panel);border:1px solid var(--edge);
+  border-top-width:2px;border-radius:2px;padding:15px 15px 13px}
 .tile .sym{font-family:Cinzel,serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
-.tile .big{font-family:var(--mono);font-size:38px;line-height:1.05;margin:8px 0 2px;font-variant-numeric:tabular-nums}
-.tile .cap{font-size:14px;color:var(--muted);line-height:1.35}
-.tile .sub{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;
-  padding-top:9px;border-top:1px solid var(--edge)}
-.tile.zero .big{color:var(--muted)}
-
+.tile .big{font-family:var(--mono);font-size:34px;line-height:1.05;margin:6px 0 0;font-variant-numeric:tabular-nums}
+.tile .need{font-size:15px;color:var(--muted)}
+.tile .sub{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:9px;
+  padding-top:8px;border-top:1px solid var(--edge)}
+.tile.short .big{color:var(--flag)}
+.tile.fine .big{color:var(--ok)}
+.absent{margin:14px 0 0;color:var(--muted);font-size:15px}
 h2{font-family:Cinzel,serif;font-weight:500;font-size:13px;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--muted);margin:38px 0 14px;
-  padding-bottom:8px;border-bottom:1px solid var(--edge)}
-
+  text-transform:uppercase;color:var(--muted);margin:38px 0 14px;padding-bottom:8px;
+  border-bottom:1px solid var(--edge)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:right;padding:7px 10px;border-bottom:1px solid var(--edge);vertical-align:top}
+th:first-child,td:first-child{text-align:left}
+td.card{font-family:"EB Garamond",serif;font-size:16px}
+td.num,th.num{font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums}
+thead th{font-family:Cinzel,serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:500}
+.short-txt{color:var(--flag)} .ok-txt{color:var(--ok)}
+.badge{font-family:var(--mono);font-size:10px;letter-spacing:.08em;border:1px solid var(--edge);
+  border-radius:2px;padding:1px 5px;color:var(--muted);margin-left:6px}
+td.live{color:var(--gold)} th.live{color:var(--gold)}
 details{background:var(--panel);border:1px solid var(--edge);border-radius:2px;margin-bottom:8px}
-summary{cursor:pointer;padding:11px 14px;font-size:16px;list-style:none}
+summary{cursor:pointer;padding:11px 14px;list-style:none}
 summary::-webkit-details-marker{display:none}
 summary::before{content:"+";font-family:var(--mono);color:var(--gold);margin-right:10px}
 details[open] summary::before{content:"–"}
-details .body{padding:0 14px 14px 34px;color:var(--muted);font-size:16px;max-width:78ch}
-.qty{font-family:var(--mono);font-size:12px;color:var(--gold)}
-
-.flag{border-left:2px solid var(--flag)}
-.flag summary::before{color:var(--flag)}
-
+details .body{padding:0 14px 14px 34px;color:var(--muted);max-width:78ch}
+.flag{border-left:2px solid var(--flag)} .flag summary::before{color:var(--flag)}
 .empty{color:var(--muted);font-style:italic}
 .err{border-left:2px solid var(--flag);background:var(--panel);padding:14px 16px;border-radius:2px}
 code{font-family:var(--mono);font-size:12px;color:var(--gold)}
-
-.check{background:var(--panel);border:1px solid var(--edge);border-radius:2px;padding:16px}
-.check .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-select{background:var(--ground);color:var(--ink);border:1px solid var(--edge);
-  border-radius:2px;padding:8px 10px;font-family:"EB Garamond",serif;font-size:16px}
-select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-.verdict{margin-top:14px;font-size:17px}
-.verdict .n{font-family:var(--mono);font-size:26px;font-variant-numeric:tabular-nums}
-.ok{color:var(--g)} .short{color:var(--flag)}
-
-table{border-collapse:collapse;width:100%;font-size:15px;margin-top:4px}
-th,td{text-align:right;padding:6px 10px;border-bottom:1px solid var(--edge)}
-th:first-child,td:first-child{text-align:left;font-family:var(--mono);font-size:13px}
-thead th{font-family:Cinzel,serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--muted);font-weight:500}
-td.live{color:var(--gold)} th.live{color:var(--gold)}
 .prose{max-width:70ch;color:var(--muted)}
 .prose p{margin:0 0 14px}
 .prose strong{color:var(--ink);font-weight:500}
-footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);
-  color:var(--muted);font-size:14px}
-footer a{color:var(--gold)}
-@media(prefers-reduced-motion:no-preference){
-  .tile{transition:border-color .18s ease}
-  .tile:hover{border-color:var(--muted)}
-}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:var(--muted);font-size:14px}
+@media(prefers-reduced-motion:no-preference){.tile{transition:border-color .18s ease}
+.tile:hover{border-color:var(--muted)}}
 </style>
 </head>
 <body>
@@ -129,134 +92,163 @@ footer a{color:var(--gold)}
 
 <header>
   <h1>Premodern Mana Sources</h1>
-  <p class="thesis">Paste a decklist. This counts what your lands actually produce, not what their
-  mana symbols suggest. The large number is how many lands can produce that colour on turn one with
-  nothing else in play; everything excluded from it is listed with the reason.</p>
+  <p class="thesis">Paste a decklist. Every spell in it is checked against the number of coloured
+  sources it needs to be cast on curve, and every source is counted for what it actually produces
+  rather than what its mana symbols suggest.</p>
 </header>
 
 <div class="cols">
   <div>
     <label class="field" for="list">Decklist</label>
-    <textarea id="list" spellcheck="false" placeholder="4 Wasteland&#10;4 Flooded Strand&#10;3 Skycloud Expanse&#10;..."></textarea>
+    <textarea id="list" spellcheck="false" placeholder="4 Adarkar Wastes&#10;4 Flooded Strand&#10;4 Counterspell&#10;&#10;Sideboard&#10;3 Hydroblast"></textarea>
     <div class="row">
-      <button id="run">Count sources</button>
+      <button id="run">Analyse</button>
       <button id="clear" class="quiet">Clear</button>
     </div>
+    <p class="hint">Put <code>Sideboard</code> on its own line to separate it. For a card you
+    never hard-cast, write the cost you do pay after the name, like <code>4 Foil {0}</code>.</p>
   </div>
-  <div id="out"><p class="empty">Paste your lands on the left. Spells are ignored, so a full list or just the mana base both work.</p></div>
+  <div id="out"><p class="empty">Paste a decklist on the left.</p></div>
 </div>
 
 <section id="learn">
-  <h2>How the target numbers are worked out</h2>
+  <h2>How your mana is counted</h2>
   <div class="prose">
-    <p>The requirement numbers come from Frank Karsten's 2022 article, which is the standard
-    reference for this. A mana base <strong>consistently casts</strong> a spell if you have at
-    least an 89 + M percent chance of drawing the coloured sources you need by turn M, counting
-    only the games where you drew enough lands in the first place. So a one-drop is held to 90
-    percent, a four-drop to 93 percent. Failing to cast a one-drop on turn one usually costs you
-    a turn; failing to cast your five-drop on turn five often costs you the game, so the bar
-    rises with the curve.</p>
-    <p>The conditioning matters. These numbers say nothing about whether you drew enough lands,
-    only about whether the lands you drew were the right colours. Land count is a separate
-    question with a separate formula.</p>
-    <p>The other rule worth knowing: <strong>on turn one only untapped sources count.</strong>
-    From turn two onward Karsten counts everything, including taplands, on the reasoning that you
-    could have played the tapland earlier. That is exactly why this page shows you two numbers
-    per colour instead of one.</p>
+    <p>Requirement numbers come from Frank Karsten's 2022 tables. A spell is <strong>consistently
+    castable</strong> when you have at least an 89 + M percent chance of drawing the coloured
+    sources it needs by turn M, counting only games where you drew enough lands. A one-drop is held
+    to 90 percent, a four-drop to 93. The tables are published at 20, 25 and 30 lands and the
+    column here follows your list, interpolating in between.</p>
+    <p><strong>On turn one only untapped sources count.</strong> From turn two onward everything
+    counts, tapped or not, since a tapland could have been played earlier. Multicolour spells have
+    each colour looked up separately and then every requirement raised by one, because you need
+    both halves at once.</p>
+    <p><strong>Premodern has no dual lands.</strong> A fetchland finds a basic, so its colours are
+    read from the rest of your decklist rather than assumed from the card. Play Flooded Strand
+    without an Island and it is not a blue source here.</p>
+    <p><strong>A land's mana symbols are not a promise.</strong> Skycloud Expanse prints white and
+    blue and produces neither on its own. Cabal Coffers and Gaea's Cradle produce nothing on an
+    empty board. The Tainted cycle is colourless until you control a Swamp. Every land in the
+    format was read individually and classified by hand, and every source excluded from a count
+    here is listed with the reason.</p>
+    <p><strong>Mana that isn't a land is counted too.</strong> Dorks contribute half a source
+    because they die, artifact accelerants three quarters, and Mox Diamond a full one. Rituals and
+    other one-shot effects are deliberately not counted as sources: they multiply mana you already
+    have rather than making a colour available, and Dark Ritual cannot cast your turn-one Duress.</p>
   </div>
 
   <h2>Sources needed, by cost and land count</h2>
   <div id="ktable"></div>
   <div class="prose" style="margin-top:14px">
-    <p>Most Premodern decks sit nearer 20 lands than the 25 the headline table assumes, so read
-    the column that matches your list. The highlighted column follows whatever you have pasted
-    above. Values between columns are interpolated, which is what Karsten suggests for land
-    counts he did not tabulate.</p>
-  </div>
-
-  <h2>Why not just use an existing calculator</h2>
-  <div class="prose">
-    <p>Karsten counts a fetchland as a full source of every colour it could find, because in
-    Modern it finds a shock dual. He flags lands that cannot find a dual as a separate and harder
-    case worth only about two thirds of a source. <strong>Premodern is entirely that harder
-    case.</strong> There are no dual lands in the format, so Flooded Strand is a Plains or an
-    Island that costs a life. Every general-purpose manabase tool inherits the Modern assumption
-    and none of them know this.</p>
-    <p>His model also assumes that lands are your only mana sources. Premodern is a ritual
-    format. Dark Ritual, Lotus Petal, Lion's Eye Diamond and Mox Diamond all see play and none
-    of them is a land, so a count that only looks at your mana base is missing real sources in
-    one direction while the point below has it missing them in the other.</p>
-    <p>Then there is the part no generic tool touches, which is that a Premodern land's mana
-    symbols routinely lie about what it produces. Skycloud Expanse shows white and blue and makes
-    neither one on its own. Ancient Spring's two abilities have no colour in common, so a card
-    that scans as a three-colour land is a blue land with a one-shot escape hatch. Cabal Coffers
-    and Gaea's Cradle read as fixing and produce nothing at all on an empty board. That is what
-    the classification underneath this page is for, and it is why the numbers here will not match
-    what you get pasting the same list into a general-purpose calculator.</p>
+    <p>Most Premodern decks sit nearer 20 lands than 25, so the column that matches your list is
+    highlighted as you type.</p>
   </div>
 </section>
 
 <footer>
-  Data from <code>premodern_lands.json</code>, 199 hand-classified lands.
-  Reasoning for any individual card lives in that file's <code>notes</code> field.
+  199 lands and 155 other mana sources, each classified by hand against its oracle text.
+  Reasoning for any individual card lives in the <code>notes</code> field of the data files.
 </footer>
 </div>
 
 <script>
 const COLORS=[["W","White","--w"],["U","Blue","--u"],["B","Black","--b"],
               ["R","Red","--r"],["G","Green","--g"],["C","Colourless","--c"]];
+const KARSTEN=[
+ ["C",12,14,15],["CC",18,21,23],["CCC",19,23,27],["CCCC",20,24,29],
+ ["1C",11,13,14],["1CC",15,18,21],["1CCC",17,21,24],["1CCCC",18,22,26],
+ ["2C",10,12,13],["2CC",13,16,19],["2CCC",15,19,22],
+ ["3C",9,10,12],["3CC",12,15,17],["3CCC",14,17,20],
+ ["4C",8,9,11],["4CC",11,13,16],["4CCC",12,16,19],
+ ["5C",7,9,10],["5CC",10,12,15]
+];
+const KMAP=new Map(KARSTEN.map(r=>[r[0],r]));
+function needed(row,lands){
+  const L=Math.max(20,Math.min(30,lands||25)), [,a,b,c]=row;
+  return Math.round(L<=25 ? a+(b-a)*(L-20)/5 : b+(c-b)*(L-25)/5);
+}
+function karstenTable(lands){
+  const L=Math.max(20,Math.min(30,lands||25)), live=L<=22.5?1:(L<27.5?2:3);
+  let h="<table><thead><tr><th>Cost</th>"+["20 lands","25 lands","30 lands"]
+    .map((t,i)=>`<th class="num ${i+1===live?"live":""}">${t}</th>`).join("")+"</tr></thead><tbody>";
+  for(const r of KARSTEN){
+    h+=`<tr><td class="num">${r[0]}</td>`;
+    for(let i=1;i<=3;i++) h+=`<td class="num ${i===live?"live":""}">${r[i]}</td>`;
+    h+="</tr>";
+  }
+  return h+"</tbody></table>";
+}
 
-let LANDS=null, BY=null;
+let LANDS=null,NONLANDS=null,COSTS=null,BYNAME=null;
 const norm=s=>s.toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g," ").trim();
 
 function symbolsOf(p){
   if(!p) return null;
   if(p.mode==="fixed") return [...new Set(p.mana)];
-  if(p.mode==="choice"||p.mode==="choice_uniform") return [...new Set(p.options)];
+  if(p.mode==="choice"||p.mode==="choice_uniform"||p.mode==="choice_combination"
+     ||p.mode==="choice_uniform_variable") return [...new Set(p.options)];
   if(p.mode==="fixed_variable") return [p.unit];
-  return null; // derived
+  return null;
 }
-// Colours a land can ever produce itself, however conditionally.
-function allColors(card){
+function landAllColors(c){
   const s=new Set();
-  for(const a of card.abilities){const y=symbolsOf(a.produces); if(y) y.forEach(x=>s.add(x));}
+  for(const a of c.abilities){const y=symbolsOf(a.produces); if(y) y.forEach(x=>s.add(x));}
   return s;
 }
-// Colours available on turn one from this land alone.
-function turnOne(card){
+function landTurnOne(c){
   const s=new Set();
-  if(card.enters_tapped||card.entry_cost) return s;
-  for(const a of card.abilities){
+  if(c.enters_tapped||c.entry_cost) return s;
+  for(const a of c.abilities){
     if(!a.self_sufficient||a.condition||a.variable_amount) continue;
-    const y=symbolsOf(a.produces); if(!y) continue;
-    y.forEach(x=>s.add(x));
+    const y=symbolsOf(a.produces); if(y) y.forEach(x=>s.add(x));
   }
   return s;
 }
-function excuse(card){
-  if(card.entry_cost) return "must pay an entry cost to stay on the battlefield";
-  if(card.enters_tapped) return "enters tapped";
-  const a=card.abilities;
-  if(!a.length) return "produces no mana";
+function landExcuse(c){
+  if(c.entry_cost) return "must pay an entry cost to stay on the battlefield";
+  if(c.enters_tapped) return "enters tapped";
+  if(!c.abilities.length) return "produces no mana";
+  const a=c.abilities;
   if(a.every(x=>!x.self_sufficient)) return "needs mana paid into it, so it can never be your first source";
   if(a.every(x=>x.condition)) return "every mana ability has a condition on it";
   if(a.every(x=>x.variable_amount)) return "amount depends on the board and its floor is zero";
   return "conditional";
 }
+// Karsten's own conventions for mana that isn't a land.
+function nonlandWeight(c){
+  if(c.one_shot) return 0;
+  if(!c.abilities.length) return 0;
+  const usable=c.abilities.filter(a=>!a.restriction&&!a.variable_amount&&a.zone==="battlefield");
+  if(!usable.length) return 0;
+  if(c.kind==="creature") return 0.5;
+  if(c.cmc===0) return 1;
+  return 0.75;
+}
+function nonlandColors(c){
+  const s=new Set();
+  for(const a of c.abilities){
+    if(a.restriction||a.variable_amount||a.zone!=="battlefield") continue;
+    const y=symbolsOf(a.produces); if(y) y.forEach(x=>s.add(x));
+  }
+  return s;
+}
 function parse(text){
-  const out=[];
+  const out=[]; let sb=false;
   for(let line of text.split(/\r?\n/)){
     line=line.trim();
     if(!line||/^(\/\/|#)/.test(line)) continue;
-    if(/^(sideboard|maindeck|deck|companion|commander)\b/i.test(line)) continue;
+    if(/^side ?board\b/i.test(line)){ sb=true; continue; }
+    if(/^(maindeck|deck|main)\b/i.test(line)){ sb=false; continue; }
+    let override=null;
+    const ov=line.match(/\s((?:\{[^}]+\})+)\s*$/);
+    if(ov){ override=ov[1]; line=line.slice(0,ov.index).trim(); }
     const m=line.match(/^(?:(\d+)\s*[xX]?\s+)?(.+?)(?:\s+\([A-Za-z0-9]{2,5}\)(?:\s+\S+)?)?$/);
     if(!m) continue;
-    out.push({qty:parseInt(m[1]||"1",10), name:m[2].trim()});
+    out.push({qty:parseInt(m[1]||"1",10),name:m[2].trim(),override,sideboard:sb});
   }
   return out;
 }
-// Which lands in this deck a fetch can actually find.
-function fetchTargets(card, deckLands){
+function fetchTargets(card,deckLands){
   const f=card.fetches; if(!f) return [];
   return deckLands.filter(e=>{
     if(f.basic_only && !e.card.supertypes.includes("Basic")) return false;
@@ -264,126 +256,184 @@ function fetchTargets(card, deckLands){
     return e.card.land_types.some(t=>f.land_types.includes(t));
   });
 }
+// {1}{U}{B} -> {cmc:3, pips:{U:1,B:1}}
+function readCost(mc){
+  const pips={}; let generic=0;
+  for(const sym of (mc.match(/\{[^}]+\}/g)||[])){
+    const s=sym.slice(1,-1);
+    if(/^\d+$/.test(s)) generic+=parseInt(s,10);
+    else if(s==="X") continue;
+    else if("WUBRGC".includes(s)) pips[s]=(pips[s]||0)+1;
+  }
+  const cmc=generic+Object.values(pips).reduce((a,b)=>a+b,0);
+  return {cmc,pips};
+}
+function pattern(cmc,n){ const g=cmc-n; return (g?String(g):"")+"C".repeat(n); }
 
 function render(text){
   const out=document.getElementById("out");
   const rows=parse(text);
-  if(!rows.length){out.innerHTML='<p class="empty">Paste your lands on the left. Spells are ignored, so a full list or just the mana base both work.</p>';return;}
+  if(!rows.length){out.innerHTML='<p class="empty">Paste a decklist on the left.</p>';return;}
 
-  const lands=[],spells=[],unknown=[];
+  const lands=[],accel=[],spells=[],unknown=[];
   for(const r of rows){
-    const c=BY.get(norm(r.name));
-    if(c) lands.push({qty:r.qty,card:c});
-    else (/^[0-9]/.test(r.name)?unknown:spells).push(r);
+    const key=norm(r.name), L=LANDS.get(key), N=NONLANDS.get(key);
+    if(L&&!r.sideboard) lands.push({qty:r.qty,card:L});
+    else if(L) lands.push({qty:0,card:L});
+    else if(N){ if(!r.sideboard) accel.push({qty:r.qty,card:N}); }
+    const cost = r.override || (COSTS?COSTS.get(key):null) || (N?N.mana_cost:null);
+    if(cost) spells.push({...r,cost});
+    else if(!L&&!N) unknown.push(r);
   }
   const landCount=lands.reduce((n,e)=>n+e.qty,0);
-  const total=rows.reduce((n,r)=>n+r.qty,0);
+  const total=rows.filter(r=>!r.sideboard).reduce((n,r)=>n+r.qty,0);
 
-  const first={},any={},excluded={},fetched={};
-  for(const [s] of COLORS){first[s]=0;any[s]=0;excluded[s]=[];fetched[s]=0;}
-
+  // ---- sources -------------------------------------------------------------
+  const first={},any={},excluded={};
+  for(const [s] of COLORS){first[s]=0;any[s]=0;excluded[s]=[];}
   for(const e of lands){
-    const t=turnOne(e.card), a=allColors(e.card);
+    const t=landTurnOne(e.card), a=landAllColors(e.card);
     for(const [s] of COLORS){
       if(t.has(s)) first[s]+=e.qty;
-      if(a.has(s)) any[s]+=e.qty;
-      else if(t.has(s)) any[s]+=e.qty;
-      if(a.has(s)&&!t.has(s)) excluded[s].push({e,why:excuse(e.card)});
+      if(a.has(s)||t.has(s)) any[s]+=e.qty;
+      if(a.has(s)&&!t.has(s)) excluded[s].push({card:e.card,qty:e.qty,why:landExcuse(e.card)});
     }
-    // fetchlands contribute the colours of what they can find in this deck
     if(e.card.fetches){
-      const targets=fetchTargets(e.card,lands);
-      const cols=new Set(); targets.forEach(t2=>allColors(t2.card).forEach(x=>cols.add(x)));
+      const tg=fetchTargets(e.card,lands), cols=new Set();
+      tg.forEach(x=>landAllColors(x.card).forEach(y=>cols.add(y)));
       const live=!e.card.enters_tapped&&!e.card.fetches.enters_tapped&&e.card.fetches.source==="library";
       for(const s of cols){
-        any[s]+=e.qty; fetched[s]+=e.qty;
+        any[s]+=e.qty;
         if(live) first[s]+=e.qty;
-        else excluded[s].push({e,why:e.card.enters_tapped
-          ? "enters tapped, so it cannot be cracked the turn it is played"
-          : "the land it finds arrives tapped"});
+        else excluded[s].push({card:e.card,qty:e.qty,
+          why:e.card.enters_tapped?"enters tapped, so it cannot be cracked the turn it is played"
+                                  :"the land it finds arrives tapped"});
       }
-      if(!targets.length) excluded["C"].push({e,why:"finds nothing this decklist actually plays"});
+      if(!tg.length) excluded["C"].push({card:e.card,qty:e.qty,why:"finds nothing this list plays"});
     }
   }
+  for(const e of accel){
+    const w=nonlandWeight(e.card); if(!w) continue;
+    for(const s of nonlandColors(e.card)) any[s]+=e.qty*w;
+  }
+  const rounded={}; for(const [s] of COLORS) rounded[s]=Math.round(any[s]);
 
-  let h="";
-  h+=`<p class="tally"><b>${landCount}</b> land${landCount===1?"":"s"}`;
-  if(total>landCount) h+=` of <b>${total}</b> cards`;
-  if(unknown.length) h+=` &middot; ${unknown.length} unreadable line(s)`;
-  h+=`</p>`;
+  // ---- requirements --------------------------------------------------------
+  const checks=[];
+  for(const sp of spells){
+    const {cmc,pips}=readCost(sp.cost);
+    const cols=Object.keys(pips).filter(c=>c!=="C");
+    if(!cols.length) continue;
+    const gold=cols.length>1;
+    for(const col of cols){
+      const pat=pattern(cmc,pips[col]);
+      const row=KMAP.get(pat); if(!row) continue;
+      const need=needed(row,landCount)+(gold?1:0);
+      const have=(pat==="C")?first[col]:rounded[col];
+      checks.push({name:sp.name,colour:col,pattern:pat,cmc,need,have,
+                   gap:have-need,sideboard:sp.sideboard,gold,override:!!sp.override});
+    }
+  }
+  checks.sort((a,b)=>a.gap-b.gap || b.need-a.need);
 
-  const present=COLORS.filter(([s])=>any[s]>0), absent=COLORS.filter(([s])=>!any[s]);
+  const worst={};
+  for(const c of checks){
+    if(c.sideboard) continue;
+    if(!worst[c.colour]||c.need>worst[c.colour].need) worst[c.colour]=c;
+  }
+
+  // ---- output --------------------------------------------------------------
+  let h=`<p class="tally"><b>${landCount}</b> land${landCount===1?"":"s"}`;
+  if(total>landCount) h+=` of <b>${total}</b> maindeck cards`;
+  if(accel.length) h+=` &middot; <b>${accel.reduce((n,e)=>n+e.qty,0)}</b> other mana source${accel.length===1?"":"s"}`;
+  if(!COSTS) h+=` &middot; card costs unavailable`;
+  h+="</p>";
+
+  const present=COLORS.filter(([s])=>rounded[s]>0||worst[s]);
+  const absent=COLORS.filter(([s])=>!rounded[s]&&!worst[s]);
   h+='<div class="grid">';
   for(const [s,label,v] of present){
-    const f=first[s], a=any[s];
-    h+=`<div class="tile ${f?"":"zero"}" style="border-top-color:var(${v})">
+    const w=worst[s], need=w?w.need:null, have=rounded[s];
+    const cls=need===null?"":(have>=need?"fine":"short");
+    h+=`<div class="tile ${cls}" style="border-top-color:var(${v})">
       <div class="sym" style="color:var(${v})">${label}</div>
-      <div class="big">${f}</div>
-      <div class="cap">on turn one</div>
-      <div class="sub">${a} source${a===1?"":"s"} in total</div>
+      <div class="big">${have}</div>
+      ${need!==null?`<div class="need">of ${need} needed</div>`:`<div class="need">no requirement</div>`}
+      <div class="sub">${need!==null?`most demanding: ${w.name}`:`sources available`}</div>
     </div>`;
   }
   h+="</div>";
   if(absent.length){
-    const names=absent.map(c=>c[1].toLowerCase());
-    const list=names.length===1?names[0]
-      :names.slice(0,-1).join(", ")+" or "+names[names.length-1];
-    h+=`<p class="absent">No ${list} sources in this list.</p>`;
+    const n=absent.map(c=>c[1].toLowerCase());
+    h+=`<p class="absent">No ${n.length===1?n[0]:n.slice(0,-1).join(", ")+" or "+n[n.length-1]} sources in this list.</p>`;
   }
 
-  h+="<h2>Check a colour requirement</h2>";
-  h+=checker(first,any,landCount);
+  if(checks.length){
+    h+="<h2>Every spell, worst first</h2><table><thead><tr>"+
+       "<th>Card</th><th class=num>Cost</th><th class=num>Have</th><th class=num>Needs</th><th>Verdict</th>"+
+       "</tr></thead><tbody>";
+    for(const c of checks){
+      const col=COLORS.find(x=>x[0]===c.colour);
+      h+=`<tr><td class="card">${c.name}`+
+         (c.sideboard?'<span class="badge">SB</span>':"")+
+         (c.gold?'<span class="badge">gold</span>':"")+
+         (c.override?'<span class="badge">alt cost</span>':"")+
+         `</td><td class="num" style="color:var(${col[2]})">${c.pattern} &middot; turn ${c.cmc}</td>`+
+         `<td class="num">${c.have}</td><td class="num">${c.need}</td>`+
+         `<td class="${c.gap<0?"short-txt":"ok-txt"}">${c.gap<0?"short "+(-c.gap):"ok"}</td></tr>`;
+    }
+    h+="</tbody></table>";
+  }else if(!COSTS){
+    h+='<h2>Every spell</h2><div class="err"><b>Card costs are not loaded.</b>'+
+       '<p style="margin:8px 0 0;color:var(--muted)">This page expects '+
+       '<code>data/premodern_card_costs.json</code>. Source counts above are unaffected.</p></div>';
+  }
 
-  // per-colour exclusions
   const anyEx=COLORS.some(([s])=>excluded[s].length);
   if(anyEx){
-    h+="<h2>Not counted on turn one</h2>";
+    h+="<h2>Sources not counted on turn one</h2>";
     for(const [s,label,v] of COLORS){
       if(!excluded[s].length) continue;
       const seen=new Map();
       for(const x of excluded[s]){
-        const k=x.e.card.name;
-        if(!seen.has(k)) seen.set(k,{qty:0,why:x.why,card:x.e.card});
-        seen.get(k).qty+=x.e.qty;
+        if(!seen.has(x.card.name)) seen.set(x.card.name,{qty:0,why:x.why});
+        seen.get(x.card.name).qty+=x.qty;
       }
       const copies=[...seen.values()].reduce((n,d)=>n+d.qty,0);
       h+=`<details><summary><span style="color:var(${v})">${label}</span> &middot; ${copies} land${copies===1?"":"s"}</summary><div class="body">`;
-      for(const [name,d] of seen){
-        h+=`<p><span class="qty">${d.qty}&times;</span> <b>${name}</b> — ${d.why}.</p>`;
-      }
+      for(const [name,d] of seen) h+=`<p><span class="num" style="color:var(--gold)">${d.qty}&times;</span> <b>${name}</b> — ${d.why}.</p>`;
       h+="</div></details>";
     }
   }
 
-  // deck-specific warnings straight off the data
   const flags=[]; const explained=new Set();
-  for(const s of Object.keys(excluded)) for(const x of excluded[s]) explained.add(x.e.card.name);
-  for(const e of lands){
+  for(const s of Object.keys(excluded)) for(const x of excluded[s]) explained.add(x.card.name);
+  for(const e of lands.concat(accel)){
     const c=e.card;
     if(c.global_effect) flags.push([c.name,
-      `While this is in your graveyard it grants every land you control "${c.global_effect.grants}". No count on this page accounts for that, because it changes what every other land does.`]);
+      `Grants ${c.global_effect.applies_to} "${c.global_effect.grants}". No count on this page accounts for that, because it changes what other cards do.`]);
     if(c.fetches){
-      const t=fetchTargets(c,lands);
-      const names=[...new Set(t.map(x=>x.card.name))];
-      flags.push([c.name, names.length
-        ? `Finds ${names.join(", ")} in this list. Its colours are counted through those lands, not from the card.`
-        : `Finds nothing in this list. It is a colourless-producing blank here.`]);
+      const t=fetchTargets(c,lands), names=[...new Set(t.map(x=>x.card.name))];
+      flags.push([c.name,names.length
+        ?`Finds ${names.join(", ")} in this list, and its colours are counted through those lands.`
+        :`Finds nothing in this list.`]);
     }
-    for(const a of c.abilities){
+    for(const a of (c.abilities||[])){
+      if(a.restriction) flags.push([c.name,`Its mana is restricted: ${a.restriction}`]);
       if(a.condition&&a.condition.type==="controls_land_type"){
         const need=a.condition.value.join(" or ");
-        const have=lands.some(x=>x.card.land_types.some(t=>a.condition.value.includes(t)));
-        flags.push([c.name, have
-          ? `Its coloured ability needs a ${need}, and this list plays one.`
-          : `Its coloured ability needs a ${need}, and this list plays none. It is a colourless land here.`]);
+        const have=lands.some(x=>x.card.land_types&&x.card.land_types.some(t=>a.condition.value.includes(t)));
+        flags.push([c.name,have?`Needs a ${need}, and this list plays one.`
+                               :`Needs a ${need}, and this list plays none.`]);
       }
       if(a.condition&&a.condition.type==="controls_n_lands")
-        flags.push([c.name,`Dead until you control ${a.condition.value} lands, itself included.`]);
-      if(a.variable_amount)
-        flags.push([c.name,`Amount equals ${a.variable_amount.equals}, floor zero. Counted as zero here on purpose.`]);
+        flags.push([c.name,`Dead until you control ${a.condition.value} lands.`]);
+      if(a.variable_amount) flags.push([c.name,`Output equals ${a.variable_amount.equals}, floor zero, so it is counted as zero here.`]);
       if(!a.self_sufficient&&symbolsOf(a.produces)&&!explained.has(c.name))
         flags.push([c.name,`Costs mana to activate, so it cannot produce your first coloured mana.`]);
     }
+    if(c.one_shot&&nonlandColors(c).size)
+      flags.push([c.name,`One shot, so it is not counted as a source. It multiplies mana you already have.`]);
   }
   if(flags.length){
     h+="<h2>Worth knowing about this list</h2>";
@@ -395,92 +445,20 @@ function render(text){
   }
 
   if(unknown.length){
-    h+="<h2>Unreadable</h2><div class=\"err\">";
-    h+=unknown.map(u=>`<div>${u.qty} ${u.name}</div>`).join("");
-    h+="<p style=\"margin:10px 0 0;color:var(--muted)\">Expected one card per line, like <code>4 Wasteland</code>.</p></div>";
+    h+='<h2>Not recognised</h2><div class="err">'+
+       unknown.slice(0,12).map(u=>`<div>${u.qty} ${u.name}</div>`).join("")+
+       '<p style="margin:10px 0 0;color:var(--muted)">Expected one card per line, like <code>4 Wasteland</code>.</p></div>';
   }
 
   out.innerHTML=h;
-  if($("kcost")){
-    const go=()=>runCheck(first,any,landCount);
-    $("kcost").onchange=go; $("kcol").onchange=go; go();
-  }
-  $("ktable").innerHTML=karstenTable(landCount);
+  document.getElementById("ktable").innerHTML=karstenTable(landCount);
 }
 
-// Frank Karsten, "How Many Sources Do You Need to Consistently Cast Your Spells?
-// A 2022 Update". Sources required in a 60-card deck at 20 / 25 / 30 lands.
-const KARSTEN=[
- ["C",   12,14,15], ["CC",  18,21,23], ["CCC", 19,23,27], ["CCCC",20,24,29],
- ["1C",  11,13,14], ["1CC", 15,18,21], ["1CCC",17,21,24], ["1CCCC",18,22,26],
- ["2C",  10,12,13], ["2CC", 13,16,19], ["2CCC",15,19,22],
- ["3C",   9,10,12], ["3CC", 12,15,17], ["3CCC",14,17,20],
- ["4C",   8, 9,11], ["4CC", 11,13,16], ["4CCC",12,16,19],
- ["5C",   7, 9,10], ["5CC", 10,12,15]
-];
-// Karsten tabulates 20, 25 and 30 lands and suggests interpolating in between.
-function needed(row,lands){
-  const L=Math.max(20,Math.min(30,lands||25));
-  const [ ,a,b,c]=row;
-  return Math.round(L<=25 ? a+(b-a)*(L-20)/5 : b+(c-b)*(L-25)/5);
-}
-function karstenTable(lands){
-  const L=Math.max(20,Math.min(30,lands||25));
-  const live=L<=22.5?1:(L<27.5?2:3);
-  let h="<table><thead><tr><th>Cost</th>"+
-    ["20 lands","25 lands","30 lands"].map((t,i)=>
-      `<th class="${i+1===live?"live":""}">${t}</th>`).join("")+"</tr></thead><tbody>";
-  for(const r of KARSTEN){
-    h+=`<tr><td>${r[0]}</td>`;
-    for(let i=1;i<=3;i++) h+=`<td class="${i===live?"live":""}">${r[i]}</td>`;
-    h+="</tr>";
-  }
-  return h+"</tbody></table>";
-}
-
-// Compare one colour requirement against what this list actually produces.
-function checker(first,any,landCount){
-  const opts=KARSTEN.map((r,i)=>`<option value="${i}">${r[0]}</option>`).join("");
-  const cols=COLORS.map(([s,l])=>`<option value="${s}">${l}</option>`).join("");
-  return `<div class="check">
-    <div class="controls">
-      <span style="color:var(--muted)">Can this list cast a</span>
-      <select id="kcost">${opts}</select>
-      <span style="color:var(--muted)">spell in</span>
-      <select id="kcol">${cols}</select>
-      <span style="color:var(--muted)">on curve?</span>
-    </div>
-    <div class="verdict" id="kout"></div>
-  </div>`;
-}
-function runCheck(first,any,landCount){
-  const row=KARSTEN[+$("kcost").value], col=$("kcol").value;
-  const want=needed(row,landCount);
-  const onedrop=row[0]==="C";
-  const have=onedrop?first[col]:any[col];
-  const gap=have-want;
-  const label=COLORS.find(c=>c[0]===col)[1].toLowerCase();
-  $("kout").innerHTML=
-    `<span class="n ${gap>=0?"ok":"short"}">${have}</span> ` +
-    `<span style="color:var(--muted)">${label} source${have===1?"":"s"} ` +
-    (onedrop?"untapped on turn one":"in total")+`, and a ${row[0]} spell wants ` +
-    `<span class="n">${want}</span> at ${landCount} lands. ` +
-    (gap>0?`<span class="ok">Clear by ${gap}.</span>`:gap===0?`<span class="ok">Exactly enough.</span>`:`<span class="short">Short by ${-gap}.</span>`)+
-    `</span><p style="margin:10px 0 0;color:var(--muted);font-size:15px">`+
-    (onedrop
-      ? "One-drops are held to untapped sources only, so taplands and anything with an entry cost are excluded from this number."
-      : "From turn two onward every source counts, tapped or not, on the assumption you could have played the tapland earlier.")+
-    "</p>";
-}
-
-// Embedded, the host page owns the background. Standalone, we paint our own.
 if(window.parent!==window){
   document.documentElement.style.background="transparent";
   document.body.style.background="transparent";
   document.body.classList.add("embedded");
 }
-
-// Let a host page (the Fourthwall embed) size its iframe to fit.
 function reportHeight(){
   if(window.parent===window) return;
   parent.postMessage({premodernMana:true,height:document.documentElement.scrollHeight},"*");
@@ -490,21 +468,23 @@ new ResizeObserver(reportHeight).observe(document.body);
 const $=id=>document.getElementById(id);
 $("run").onclick=()=>render($("list").value);
 $("clear").onclick=()=>{$("list").value="";render("");};
-let t; $("list").oninput=()=>{clearTimeout(t);t=setTimeout(()=>render($("list").value),350);};
+let t;$("list").oninput=()=>{clearTimeout(t);t=setTimeout(()=>render($("list").value),350);};
 
-fetch("data/premodern_lands.json")
-  .then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
-  .then(j=>{
-    LANDS=j; BY=new Map(j.map(c=>[norm(c.name),c]));
-    $("list").disabled=false;
-    $("ktable").innerHTML=karstenTable(25);
-  })
-  .catch(()=>{
-    $("out").innerHTML='<div class="err"><b>Card data did not load.</b>'+
-      '<p style="margin:8px 0 0;color:var(--muted)">This page expects '+
-      '<code>data/premodern_lands.json</code> next to it. Check the file is committed '+
-      'and that Pages is serving from the repository root.</p></div>';
-  });
+Promise.all([
+  fetch("data/premodern_lands.json").then(r=>r.json()),
+  fetch("data/premodern_nonlands.json").then(r=>r.json()),
+  fetch("data/premodern_card_costs.json").then(r=>r.ok?r.json():null).catch(()=>null)
+]).then(([l,n,c])=>{
+  LANDS=new Map(l.map(x=>[norm(x.name),x]));
+  NONLANDS=new Map(n.map(x=>[norm(x.name),x]));
+  COSTS=c?new Map(Object.entries(c).map(([k,v])=>[norm(k),v])):null;
+  $("ktable").innerHTML=karstenTable(22);
+}).catch(()=>{
+  $("out").innerHTML='<div class="err"><b>Card data did not load.</b>'+
+    '<p style="margin:8px 0 0;color:var(--muted)">This page expects '+
+    '<code>data/premodern_lands.json</code> and <code>data/premodern_nonlands.json</code> '+
+    'next to it.</p></div>';
+});
 </script>
 </body>
 </html>

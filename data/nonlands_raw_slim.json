@@ -1,0 +1,1242 @@
+[
+ {
+  "name": "Adarkar Unicorn",
+  "set": "ICE",
+  "type_line": "Creature \u2014 Unicorn",
+  "mana_cost": "{1}{W}{W}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {U} or {C}{U}. Spend this mana only to pay cumulative upkeep costs."
+ },
+ {
+  "name": "Agent of Stromgald",
+  "set": "ALL",
+  "type_line": "Creature \u2014 Human Knight",
+  "mana_cost": "{R}",
+  "cmc": 1.0,
+  "oracle_text": "{R}: Add {B}."
+ },
+ {
+  "name": "Apprentice Wizard",
+  "set": "2XM",
+  "type_line": "Creature \u2014 Human Wizard",
+  "mana_cost": "{1}{U}{U}",
+  "cmc": 3.0,
+  "oracle_text": "{U}, {T}: Add {C}{C}{C}."
+ },
+ {
+  "name": "Ashnod's Altar",
+  "set": "CMM",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "Sacrifice a creature: Add {C}{C}."
+ },
+ {
+  "name": "Astrolabe",
+  "set": "ME3",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{1}, {T}, Sacrifice this artifact: Add two mana of any one color. Draw a card at the beginning of the next turn's upkeep."
+ },
+ {
+  "name": "Barbed Sextant",
+  "set": "ME2",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "{1}, {T}, Sacrifice this artifact: Add one mana of any color. Draw a card at the beginning of the next turn's upkeep."
+ },
+ {
+  "name": "Benthic Explorers",
+  "set": "ME3",
+  "type_line": "Creature \u2014 Merfolk Scout",
+  "mana_cost": "{3}{U}",
+  "cmc": 4.0,
+  "oracle_text": "{T}, Untap a tapped land an opponent controls: Add one mana of any type that land could produce."
+ },
+ {
+  "name": "Birchlore Rangers",
+  "set": "ONS",
+  "type_line": "Creature \u2014 Elf Druid Ranger",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "Tap two untapped Elves you control: Add one mana of any color.\nMorph {G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)"
+ },
+ {
+  "name": "Birds of Paradise",
+  "set": "MSC",
+  "type_line": "Creature \u2014 Bird",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "Flying\n{T}: Add one mana of any color."
+ },
+ {
+  "name": "Black Mana Battery",
+  "set": "4ED",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{2}, {T}: Put a charge counter on this artifact.\n{T}, Remove any number of charge counters from this artifact: Add {B}, then add an additional {B} for each charge counter removed this way."
+ },
+ {
+  "name": "Black Market",
+  "set": "CLB",
+  "type_line": "Enchantment",
+  "mana_cost": "{3}{B}{B}",
+  "cmc": 5.0,
+  "oracle_text": "Whenever a creature dies, put a charge counter on this enchantment.\nAt the beginning of your first main phase, add {B} for each charge counter on this enchantment."
+ },
+ {
+  "name": "Blanket of Night",
+  "set": "VIS",
+  "type_line": "Enchantment",
+  "mana_cost": "{1}{B}{B}",
+  "cmc": 3.0,
+  "oracle_text": "Each land is a Swamp in addition to its other land types."
+ },
+ {
+  "name": "Blood Celebrant",
+  "set": "LGN",
+  "type_line": "Creature \u2014 Human Cleric",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "{B}, Pay 1 life: Add one mana of any color."
+ },
+ {
+  "name": "Blood Pet",
+  "set": "7ED",
+  "type_line": "Creature \u2014 Thrull",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "Sacrifice this creature: Add {B}."
+ },
+ {
+  "name": "Bloodstone Cameo",
+  "set": "INV",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {B} or {R}."
+ },
+ {
+  "name": "Blood Vassal",
+  "set": "USG",
+  "type_line": "Creature \u2014 Thrull",
+  "mana_cost": "{2}{B}",
+  "cmc": 3.0,
+  "oracle_text": "Sacrifice this creature: Add {B}{B}."
+ },
+ {
+  "name": "Blue Mana Battery",
+  "set": "4ED",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{2}, {T}: Put a charge counter on this artifact.\n{T}, Remove any number of charge counters from this artifact: Add {U}, then add an additional {U} for each charge counter removed this way."
+ },
+ {
+  "name": "Bog Initiate",
+  "set": "INV",
+  "type_line": "Creature \u2014 Human Wizard",
+  "mana_cost": "{1}{B}",
+  "cmc": 2.0,
+  "oracle_text": "{1}: Add {B}."
+ },
+ {
+  "name": "Bog Witch",
+  "set": "ARC",
+  "type_line": "Creature \u2014 Human Spellshaper",
+  "mana_cost": "{2}{B}",
+  "cmc": 3.0,
+  "oracle_text": "{B}, {T}, Discard a card: Add {B}{B}{B}."
+ },
+ {
+  "name": "Brightstone Ritual",
+  "set": "ONS",
+  "type_line": "Instant",
+  "mana_cost": "{R}",
+  "cmc": 1.0,
+  "oracle_text": "Add {R} for each Goblin on the battlefield."
+ },
+ {
+  "name": "Bubbling Muck",
+  "set": "UDS",
+  "type_line": "Sorcery",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "Until end of turn, whenever a player taps a Swamp for mana, that player adds an additional {B}."
+ },
+ {
+  "name": "Burnt Offering",
+  "set": "ICE",
+  "type_line": "Instant",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "As an additional cost to cast this spell, sacrifice a creature.\nAdd X mana in any combination of {B} and/or {R}, where X is the sacrificed creature's mana value."
+ },
+ {
+  "name": "Cabal Ritual",
+  "set": "VMA",
+  "type_line": "Instant",
+  "mana_cost": "{1}{B}",
+  "cmc": 2.0,
+  "oracle_text": "Add {B}{B}{B}.\nThreshold \u2014 Add {B}{B}{B}{B}{B} instead if there are seven or more cards in your graveyard."
+ },
+ {
+  "name": "Cadaverous Bloom",
+  "set": "MIR",
+  "type_line": "Enchantment",
+  "mana_cost": "{3}{B}{G}",
+  "cmc": 5.0,
+  "oracle_text": "Exile a card from your hand: Add {B}{B} or {G}{G}."
+ },
+ {
+  "name": "Carnival of Souls",
+  "set": "UDS",
+  "type_line": "Enchantment",
+  "mana_cost": "{1}{B}",
+  "cmc": 2.0,
+  "oracle_text": "Whenever a creature enters, you lose 1 life and add {B}."
+ },
+ {
+  "name": "Carpet of Flowers",
+  "set": "USG",
+  "type_line": "Enchantment",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "At the beginning of each of your main phases, if you haven't added mana with this ability this turn, you may add X mana of any one color, where X is the number of Islands target opponent controls."
+ },
+ {
+  "name": "Cathodion",
+  "set": "2XM",
+  "type_line": "Artifact Creature \u2014 Construct",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "When this creature dies, add {C}{C}{C}."
+ },
+ {
+  "name": "Celestial Prism",
+  "set": "4ED",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{2}, {T}: Add one mana of any color."
+ },
+ {
+  "name": "Ceta Disciple",
+  "set": "APC",
+  "type_line": "Creature \u2014 Merfolk Wizard",
+  "mana_cost": "{U}",
+  "cmc": 1.0,
+  "oracle_text": "{R}, {T}: Target creature gets +2/+0 until end of turn.\n{G}, {T}: Add one mana of any color."
+ },
+ {
+  "name": "Chaos Moon",
+  "set": "ICE",
+  "type_line": "Enchantment",
+  "mana_cost": "{3}{R}",
+  "cmc": 4.0,
+  "oracle_text": "At the beginning of each upkeep, count the number of permanents. If the number is odd, until end of turn, red creatures get +1/+1 and whenever a player taps a Mountain for mana, that player adds an additional {R}. If the number is even, until end of turn, red creatures get -1/-1 and if a player taps a Mountain for mana, that Mountain produces colorless mana instead of any other type."
+ },
+ {
+  "name": "Charcoal Diamond",
+  "set": "CLB",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "This artifact enters tapped.\n{T}: Add {B}."
+ },
+ {
+  "name": "Charmed Pendant",
+  "set": "ODY",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{T}, Mill a card: For each colored mana symbol in the milled card's mana cost, add one mana of that color. Activate only as an instant. (For example, if the card's mana cost is {3}{U}{U}{B}, you add {U}{U}{B}.)"
+ },
+ {
+  "name": "Chromatic Sphere",
+  "set": "JMP",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "{1}, {T}, Sacrifice this artifact: Add one mana of any color. Draw a card."
+ },
+ {
+  "name": "Citanul Hierophants",
+  "set": "DSC",
+  "type_line": "Creature \u2014 Human Druid",
+  "mana_cost": "{3}{G}",
+  "cmc": 4.0,
+  "oracle_text": "Creatures you control have \"{T}: Add {G}.\""
+ },
+ {
+  "name": "Crosis's Attendant",
+  "set": "INV",
+  "type_line": "Artifact Creature \u2014 Golem",
+  "mana_cost": "{5}",
+  "cmc": 5.0,
+  "oracle_text": "{1}, Sacrifice this creature: Add {U}{B}{R}."
+ },
+ {
+  "name": "Culling the Weak",
+  "set": "EXO",
+  "type_line": "Instant",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "As an additional cost to cast this spell, sacrifice a creature.\nAdd {B}{B}{B}{B}."
+ },
+ {
+  "name": "Darigaaz's Attendant",
+  "set": "INV",
+  "type_line": "Artifact Creature \u2014 Golem",
+  "mana_cost": "{5}",
+  "cmc": 5.0,
+  "oracle_text": "{1}, Sacrifice this creature: Add {B}{R}{G}."
+ },
+ {
+  "name": "Dark Ritual",
+  "set": "MSC",
+  "type_line": "Instant",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "Add {B}{B}{B}."
+ },
+ {
+  "name": "Darkwater Egg",
+  "set": "ODY",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "{2}, {T}, Sacrifice this artifact: Add {U}{B}. Draw a card."
+ },
+ {
+  "name": "Diamond Kaleidoscope",
+  "set": "VIS",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{3}, {T}: Create a 0/1 colorless Prism artifact creature token.\nSacrifice a Prism token: Add one mana of any color."
+ },
+ {
+  "name": "Divergent Growth",
+  "set": "SCG",
+  "type_line": "Instant",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "Until end of turn, lands you control gain \"{T}: Add one mana of any color.\""
+ },
+ {
+  "name": "Drain Power",
+  "set": "ME4",
+  "type_line": "Sorcery",
+  "mana_cost": "{U}{U}",
+  "cmc": 2.0,
+  "oracle_text": "Target player activates a mana ability of each land they control. Then that player loses all unspent mana and you add the mana lost this way."
+ },
+ {
+  "name": "Drake-Skull Cameo",
+  "set": "INV",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {U} or {B}."
+ },
+ {
+  "name": "Dromar's Attendant",
+  "set": "INV",
+  "type_line": "Artifact Creature \u2014 Golem",
+  "mana_cost": "{5}",
+  "cmc": 5.0,
+  "oracle_text": "{1}, Sacrifice this creature: Add {W}{U}{B}."
+ },
+ {
+  "name": "Eladamri's Vineyard",
+  "set": "TMP",
+  "type_line": "Enchantment",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "At the beginning of each player's first main phase, that player adds {G}{G}."
+ },
+ {
+  "name": "Elvish Aberration",
+  "set": "DMR",
+  "type_line": "Creature \u2014 Elf Mutant",
+  "mana_cost": "{5}{G}",
+  "cmc": 6.0,
+  "oracle_text": "{T}: Add {G}{G}{G}.\nForestcycling {2} ({2}, Discard this card: Search your library for a Forest card, reveal it, put it into your hand, then shuffle.)"
+ },
+ {
+  "name": "Elvish Guidance",
+  "set": "ONS",
+  "type_line": "Enchantment \u2014 Aura",
+  "mana_cost": "{2}{G}",
+  "cmc": 3.0,
+  "oracle_text": "Enchant land\nWhenever enchanted land is tapped for mana, its controller adds an additional {G} for each Elf on the battlefield."
+ },
+ {
+  "name": "Elvish Spirit Guide",
+  "set": "DMR",
+  "type_line": "Creature \u2014 Elf Spirit",
+  "mana_cost": "{2}{G}",
+  "cmc": 3.0,
+  "oracle_text": "Exile this creature from your hand: Add {G}."
+ },
+ {
+  "name": "Energy Tap",
+  "set": "4ED",
+  "type_line": "Sorcery",
+  "mana_cost": "{U}",
+  "cmc": 1.0,
+  "oracle_text": "Tap target untapped creature you control. If you do, add an amount of {C} equal to that creature's mana value."
+ },
+ {
+  "name": "Eye of Ramos",
+  "set": "MMQ",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {U}.\nSacrifice this artifact: Add {U}."
+ },
+ {
+  "name": "Fellwar Stone",
+  "set": "SOC",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce."
+ },
+ {
+  "name": "Fertile Ground",
+  "set": "ECC",
+  "type_line": "Enchantment \u2014 Aura",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "Enchant land\nWhenever enchanted land is tapped for mana, its controller adds an additional one mana of any color."
+ },
+ {
+  "name": "Fire Diamond",
+  "set": "CLB",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "This artifact enters tapped.\n{T}: Add {R}."
+ },
+ {
+  "name": "Food Chain",
+  "set": "2X2",
+  "type_line": "Enchantment",
+  "mana_cost": "{2}{G}",
+  "cmc": 3.0,
+  "oracle_text": "Exile a creature you control: Add X mana of any one color, where X is 1 plus the exiled creature's mana value. Spend this mana only to cast creature spells."
+ },
+ {
+  "name": "Fyndhorn Elder",
+  "set": "8ED",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{2}{G}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {G}{G}."
+ },
+ {
+  "name": "Fyndhorn Elves",
+  "set": "CMR",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "{T}: Add {G}."
+ },
+ {
+  "name": "Goblin Clearcutter",
+  "set": "LGN",
+  "type_line": "Creature \u2014 Goblin",
+  "mana_cost": "{3}{R}",
+  "cmc": 4.0,
+  "oracle_text": "{T}, Sacrifice a Forest: Add three mana in any combination of {R} and/or {G}."
+ },
+ {
+  "name": "Green Mana Battery",
+  "set": "4ED",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{2}, {T}: Put a charge counter on this artifact.\n{T}, Remove any number of charge counters from this artifact: Add {G}, then add an additional {G} for each charge counter removed this way."
+ },
+ {
+  "name": "Harvester Druid",
+  "set": "JUD",
+  "type_line": "Creature \u2014 Human Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add one mana of any color that a land you control could produce."
+ },
+ {
+  "name": "Heart of Ramos",
+  "set": "MMQ",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {R}.\nSacrifice this artifact: Add {R}."
+ },
+ {
+  "name": "Heart Warden",
+  "set": "UDS",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {G}.\n{2}, Sacrifice this creature: Draw a card."
+ },
+ {
+  "name": "Helionaut",
+  "set": "APC",
+  "type_line": "Creature \u2014 Human Soldier",
+  "mana_cost": "{2}{W}",
+  "cmc": 3.0,
+  "oracle_text": "Flying\n{1}, {T}: Add one mana of any color."
+ },
+ {
+  "name": "Horn of Ramos",
+  "set": "MMQ",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {G}.\nSacrifice this artifact: Add {G}."
+ },
+ {
+  "name": "Iceberg",
+  "set": "ME2",
+  "type_line": "Enchantment",
+  "mana_cost": "{X}{U}{U}",
+  "cmc": 2.0,
+  "oracle_text": "This enchantment enters with X ice counters on it.\n{3}: Put an ice counter on this enchantment.\nRemove an ice counter from this enchantment: Add {C}."
+ },
+ {
+  "name": "Initiates of the Ebon Hand",
+  "set": "5ED",
+  "type_line": "Creature \u2014 Cleric",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "{1}: Add {B}. If this ability has been activated four or more times this turn, sacrifice this creature at the beginning of the next end step."
+ },
+ {
+  "name": "Jeweled Amulet",
+  "set": "ME2",
+  "type_line": "Artifact",
+  "mana_cost": "{0}",
+  "cmc": 0.0,
+  "oracle_text": "{1}, {T}: Put a charge counter on this artifact. Note the type of mana spent to pay this activation cost. Activate only if there are no charge counters on this artifact.\n{T}, Remove a charge counter from this artifact: Add one mana of this artifact's last noted type."
+ },
+ {
+  "name": "Jungle Patrol",
+  "set": "MIR",
+  "type_line": "Creature \u2014 Human Soldier",
+  "mana_cost": "{3}{G}",
+  "cmc": 4.0,
+  "oracle_text": "{1}{G}, {T}: Create a 0/1 green Wall creature token with defender named Wood.\nSacrifice a token named Wood: Add {R}."
+ },
+ {
+  "name": "Kyren Toy",
+  "set": "MMQ",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{1}, {T}: Put a charge counter on this artifact.\n{T}, Remove X charge counters from this artifact: Add an amount of {C} equal to X plus one."
+ },
+ {
+  "name": "Lion's Eye Diamond",
+  "set": "VMA",
+  "type_line": "Artifact",
+  "mana_cost": "{0}",
+  "cmc": 0.0,
+  "oracle_text": "Discard your hand, Sacrifice this artifact: Add three mana of any one color. Activate only as an instant."
+ },
+ {
+  "name": "Llanowar Dead",
+  "set": "APC",
+  "type_line": "Creature \u2014 Zombie Elf",
+  "mana_cost": "{B}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {B}."
+ },
+ {
+  "name": "Llanowar Elves",
+  "set": "FDN",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "{T}: Add {G}."
+ },
+ {
+  "name": "Lotus Blossom",
+  "set": "DMR",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "At the beginning of your upkeep, you may put a petal counter on this artifact.\n{T}, Sacrifice this artifact: Add X mana of any one color, where X is the number of petal counters on this artifact."
+ },
+ {
+  "name": "Lotus Guardian",
+  "set": "INV",
+  "type_line": "Artifact Creature \u2014 Dragon",
+  "mana_cost": "{7}",
+  "cmc": 7.0,
+  "oracle_text": "Flying\n{T}: Add one mana of any color."
+ },
+ {
+  "name": "Lotus Petal",
+  "set": "TPR",
+  "type_line": "Artifact",
+  "mana_cost": "{0}",
+  "cmc": 0.0,
+  "oracle_text": "{T}, Sacrifice this artifact: Add one mana of any color."
+ },
+ {
+  "name": "Mana Cache",
+  "set": "NEM",
+  "type_line": "Enchantment",
+  "mana_cost": "{1}{R}{R}",
+  "cmc": 3.0,
+  "oracle_text": "At the beginning of each player's end step, put a charge counter on this enchantment for each untapped land that player controls.\nRemove a charge counter from this enchantment: Add {C}. Any player may activate this ability but only during their turn before the end step."
+ },
+ {
+  "name": "Mana Cylix",
+  "set": "CON",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "{1}, {T}: Add one mana of any color."
+ },
+ {
+  "name": "Mana Echoes",
+  "set": "2XM",
+  "type_line": "Enchantment",
+  "mana_cost": "{2}{R}{R}",
+  "cmc": 4.0,
+  "oracle_text": "Whenever a creature enters, you may add an amount of {C} equal to the number of creatures you control that share a creature type with it."
+ },
+ {
+  "name": "Mana Flare",
+  "set": "ME1",
+  "type_line": "Enchantment",
+  "mana_cost": "{2}{R}",
+  "cmc": 3.0,
+  "oracle_text": "Whenever a player taps a land for mana, that player adds one mana of any type that land produced."
+ },
+ {
+  "name": "Manakin",
+  "set": "IMA",
+  "type_line": "Artifact Creature \u2014 Construct",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {C}."
+ },
+ {
+  "name": "Mana Prism",
+  "set": "VMA",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color."
+ },
+ {
+  "name": "Marble Diamond",
+  "set": "CLB",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "This artifact enters tapped.\n{T}: Add {W}."
+ },
+ {
+  "name": "Metalworker",
+  "set": "UDS",
+  "type_line": "Artifact Creature \u2014 Construct",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Reveal any number of artifact cards in your hand. Add {C}{C} for each card revealed this way."
+ },
+ {
+  "name": "Metamorphosis",
+  "set": "CHR",
+  "type_line": "Sorcery",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "As an additional cost to cast this spell, sacrifice a creature.\nAdd X mana of any one color, where X is 1 plus the sacrificed creature's mana value. Spend this mana only to cast creature spells."
+ },
+ {
+  "name": "Millikin",
+  "set": "SOC",
+  "type_line": "Artifact Creature \u2014 Construct",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "{T}, Mill a card: Add {C}. (To mill a card, put the top card of your library into your graveyard.)"
+ },
+ {
+  "name": "Mind Stone",
+  "set": "SOC",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}, Sacrifice this artifact: Draw a card."
+ },
+ {
+  "name": "Mirari's Wake",
+  "set": "CMM",
+  "type_line": "Enchantment",
+  "mana_cost": "{3}{G}{W}",
+  "cmc": 5.0,
+  "oracle_text": "Creatures you control get +1/+1.\nWhenever you tap a land for mana, add one mana of any type that land produced."
+ },
+ {
+  "name": "Morgue Toad",
+  "set": "DDH",
+  "type_line": "Creature \u2014 Frog",
+  "mana_cost": "{2}{B}",
+  "cmc": 3.0,
+  "oracle_text": "Sacrifice this creature: Add {U}{R}."
+ },
+ {
+  "name": "Moss Diamond",
+  "set": "CLB",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "This artifact enters tapped.\n{T}: Add {G}."
+ },
+ {
+  "name": "Mossfire Egg",
+  "set": "ODY",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "{2}, {T}, Sacrifice this artifact: Add {R}{G}. Draw a card."
+ },
+ {
+  "name": "Mox Diamond",
+  "set": "TPR",
+  "type_line": "Artifact",
+  "mana_cost": "{0}",
+  "cmc": 0.0,
+  "oracle_text": "If this artifact would enter, you may discard a land card instead. If you do, put this artifact onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add one mana of any color."
+ },
+ {
+  "name": "Multani's Harmony",
+  "set": "PLS",
+  "type_line": "Enchantment \u2014 Aura",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "Enchant creature\nEnchanted creature has \"{T}: Add one mana of any color.\""
+ },
+ {
+  "name": "Nantuko Elder",
+  "set": "ODY",
+  "type_line": "Creature \u2014 Insect Druid",
+  "mana_cost": "{2}{G}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {C}{G}."
+ },
+ {
+  "name": "Necra Disciple",
+  "set": "APC",
+  "type_line": "Creature \u2014 Human Wizard",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "{G}, {T}: Add one mana of any color.\n{W}, {T}: Prevent the next 1 damage that would be dealt to any target this turn."
+ },
+ {
+  "name": "Nomadic Elf",
+  "set": "DDE",
+  "type_line": "Creature \u2014 Elf Nomad",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{1}{G}: Add one mana of any color."
+ },
+ {
+  "name": "Orcish Lumberjack",
+  "set": "VMA",
+  "type_line": "Creature \u2014 Orc",
+  "mana_cost": "{R}",
+  "cmc": 1.0,
+  "oracle_text": "{T}, Sacrifice a Forest: Add three mana in any combination of {R} and/or {G}."
+ },
+ {
+  "name": "Overabundance",
+  "set": "INV",
+  "type_line": "Enchantment",
+  "mana_cost": "{1}{R}{G}",
+  "cmc": 3.0,
+  "oracle_text": "Whenever a player taps a land for mana, that player adds one mana of any type that land produced, and this enchantment deals 1 damage to the player."
+ },
+ {
+  "name": "Overeager Apprentice",
+  "set": "DVD",
+  "type_line": "Creature \u2014 Human Minion",
+  "mana_cost": "{2}{B}",
+  "cmc": 3.0,
+  "oracle_text": "Discard a card, Sacrifice this creature: Add {B}{B}{B}."
+ },
+ {
+  "name": "Overgrowth",
+  "set": "C18",
+  "type_line": "Enchantment \u2014 Aura",
+  "mana_cost": "{2}{G}",
+  "cmc": 3.0,
+  "oracle_text": "Enchant land\nWhenever enchanted land is tapped for mana, its controller adds an additional {G}{G}."
+ },
+ {
+  "name": "Overlaid Terrain",
+  "set": "NEM",
+  "type_line": "Enchantment",
+  "mana_cost": "{2}{G}{G}",
+  "cmc": 4.0,
+  "oracle_text": "As this enchantment enters, sacrifice all lands you control.\nLands you control have \"{T}: Add two mana of any one color.\""
+ },
+ {
+  "name": "Phyrexian Altar",
+  "set": "2X2",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "Sacrifice a creature: Add one mana of any color."
+ },
+ {
+  "name": "Phyrexian Lens",
+  "set": "INV",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}, Pay 1 life: Add one mana of any color."
+ },
+ {
+  "name": "Priest of Gix",
+  "set": "DDE",
+  "type_line": "Creature \u2014 Phyrexian Human Cleric Minion",
+  "mana_cost": "{2}{B}",
+  "cmc": 3.0,
+  "oracle_text": "When this creature enters, add {B}{B}{B}."
+ },
+ {
+  "name": "Priest of Titania",
+  "set": "MH3",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {G} for each Elf on the battlefield."
+ },
+ {
+  "name": "Pygmy Hippo",
+  "set": "VIS",
+  "type_line": "Creature \u2014 Hippo",
+  "mana_cost": "{G}{U}",
+  "cmc": 2.0,
+  "oracle_text": "Whenever this creature attacks and isn't blocked, you may have defending player activate a mana ability of each land they control and lose all unspent mana. If you do, this creature assigns no combat damage this turn and at the beginning of your next main phase this turn, you add an amount of {C} equal to the amount of mana that player lost this way."
+ },
+ {
+  "name": "Quirion Elves",
+  "set": "DDE",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "As this creature enters, choose a color.\n{T}: Add {G}.\n{T}: Add one mana of the chosen color."
+ },
+ {
+  "name": "Quirion Explorer",
+  "set": "C16",
+  "type_line": "Creature \u2014 Elf Druid Scout",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce."
+ },
+ {
+  "name": "Quirion Sentinel",
+  "set": "INV",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "When this creature enters, add one mana of any color."
+ },
+ {
+  "name": "Rain of Filth",
+  "set": "USG",
+  "type_line": "Instant",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "Until end of turn, lands you control gain \"Sacrifice this land: Add {B}.\""
+ },
+ {
+  "name": "Red Mana Battery",
+  "set": "4ED",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{2}, {T}: Put a charge counter on this artifact.\n{T}, Remove any number of charge counters from this artifact: Add {R}, then add an additional {R} for each charge counter removed this way."
+ },
+ {
+  "name": "Rith's Attendant",
+  "set": "INV",
+  "type_line": "Artifact Creature \u2014 Golem",
+  "mana_cost": "{5}",
+  "cmc": 5.0,
+  "oracle_text": "{1}, Sacrifice this creature: Add {R}{G}{W}."
+ },
+ {
+  "name": "Rofellos, Llanowar Emissary",
+  "set": "VMA",
+  "type_line": "Legendary Creature \u2014 Elf Druid",
+  "mana_cost": "{G}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {G} for each Forest you control."
+ },
+ {
+  "name": "Sea Scryer",
+  "set": "MIR",
+  "type_line": "Creature \u2014 Merfolk Wizard",
+  "mana_cost": "{1}{U}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add {U}."
+ },
+ {
+  "name": "Seashell Cameo",
+  "set": "INV",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {W} or {U}."
+ },
+ {
+  "name": "Seton, Krosan Protector",
+  "set": "ODY",
+  "type_line": "Legendary Creature \u2014 Centaur Druid",
+  "mana_cost": "{G}{G}{G}",
+  "cmc": 3.0,
+  "oracle_text": "Tap an untapped Druid you control: Add {G}."
+ },
+ {
+  "name": "Shadowblood Egg",
+  "set": "ODY",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "{2}, {T}, Sacrifice this artifact: Add {B}{R}. Draw a card."
+ },
+ {
+  "name": "Sisay's Ring",
+  "set": "CMR",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{T}: Add {C}{C}."
+ },
+ {
+  "name": "Sisters of the Flame",
+  "set": "4ED",
+  "type_line": "Creature \u2014 Human Shaman",
+  "mana_cost": "{1}{R}{R}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {R}."
+ },
+ {
+  "name": "Skirge Familiar",
+  "set": "MH2",
+  "type_line": "Creature \u2014 Phyrexian Imp",
+  "mana_cost": "{4}{B}",
+  "cmc": 5.0,
+  "oracle_text": "Flying\nDiscard a card: Add {B}."
+ },
+ {
+  "name": "Skirk Prospector",
+  "set": "DMR",
+  "type_line": "Creature \u2014 Goblin",
+  "mana_cost": "{R}",
+  "cmc": 1.0,
+  "oracle_text": "Sacrifice a Goblin: Add {R}."
+ },
+ {
+  "name": "Skull of Ramos",
+  "set": "MMQ",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {B}.\nSacrifice this artifact: Add {B}."
+ },
+ {
+  "name": "Skycloud Egg",
+  "set": "ODY",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "{2}, {T}, Sacrifice this artifact: Add {W}{U}. Draw a card."
+ },
+ {
+  "name": "Sky Diamond",
+  "set": "CLB",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "This artifact enters tapped.\n{T}: Add {U}."
+ },
+ {
+  "name": "Skyshroud Elf",
+  "set": "TPR",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {G}.\n{1}: Add {R} or {W}."
+ },
+ {
+  "name": "Skyshroud Troopers",
+  "set": "STH",
+  "type_line": "Creature \u2014 Elf Druid Warrior",
+  "mana_cost": "{3}{G}",
+  "cmc": 4.0,
+  "oracle_text": "{T}: Add {G}."
+ },
+ {
+  "name": "Snowfall",
+  "set": "ICE",
+  "type_line": "Enchantment",
+  "mana_cost": "{2}{U}",
+  "cmc": 3.0,
+  "oracle_text": "Cumulative upkeep {U} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nWhenever an Island is tapped for mana, its controller may add an additional {U}. If that Island is snow, its controller may add an additional {U}{U} instead. Spend this mana only to pay cumulative upkeep costs."
+ },
+ {
+  "name": "Soldevi Adnate",
+  "set": "ALL",
+  "type_line": "Creature \u2014 Human Cleric",
+  "mana_cost": "{1}{B}",
+  "cmc": 2.0,
+  "oracle_text": "{T}, Sacrifice a black or artifact creature: Add an amount of {B} equal to the sacrificed creature's mana value."
+ },
+ {
+  "name": "Soldevi Machinist",
+  "set": "ME4",
+  "type_line": "Creature \u2014 Human Wizard Artificer",
+  "mana_cost": "{1}{U}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {C}{C}. Spend this mana only to activate abilities of artifacts."
+ },
+ {
+  "name": "Sol Grail",
+  "set": "ME3",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "As this artifact enters, choose a color.\n{T}: Add one mana of the chosen color."
+ },
+ {
+  "name": "Songs of the Damned",
+  "set": "UMA",
+  "type_line": "Instant",
+  "mana_cost": "{B}",
+  "cmc": 1.0,
+  "oracle_text": "Add {B} for each creature card in your graveyard."
+ },
+ {
+  "name": "Spoils of Evil",
+  "set": "ICE",
+  "type_line": "Instant",
+  "mana_cost": "{2}{B}",
+  "cmc": 3.0,
+  "oracle_text": "For each artifact or creature card in target opponent's graveyard, add {C} and you gain 1 life."
+ },
+ {
+  "name": "Squandered Resources",
+  "set": "VIS",
+  "type_line": "Enchantment",
+  "mana_cost": "{B}{G}",
+  "cmc": 2.0,
+  "oracle_text": "Sacrifice a land: Add one mana of any type the sacrificed land could produce."
+ },
+ {
+  "name": "Star Compass",
+  "set": "IMA",
+  "type_line": "Artifact",
+  "mana_cost": "{2}",
+  "cmc": 2.0,
+  "oracle_text": "This artifact enters tapped.\n{T}: Add one mana of any color that a basic land you control could produce."
+ },
+ {
+  "name": "Sungrass Egg",
+  "set": "ODY",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "{2}, {T}, Sacrifice this artifact: Add {G}{W}. Draw a card."
+ },
+ {
+  "name": "Thran Dynamo",
+  "set": "CMM",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{T}: Add {C}{C}{C}."
+ },
+ {
+  "name": "Thran Turbine",
+  "set": "USG",
+  "type_line": "Artifact",
+  "mana_cost": "{1}",
+  "cmc": 1.0,
+  "oracle_text": "At the beginning of your upkeep, you may add {C}{C}. This mana can't be spent to cast spells."
+ },
+ {
+  "name": "Tigereye Cameo",
+  "set": "INV",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {G} or {W}."
+ },
+ {
+  "name": "Tinder Wall",
+  "set": "ME2",
+  "type_line": "Creature \u2014 Plant Wall",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "Defender (This creature can't attack.)\nSacrifice this creature: Add {R}{R}.\n{R}, Sacrifice this creature: It deals 2 damage to target creature it's blocking."
+ },
+ {
+  "name": "Tooth of Ramos",
+  "set": "MMQ",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {W}.\nSacrifice this artifact: Add {W}."
+ },
+ {
+  "name": "Treva's Attendant",
+  "set": "INV",
+  "type_line": "Artifact Creature \u2014 Golem",
+  "mana_cost": "{5}",
+  "cmc": 5.0,
+  "oracle_text": "{1}, Sacrifice this creature: Add {G}{W}{U}."
+ },
+ {
+  "name": "Troll-Horn Cameo",
+  "set": "INV",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{T}: Add {R} or {G}."
+ },
+ {
+  "name": "Urborg Elf",
+  "set": "APC",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {B}, {G}, or {U}."
+ },
+ {
+  "name": "Utopia Tree",
+  "set": "9ED",
+  "type_line": "Creature \u2014 Plant",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add one mana of any color."
+ },
+ {
+  "name": "Ventifact Bottle",
+  "set": "MIR",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "{X}{1}, {T}: Put X charge counters on this artifact. Activate only as a sorcery.\nAt the beginning of your first main phase, if this artifact has a charge counter on it, tap it and remove all charge counters from it. Add {C} for each charge counter removed this way."
+ },
+ {
+  "name": "Vernal Bloom",
+  "set": "8ED",
+  "type_line": "Enchantment",
+  "mana_cost": "{3}{G}",
+  "cmc": 4.0,
+  "oracle_text": "Whenever a Forest is tapped for mana, its controller adds an additional {G}."
+ },
+ {
+  "name": "Vine Trellis",
+  "set": "GVL",
+  "type_line": "Creature \u2014 Plant Wall",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "Defender (This creature can't attack.)\n{T}: Add {G}."
+ },
+ {
+  "name": "Wall of Roots",
+  "set": "TDC",
+  "type_line": "Creature \u2014 Plant Wall",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "Defender\nPut a -0/-1 counter on this creature: Add {G}. Activate only once each turn."
+ },
+ {
+  "name": "Werebear",
+  "set": "DMR",
+  "type_line": "Creature \u2014 Human Bear Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {G}.\nThreshold \u2014 This creature gets +3/+3 as long as there are seven or more cards in your graveyard."
+ },
+ {
+  "name": "White Mana Battery",
+  "set": "4ED",
+  "type_line": "Artifact",
+  "mana_cost": "{4}",
+  "cmc": 4.0,
+  "oracle_text": "{2}, {T}: Put a charge counter on this artifact.\n{T}, Remove any number of charge counters from this artifact: Add {W}, then add an additional {W} for each charge counter removed this way."
+ },
+ {
+  "name": "Wild Growth",
+  "set": "MKC",
+  "type_line": "Enchantment \u2014 Aura",
+  "mana_cost": "{G}",
+  "cmc": 1.0,
+  "oracle_text": "Enchant land\nWhenever enchanted land is tapped for mana, its controller adds an additional {G}."
+ },
+ {
+  "name": "Winter's Night",
+  "set": "ME2",
+  "type_line": "World Enchantment",
+  "mana_cost": "{R}{G}{W}",
+  "cmc": 3.0,
+  "oracle_text": "Whenever a player taps a snow land for mana, that player adds one mana of any type that land produced. That land doesn't untap during its controller's next untap step."
+ },
+ {
+  "name": "Wirewood Channeler",
+  "set": "KHC",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{3}{G}",
+  "cmc": 4.0,
+  "oracle_text": "{T}: Add X mana of any one color, where X is the number of Elves on the battlefield."
+ },
+ {
+  "name": "Wirewood Elf",
+  "set": "ONS",
+  "type_line": "Creature \u2014 Elf Druid",
+  "mana_cost": "{1}{G}",
+  "cmc": 2.0,
+  "oracle_text": "{T}: Add {G}."
+ },
+ {
+  "name": "Witch Engine",
+  "set": "USG",
+  "type_line": "Creature \u2014 Horror",
+  "mana_cost": "{5}{B}",
+  "cmc": 6.0,
+  "oracle_text": "Swampwalk (This creature can't be blocked as long as defending player controls a Swamp.)\n{T}: Add {B}{B}{B}{B}. Target opponent gains control of this creature. (Activate only as an instant.)"
+ },
+ {
+  "name": "Workhorse",
+  "set": "EXO",
+  "type_line": "Artifact Creature \u2014 Horse",
+  "mana_cost": "{6}",
+  "cmc": 6.0,
+  "oracle_text": "This creature enters with four +1/+1 counters on it.\nRemove a +1/+1 counter from this creature: Add {C}."
+ },
+ {
+  "name": "Worn Powerstone",
+  "set": "MH3",
+  "type_line": "Artifact",
+  "mana_cost": "{3}",
+  "cmc": 3.0,
+  "oracle_text": "This artifact enters tapped.\n{T}: Add {C}{C}."
+ }
+]

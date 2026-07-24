@@ -64,25 +64,32 @@ change ships by pushing here instead of re-pasting markup.
 
 ## What the calculator does
 
-Paste a decklist. For each colour it reports how many lands can produce that colour on
-turn one with nothing else in play, and separately how many produce it at all. Every land
-excluded from the turn-one count is listed with the reason, and deck-specific warnings are
-generated from the data: which lands your fetchlands can actually find, whether your
-Tainted lands have a Swamp to turn them on, which lands need mana paid into them.
+Paste a decklist. Every spell is checked against the number of coloured sources it needs to be
+cast on curve, using Frank Karsten's 2022 tables interpolated to your actual land count, with his
+gold-card rule applied to multicolour spells and turn-one requirements measured against untapped
+sources only. Results are sorted worst first, so the card your mana base actually fails is at the
+top.
 
-It then checks those counts against Frank Karsten's 2022 source requirements. Karsten
-publishes columns for 20, 25 and 30-land decks; the page reads the column matching your
-list and interpolates in between, which is what he suggests for land counts he did not
-tabulate. Premodern decks usually sit nearer 20 lands than the 25 his headline table
-assumes, so the default column is often the wrong one to read.
+Sources are counted from the data files rather than from mana symbols. Fetchlands resolve against
+the rest of your decklist, since the format has no duals. Lands whose symbols overstate them are
+excluded from the turn-one count and listed with the reason. Nonland mana is included at Karsten's
+own weightings: dorks at half a source, artifact accelerants at three quarters, Mox Diamond at one,
+and one-shot effects at zero because a ritual multiplies mana you already have rather than making a
+colour available.
 
-The page also explains the underlying math and says plainly why a general-purpose manabase
-calculator gets Premodern wrong. Karsten counts a fetchland as a full source of everything
-it could find because in Modern it finds a shock dual, and flags lands that cannot find a
-dual as a harder case. Premodern is entirely that harder case, since the format has no dual
-lands at all.
+Two conveniences worth knowing. A line reading `Sideboard` separates the sideboard, which is then
+marked but still checked. And a card you never hard-cast can carry the cost you do pay, written
+after the name as `4 Foil {0}`.
 
 It does not simulate. Source counts checked against published targets, Monte Carlo later.
+
+## Building the card cost table
+
+The per-spell check needs the mana cost of every legal card. Open `build/fetch-card-costs.html`
+in a browser and press the button: it pages through Scryfall, respects the rate limit, and saves
+`premodern_card_costs.json`. Put that file in `data/`. Run it once, since the card pool is frozen.
+
+Without it the page still counts sources correctly and says plainly that costs are unavailable.
 
 ## Two files, on purpose
 

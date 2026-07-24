@@ -1,0 +1,6161 @@
+[
+  {
+    "name": "Sisay's Ring",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "C"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Four mana for a rock that taps for two. Net positive from the turn after it lands, and never fixes colour. cmc is the number that matters most on these: it cannot contribute anything before turn four on an untouched curve."
+  },
+  {
+    "name": "Thran Dynamo",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "C",
+            "C"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 3,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Same slot as Sisay's Ring for one more mana of output. Colourless only."
+  },
+  {
+    "name": "Worn Powerstone",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": true,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "C"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Enters tapped, so the turn it is cast it does nothing at all. Three mana in, two per turn from the following turn onward."
+  },
+  {
+    "name": "Mind Stone",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{1}, {T}, Sacrifice",
+        "effect": "Draw a card.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "Ramps for one and cashes itself in for a card later, so it is the rare accelerant that is not dead in the late game. The draw mode competes with the mana ability for the tap."
+  },
+  {
+    "name": "Manakin",
+    "kind": "creature",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "A rock that can be killed. summoning_sick is true and it is the field that separates this from Mind Stone: cast on turn two, it produces nothing until turn three."
+  },
+  {
+    "name": "Millikin",
+    "kind": "creature",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": {
+          "action": "mill",
+          "count": 1
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Colourless mana that costs a card off the top each time. In a deck that wants a full graveyard the mill is upside; anywhere else it is a real cost and additional_cost records it rather than burying it in text."
+  },
+  {
+    "name": "White Mana Battery",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "W"
+        },
+        "amount": 1,
+        "net_mana": null,
+        "cost": "{T}, Remove any number of charge counters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one plus the number of charge counters removed",
+          "note": "Removing zero counters still adds one, so the floor is 1 rather than 0."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}",
+        "effect": "Put a charge counter on this artifact.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Reads like a storage artifact and works like a bad mana rock. Removing no counters still adds one, so amount is 1, not 0. Charging costs {2} and the tap, which buys one future mana for two present ones, so the storage mode is a net loss and the card is really a four-mana rock that taps for one of its colour."
+  },
+  {
+    "name": "Blue Mana Battery",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "U"
+        },
+        "amount": 1,
+        "net_mana": null,
+        "cost": "{T}, Remove any number of charge counters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one plus the number of charge counters removed",
+          "note": "Removing zero counters still adds one, so the floor is 1 rather than 0."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}",
+        "effect": "Put a charge counter on this artifact.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "See White Mana Battery. Same cycle."
+  },
+  {
+    "name": "Black Mana Battery",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "B"
+        },
+        "amount": 1,
+        "net_mana": null,
+        "cost": "{T}, Remove any number of charge counters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one plus the number of charge counters removed",
+          "note": "Removing zero counters still adds one, so the floor is 1 rather than 0."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}",
+        "effect": "Put a charge counter on this artifact.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "See White Mana Battery. Same cycle."
+  },
+  {
+    "name": "Red Mana Battery",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "R"
+        },
+        "amount": 1,
+        "net_mana": null,
+        "cost": "{T}, Remove any number of charge counters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one plus the number of charge counters removed",
+          "note": "Removing zero counters still adds one, so the floor is 1 rather than 0."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}",
+        "effect": "Put a charge counter on this artifact.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "See White Mana Battery. Same cycle."
+  },
+  {
+    "name": "Green Mana Battery",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "G"
+        },
+        "amount": 1,
+        "net_mana": null,
+        "cost": "{T}, Remove any number of charge counters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one plus the number of charge counters removed",
+          "note": "Removing zero counters still adds one, so the floor is 1 rather than 0."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}",
+        "effect": "Put a charge counter on this artifact.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "See White Mana Battery. Same cycle."
+  },
+  {
+    "name": "Seashell Cameo",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Three mana for a rock that taps for one of two colours. Fixes without accelerating, since it costs three to add one. Its value is entirely colour, which makes it the artifact answer to the same problem the Invasion taplands solve for free."
+  },
+  {
+    "name": "Drake-Skull Cameo",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "U",
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Seashell Cameo. Same cycle."
+  },
+  {
+    "name": "Bloodstone Cameo",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "B",
+            "R"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Seashell Cameo. Same cycle."
+  },
+  {
+    "name": "Troll-Horn Cameo",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Seashell Cameo. Same cycle."
+  },
+  {
+    "name": "Tigereye Cameo",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "G",
+            "W"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Seashell Cameo. Same cycle."
+  },
+  {
+    "name": "Marble Diamond",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": true,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "W"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two mana, enters tapped, then taps for one of its colour every turn. Genuine acceleration from the turn after it lands, and the enters_tapped flag is why it is not acceleration on the turn you cast it."
+  },
+  {
+    "name": "Sky Diamond",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": true,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "U"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Marble Diamond. Same cycle."
+  },
+  {
+    "name": "Charcoal Diamond",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": true,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Marble Diamond. Same cycle."
+  },
+  {
+    "name": "Fire Diamond",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": true,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Marble Diamond. Same cycle."
+  },
+  {
+    "name": "Moss Diamond",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": true,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Marble Diamond. Same cycle."
+  },
+  {
+    "name": "Skycloud Egg",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "W",
+            "U"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 0,
+        "cost": "{2}, {T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}, Sacrifice",
+        "effect": "Draw a card.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "Net zero mana. You pay {2} and get two back, so this never accelerates anything; it converts generic mana into two specific colours and replaces itself with a card. self_sufficient is false, so it can never produce your first coloured mana, which is the same trap as the Odyssey filter lands from the same block."
+  },
+  {
+    "name": "Darkwater Egg",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "U",
+            "B"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 0,
+        "cost": "{2}, {T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}, Sacrifice",
+        "effect": "Draw a card.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "See Skycloud Egg. Same cycle."
+  },
+  {
+    "name": "Shadowblood Egg",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "R"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 0,
+        "cost": "{2}, {T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}, Sacrifice",
+        "effect": "Draw a card.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "See Skycloud Egg. Same cycle."
+  },
+  {
+    "name": "Mossfire Egg",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R",
+            "G"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 0,
+        "cost": "{2}, {T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}, Sacrifice",
+        "effect": "Draw a card.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "See Skycloud Egg. Same cycle."
+  },
+  {
+    "name": "Sungrass Egg",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G",
+            "W"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 0,
+        "cost": "{2}, {T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, {T}, Sacrifice",
+        "effect": "Draw a card.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "See Skycloud Egg. Same cycle."
+  },
+  {
+    "name": "Tooth of Ramos",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "W"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "W"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "The sacrifice ability has no tap symbol in its cost, which is the detail worth having. You can tap it for one and then sacrifice it for another in the same turn, so it is two mana in a pinch, and the sacrifice still works while it is tapped or summoning-sick-irrelevant. Three mana for one per turn is otherwise poor."
+  },
+  {
+    "name": "Eye of Ramos",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "U"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "U"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Tooth of Ramos. Same cycle."
+  },
+  {
+    "name": "Skull of Ramos",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Tooth of Ramos. Same cycle."
+  },
+  {
+    "name": "Heart of Ramos",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Tooth of Ramos. Same cycle."
+  },
+  {
+    "name": "Horn of Ramos",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Tooth of Ramos. Same cycle."
+  },
+  {
+    "name": "Dromar's Attendant",
+    "kind": "creature",
+    "mana_cost": "{5}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "W",
+            "U",
+            "B"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 2,
+        "cost": "{1}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Five mana for a 2/2 that can later be turned into three specific colours for one. The mana ability has no tap in its cost, so summoning sickness does not stop you cracking it the turn it arrives. Net plus two when used, but you have already paid five, so this is fixing for a deck that got there, not acceleration."
+  },
+  {
+    "name": "Crosis's Attendant",
+    "kind": "creature",
+    "mana_cost": "{5}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "U",
+            "B",
+            "R"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 2,
+        "cost": "{1}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Dromar's Attendant. Same cycle."
+  },
+  {
+    "name": "Darigaaz's Attendant",
+    "kind": "creature",
+    "mana_cost": "{5}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 2,
+        "cost": "{1}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Dromar's Attendant. Same cycle."
+  },
+  {
+    "name": "Rith's Attendant",
+    "kind": "creature",
+    "mana_cost": "{5}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R",
+            "G",
+            "W"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 2,
+        "cost": "{1}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Dromar's Attendant. Same cycle."
+  },
+  {
+    "name": "Treva's Attendant",
+    "kind": "creature",
+    "mana_cost": "{5}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G",
+            "W",
+            "U"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 2,
+        "cost": "{1}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Dromar's Attendant. Same cycle."
+  },
+  {
+    "name": "Lotus Petal",
+    "kind": "artifact",
+    "mana_cost": "{0}",
+    "cmc": 0,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Free to cast and produces any colour once, so it is one of the few nonland cards in the pool that genuinely can be your first coloured mana on turn one. One shot: using it is the end of it. Net plus one on the turn it is used and minus a card overall."
+  },
+  {
+    "name": "Mox Diamond",
+    "kind": "artifact",
+    "mana_cost": "{0}",
+    "cmc": 0,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": {
+      "action": "discard",
+      "count": 1,
+      "target": "land card",
+      "timing": "replacement",
+      "if_unmet": "graveyard"
+    },
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Free, untapped, any colour, every turn, and the price is a land card discarded as it enters. Same replacement-effect shape as the Alliances lands, so entry_cost carries it: if you cannot or will not discard a land it goes straight to the graveyard. In land-count terms it is a wash, which is why it is played as fixing and tempo rather than as ramp."
+  },
+  {
+    "name": "Lion's Eye Diamond",
+    "kind": "artifact",
+    "mana_cost": "{0}",
+    "cmc": 0,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_uniform",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ],
+          "count": 3
+        },
+        "amount": 3,
+        "net_mana": 3,
+        "cost": "Discard your hand, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Three mana of one colour for free, and the cost is your entire hand, which is why it only functions in decks built to empty their hand first or to use the mana before the discard matters. Instant speed only. produces uses choice_uniform because all three mana are the same chosen colour, not three colours."
+  },
+  {
+    "name": "Mana Cylix",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}, {T}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Pure colour conversion at net zero. Never accelerates and can never make your first coloured mana. The cheapest fixer in the pool and correspondingly the weakest."
+  },
+  {
+    "name": "Celestial Prism",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": -1,
+        "cost": "{2}, {T}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net minus one per activation. Three to cast and then it loses you mana every time you use it, so it is only fixing of last resort."
+  },
+  {
+    "name": "Mana Prism",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}, {T}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two modes, and only the colourless one is self-sufficient. Structurally identical to the Homelands castles: a colourless source with a conversion button attached."
+  },
+  {
+    "name": "Phyrexian Lens",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}, Pay 1 life",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Any colour, no mana cost to activate, so self_sufficient is true and the price is a life per use. The artifact equivalent of City of Brass, except the life loss is part of the ability rather than a trigger on tapping."
+  },
+  {
+    "name": "Chromatic Sphere",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}, {T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{1}, {T}, Sacrifice",
+        "effect": "Draw a card.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "Net zero mana that replaces itself with a card immediately. Fixing and deck-thinning rather than acceleration."
+  },
+  {
+    "name": "Barbed Sextant",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}, {T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{1}, {T}, Sacrifice",
+        "effect": "Draw a card at the beginning of the next turn's upkeep.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "See Chromatic Sphere, except the card arrives next upkeep rather than immediately, which makes it materially worse in any deck that wanted the card now."
+  },
+  {
+    "name": "Astrolabe",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_uniform",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ],
+          "count": 2
+        },
+        "amount": 2,
+        "net_mana": 1,
+        "cost": "{1}, {T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{1}, {T}, Sacrifice",
+        "effect": "Draw a card at the beginning of the next turn's upkeep.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "Two mana of one chosen colour for one, so net plus one, plus a delayed card. Not to be confused with the Modern Horizons card of a similar name, which is not in this pool."
+  },
+  {
+    "name": "Fellwar Stone",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "any colour a land an opponent controls could produce"
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": {
+          "type": "opponent_controls_land_producing_mana"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Colours resolve against the opponent's board, not yours and not the card, so it is the one accelerant in the pool whose usefulness is a matchup question. Against a mono-coloured deck it is a one-colour rock; against nothing it produces nothing. Note it reads colours, so an opponent playing only colourless-producing lands leaves it dead."
+  },
+  {
+    "name": "Star Compass",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": true,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "any colour a basic land you control could produce"
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_basic_land"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Mirrors your own basics, so in a deck with no basic lands it produces nothing at all. Enters tapped. Worth pairing with the land file: fetchlands find basics, and this reads basics, so the two interact in a way neither card mentions."
+  },
+  {
+    "name": "Sol Grail",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "The colour is chosen as it enters and then fixed for the rest of the game, so the choice mode here is a one-time decision rather than a per-activation one. Treat it as a rock of whichever colour you named."
+  },
+  {
+    "name": "Charmed Pendant",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "the coloured mana symbols in the milled card's mana cost"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "{T}, Mill a card",
+        "additional_cost": {
+          "action": "mill",
+          "count": 1
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of coloured pips on the card milled",
+          "note": "Zero if the milled card is a land or has no coloured pips."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Output is whatever the top of your library happens to be, so it can produce nothing, and the floor of zero is real rather than theoretical. Instant speed only. Any calculator should treat this as unreliable rather than as four fixed sources."
+  },
+  {
+    "name": "Ashnod's Altar",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "C"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "Sacrifice a creature",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "creature"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "No tap in the cost, so it is repeatable as many times as you have creatures within a single turn. That makes it a combo piece rather than a mana rock, and a source count is the wrong lens for it entirely."
+  },
+  {
+    "name": "Phyrexian Altar",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice a creature",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "creature"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Ashnod's Altar. One mana instead of two, but any colour, and likewise unlimited within a turn."
+  },
+  {
+    "name": "Cathodion",
+    "kind": "creature",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "C",
+            "C"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 3,
+        "cost": "When this creature dies",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "The mana comes from a death trigger rather than an activated ability, so you do not control the timing unless you also control a sacrifice outlet. Three mana back from a three-mana body makes it free to loop with an altar."
+  },
+  {
+    "name": "Workhorse",
+    "kind": "creature",
+    "mana_cost": "{6}",
+    "cmc": 6,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": 4,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Remove a +1/+1 counter",
+        "additional_cost": {
+          "action": "remove_counter",
+          "count": 1,
+          "target": "+1/+1 counter"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Four activations, one per counter, and each one shrinks the creature. total_activations is 4 for the same reason Gemstone Mine's is 3: the limit is printed, not situational. No tap in the cost, so all four can be used in one turn."
+  },
+  {
+    "name": "Kyren Toy",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 1,
+        "net_mana": null,
+        "cost": "{T}, Remove X charge counters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "X plus one, where X is the number of charge counters removed",
+          "note": "Removing zero counters still adds one, so the floor is 1."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{1}, {T}",
+        "effect": "Put a charge counter on this artifact.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Charging costs {1} and the tap to buy one future colourless, so like the mana batteries the storage mode loses tempo. The floor is one, not zero."
+  },
+  {
+    "name": "Jeweled Amulet",
+    "kind": "artifact",
+    "mana_cost": "{0}",
+    "cmc": 0,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "the type of mana spent to charge it"
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}, Remove a charge counter",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": {
+          "type": "has_charge_counter"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{1}, {T}",
+        "effect": "Put a charge counter and note the type of mana spent. Activate only if there are no charge counters on this artifact.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "The release ability costs no mana and yields one, so per ability it is net plus one; across the full cycle of charging and releasing it is net zero, one mana in and the same one back out later. It moves mana across turns rather than making any, which is occasionally what a deck wants and is never acceleration."
+  },
+  {
+    "name": "Lotus Blossom",
+    "kind": "artifact",
+    "mana_cost": "{2}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "any one colour"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "{T}, Sacrifice",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": {
+          "equals": "the number of petal counters",
+          "note": "One counter per upkeep, starting the turn after it lands, so the payoff grows only if it survives."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "triggered",
+        "cost": null,
+        "effect": "At the beginning of your upkeep, you may put a petal counter on this artifact.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Produces nothing the turn it is cast and nothing at all if cracked immediately, so amount is 0. Every point of output is a turn of it sitting on the battlefield being a target."
+  },
+  {
+    "name": "Ventifact Bottle",
+    "kind": "artifact",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Automatic at the beginning of your first main phase",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of charge counters removed",
+          "note": "All counters are removed at once and the artifact taps itself."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{X}{1}, {T}",
+        "effect": "Put X charge counters on this artifact. Activate only as a sorcery.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Charging costs X plus one to store X, so every cycle loses a mana, and the release is not optional: it fires at your first main phase whether or not you want it. A calculator should treat this as a mana sink, not a source."
+  },
+  {
+    "name": "Thran Turbine",
+    "kind": "artifact",
+    "mana_cost": "{1}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "C"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "At the beginning of your upkeep",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": "This mana can't be spent to cast spells.",
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two free colourless every upkeep that cannot pay for a single spell. The restriction field exists for this card: counted as a source without it, it would look like the best accelerant in the format. It pays for activated abilities only."
+  },
+  {
+    "name": "Diamond Kaleidoscope",
+    "kind": "artifact",
+    "mana_cost": "{4}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice a Prism token",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "Prism token"
+        },
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_token",
+          "value": "Prism"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{3}, {T}",
+        "effect": "Create a 0/1 colourless Prism artifact creature token.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Two steps and both are expensive: four to cast, then three and a tap per token, and each token converts into exactly one mana of any colour. Net deeply negative as mana; it exists for decks that want the tokens themselves."
+  },
+  {
+    "name": "Metalworker",
+    "kind": "creature",
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "two per artifact card revealed from your hand",
+          "note": "Reveal only, the cards are not spent, so the same hand can be revealed every turn."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Zero in a deck with no other artifacts and enormous in a deck built around them, which makes it the clearest case in this file for keeping assumed values out of the data. Summoning sick, so nothing on the turn it lands. The cards are revealed rather than discarded, so the same hand works every turn."
+  },
+  {
+    "name": "Lotus Guardian",
+    "kind": "creature",
+    "mana_cost": "{7}",
+    "cmc": 7,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Seven mana for a flying body that taps for one of any colour. By the time this is castable the fixing is decoration."
+  },
+  {
+    "name": "Llanowar Elves",
+    "kind": "creature",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "The baseline mana creature. One green on turn two if it survives, and that conditional is the whole reason Karsten counts dorks as half a source rather than a full one. summoning_sick is true and requires_tap is true on the mana ability, so it produces nothing the turn it lands."
+  },
+  {
+    "name": "Fyndhorn Elves",
+    "kind": "creature",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Functionally identical to Llanowar Elves."
+  },
+  {
+    "name": "Birds of Paradise",
+    "kind": "creature",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Any colour for one green, which makes it the best fixer in the pool that is not a land, and a flying blocker besides. Still a creature: it dies to everything, and it cannot tap the turn it arrives."
+  },
+  {
+    "name": "Wirewood Elf",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two-mana Llanowar Elves."
+  },
+  {
+    "name": "Vine Trellis",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Defender, so it accelerates and blocks and does nothing else. Same mana profile as Wirewood Elf with a far better body for surviving."
+  },
+  {
+    "name": "Heart Warden",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{2}, Sacrifice",
+        "effect": "Draw a card.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "Accelerates early and converts into a card once it stops mattering, the creature version of Mind Stone."
+  },
+  {
+    "name": "Skyshroud Troopers",
+    "kind": "creature",
+    "mana_cost": "{3}{G}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Four mana for one green a turn, which is nearly never worth a card. Recorded for completeness."
+  },
+  {
+    "name": "Sisters of the Flame",
+    "kind": "creature",
+    "mana_cost": "{1}{R}{R}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Three mana for one red a turn."
+  },
+  {
+    "name": "Llanowar Dead",
+    "kind": "creature",
+    "mana_cost": "{B}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Costs green and black and produces black only, so it does not fix, it converts a two-colour investment into one colour."
+  },
+  {
+    "name": "Utopia Tree",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Birds of Paradise for one more mana and no flying."
+  },
+  {
+    "name": "Werebear",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "static",
+        "cost": null,
+        "effect": "Threshold: gets +3/+3 as long as there are seven or more cards in your graveyard.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "A mana creature that turns into a 4/4 late. The threshold clause has no bearing on mana."
+  },
+  {
+    "name": "Fyndhorn Elder",
+    "kind": "creature",
+    "mana_cost": "{2}{G}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G",
+            "G"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two green from one card, so it is genuine ramp rather than fixing. Three mana in, two per turn after."
+  },
+  {
+    "name": "Elvish Aberration",
+    "kind": "creature",
+    "mana_cost": "{5}{G}",
+    "cmc": 6,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G",
+            "G",
+            "G"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 3,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated_from_hand",
+        "cost": "{2}",
+        "effect": "Forestcycling: search your library for a Forest card, reveal it, put it into your hand, then shuffle.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Six mana for three green a turn, which is a late-game mana sink. The forestcycling mode is the reason it sees play: from hand it is a two-mana Forest tutor, and that mode has nothing to do with its mana ability."
+  },
+  {
+    "name": "Nantuko Elder",
+    "kind": "creature",
+    "mana_cost": "{2}{G}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "G"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two mana but only one of them green, so produces is mode fixed with both symbols rather than a choice. Reading it as two green would overstate its fixing."
+  },
+  {
+    "name": "Wall of Roots",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": 5,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Put a -0/-1 counter on this creature",
+        "additional_cost": {
+          "action": "put_counter",
+          "count": 1,
+          "target": "-0/-1 counter on itself"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": {
+          "pattern": "once_each_turn",
+          "reason": "Printed restriction: activate only once each turn."
+        },
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "The mana ability has no tap in its cost, so summoning_sick is false and it produces green the turn it lands, which is what separates it from every other two-mana dork in the pool. Five activations total: the body is 0/5 and the fifth counter kills it. Once per turn, so the five are spread across five turns."
+  },
+  {
+    "name": "Blood Pet",
+    "kind": "creature",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice this creature",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "One black back for the one black you spent, so it is net zero mana across its life. What it actually does is move a mana from one turn to a later one, and it is not summoning sick because the cost has no tap."
+  },
+  {
+    "name": "Blood Vassal",
+    "kind": "creature",
+    "mana_cost": "{2}{B}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "Sacrifice this creature",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Three mana in, two black back whenever you want them. Net negative overall; it exists to convert a body into black at instant speed."
+  },
+  {
+    "name": "Morgue Toad",
+    "kind": "creature",
+    "mana_cost": "{2}{B}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "U",
+            "R"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "Sacrifice this creature",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Cast for black, cashes in for blue and red, so like the Invasion sacrifice lands its two abilities share no colours with its cost. Fixing across colour pairs, once."
+  },
+  {
+    "name": "Tinder Wall",
+    "kind": "creature",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R",
+            "R"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "Sacrifice this creature",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{R}, Sacrifice",
+        "effect": "Deals 2 damage to target creature it's blocking.",
+        "sacrifices_self": true
+      }
+    ],
+    "global_effect": null,
+    "notes": "One green becomes two red, which is a colour conversion and a net plus one, available the turn it lands. A defender in the meantime."
+  },
+  {
+    "name": "Skirk Prospector",
+    "kind": "creature",
+    "mana_cost": "{R}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice a Goblin",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "Goblin"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Repeatable within a turn as long as Goblins keep dying, and it can sacrifice itself since it is a Goblin. No tap, so it works immediately. This is a combo engine in the shape of a mana creature."
+  },
+  {
+    "name": "Blood Celebrant",
+    "kind": "creature",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{B}, Pay 1 life",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net zero: one black in, one of any colour out, plus a life. Pure conversion, so it can never produce your first coloured mana, but it converts an unlimited number of times per turn."
+  },
+  {
+    "name": "Agent of Stromgald",
+    "kind": "creature",
+    "mana_cost": "{R}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{R}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net zero red into black, repeatable, no tap. A colour converter rather than a mana source."
+  },
+  {
+    "name": "Bog Initiate",
+    "kind": "creature",
+    "mana_cost": "{1}{B}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net zero generic into black, unlimited per turn. Useful only in a deck that needs to convert a lot of colourless into black in one turn."
+  },
+  {
+    "name": "Initiates of the Ebon Hand",
+    "kind": "creature",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": {
+          "pattern": "self_destructs_past_a_threshold",
+          "reason": "Using it four or more times in a turn sacrifices it at the beginning of the next end step."
+        },
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Bog Initiate, with a printed cap on enthusiasm: the fourth activation in a turn kills it. Recorded as availability rather than total_activations because the limit is per turn and only bites if you cross it."
+  },
+  {
+    "name": "Nomadic Elf",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": -1,
+        "cost": "{1}{G}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net minus one, and it requires green to make anything else, so it fixes only for a deck already based in green. Among the worst rates in the pool."
+  },
+  {
+    "name": "Skyshroud Elf",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "R",
+            "W"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two abilities with different profiles. The green one taps and is real mana; the red-or-white one is net zero conversion and needs no tap, so it works the turn it lands while the green one does not."
+  },
+  {
+    "name": "Skirge Familiar",
+    "kind": "creature",
+    "mana_cost": "{4}{B}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Discard a card",
+        "additional_cost": {
+          "action": "discard",
+          "count": 1,
+          "target": "a card"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Converts cards into black mana at one for one, unlimited within a turn and no tap required. Five mana to deploy, so it is a combo piece and not acceleration."
+  },
+  {
+    "name": "Overeager Apprentice",
+    "kind": "creature",
+    "mana_cost": "{2}{B}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 3,
+        "cost": "Discard a card, Sacrifice this creature",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": true,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Three black at instant speed for a card and the body. Net zero against its own casting cost, so it is a ritual with a delay rather than acceleration."
+  },
+  {
+    "name": "Apprentice Wizard",
+    "kind": "creature",
+    "mana_cost": "{1}{U}{U}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "C",
+            "C"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 2,
+        "cost": "{U}, {T}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net plus two per turn, which is the best repeatable rate on any creature here, and it needs blue mana to work so it cannot bootstrap itself. summoning_sick is true and requires_tap is true on the mana ability, so it produces nothing the turn it lands."
+  },
+  {
+    "name": "Bog Witch",
+    "kind": "creature",
+    "mana_cost": "{2}{B}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 2,
+        "cost": "{B}, {T}, Discard a card",
+        "additional_cost": {
+          "action": "discard",
+          "count": 1,
+          "target": "a card"
+        },
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "A repeatable Dark Ritual that costs a card each time. Net plus two in mana, minus one in cards."
+  },
+  {
+    "name": "Sea Scryer",
+    "kind": "creature",
+    "mana_cost": "{1}{U}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "U"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}, {T}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Both abilities tap it, so they are mutually exclusive: colourless for free, or blue at net zero. Structurally the Homelands castle pattern on a creature."
+  },
+  {
+    "name": "Helionaut",
+    "kind": "creature",
+    "mana_cost": "{2}{W}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{1}, {T}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net zero fixing on a flying body. Cannot make your first coloured mana."
+  },
+  {
+    "name": "Ceta Disciple",
+    "kind": "creature",
+    "mana_cost": "{U}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{G}, {T}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{R}, {T}",
+        "effect": "Target creature gets +2/+0 until end of turn.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Costs blue to cast, green to activate, and produces any colour at net zero. A three-colour card that fixes for none of them until you already have two."
+  },
+  {
+    "name": "Necra Disciple",
+    "kind": "creature",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 0,
+        "cost": "{G}, {T}",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{W}, {T}",
+        "effect": "Prevent the next 1 damage that would be dealt to any target this turn.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "See Ceta Disciple. Same cycle, black body, green activation."
+  },
+  {
+    "name": "Priest of Titania",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "G"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of Elves on the battlefield",
+          "note": "Counts every Elf in play including opponents' and including itself."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Zero on an empty board and enormous in an Elf deck, so amount is 0 and the real number lives in variable_amount, exactly as with Gaea's Cradle. Note it counts all Elves on the battlefield, not just yours, and it counts itself."
+  },
+  {
+    "name": "Rofellos, Llanowar Emissary",
+    "kind": "creature",
+    "mana_cost": "{G}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "G"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of Forests you control",
+          "note": "Counts by land type, so Snow-Covered Forest counts."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Legendary. Counts Forests by land type, so snow basics count and nonbasic green lands without the Forest type do not. Zero in a deck with no Forests, which is not hypothetical in a format where much of the fixing is nonbasic."
+  },
+  {
+    "name": "Wirewood Channeler",
+    "kind": "creature",
+    "mana_cost": "{3}{G}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_uniform_variable",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of Elves on the battlefield",
+          "note": "All the mana must be the same chosen colour."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Like Priest of Titania but any single colour, which turns an Elf board into fixing as well as ramp. All the mana is one colour, not spread across several."
+  },
+  {
+    "name": "Soldevi Adnate",
+    "kind": "creature",
+    "mana_cost": "{1}{B}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "B"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "{T}, Sacrifice a black or artifact creature",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "black or artifact creature"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the mana value of the sacrificed creature",
+          "note": "Zero if the creature sacrificed costs zero."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Converts a large creature into black mana equal to its cost. Needs a specific kind of creature to eat, so in most decks it is dead weight and in a reanimator shell it is a ritual."
+  },
+  {
+    "name": "Harvester Druid",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "any colour a land you control could produce"
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_land_producing_mana"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Mirrors your own lands, so it fixes nothing your mana base cannot already do; what it does is add a second copy of a colour you are short of. Reflecting Pool on a body, with the same bootstrapping limit."
+  },
+  {
+    "name": "Quirion Explorer",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "any colour a land an opponent controls could produce"
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": {
+          "type": "opponent_controls_land_producing_mana"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Reads the opponent's lands, so its value is a matchup question and it can be blank in game one. Fellwar Stone on a body."
+  },
+  {
+    "name": "Benthic Explorers",
+    "kind": "creature",
+    "mana_cost": "{3}{U}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "any mana type the untapped land could produce"
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}, Untap a tapped land an opponent controls",
+        "additional_cost": {
+          "action": "untap",
+          "count": 1,
+          "target": "tapped land an opponent controls"
+        },
+        "self_sufficient": true,
+        "condition": {
+          "type": "opponent_controls_tapped_land"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Requires the opponent to have a tapped land, so it does nothing on your turn against an untapped board and nothing at all against an opponent who holds mana up. Four mana for a conditional one."
+  },
+  {
+    "name": "Quirion Elves",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": {
+          "type": "colour_chosen_as_it_enters"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "The second colour is locked in as it enters and cannot be changed afterwards, so the choice mode here is a one-time decision. Both abilities tap it, so it makes one mana a turn, of green or of the named colour."
+  },
+  {
+    "name": "Urborg Elf",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "B",
+            "G",
+            "U"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Three fixed colours, no choice made on entry, one mana a turn."
+  },
+  {
+    "name": "Pygmy Hippo",
+    "kind": "creature",
+    "mana_cost": "{G}{U}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Combat damage trigger when unblocked",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": {
+          "type": "attacks_and_is_unblocked"
+        },
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the amount of mana the defending player lost this way",
+          "note": "Depends entirely on the opponent's untapped lands and their choices."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Mana as a combat trigger, contingent on attacking, being unblocked, and the opponent having lands to drain. It also gives up its combat damage to do it. Not a mana source in any sense a calculator should count; recorded so it is not mistaken for one."
+  },
+  {
+    "name": "Witch Engine",
+    "kind": "creature",
+    "mana_cost": "{5}{B}",
+    "cmc": 6,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        "amount": 4,
+        "net_mana": 4,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "triggered",
+        "cost": null,
+        "effect": "Target opponent gains control of this creature when the mana ability is used.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Four black once, and then your opponent owns the creature, which is why one_shot is true even though the ability is not printed as a sacrifice. Six mana to deploy makes this a late-game burst, not ramp."
+  },
+  {
+    "name": "Elvish Spirit Guide",
+    "kind": "creature",
+    "mana_cost": "{2}{G}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Exile this creature from your hand",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "hand"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Free green from your hand without ever casting it, which makes it one of the very few cards in the pool that can produce coloured mana on turn one before any land is played. The zone field exists for this: counted as a battlefield source it would be wrong twice over, since it never enters play when used this way."
+  },
+  {
+    "name": "Citanul Hierophants",
+    "kind": "creature",
+    "mana_cost": "{3}{G}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "creatures you control",
+      "grants": "{T}: Add {G}",
+      "kind": "granted_ability",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Grants every creature you control a green mana ability, so like Riftstone Portal it changes what other cards do and cannot be evaluated on its own. Its own tap ability comes from the same granted ability. Any count that sums per-card colours is wrong about your whole board while this is out, and the granted abilities are subject to summoning sickness on the creatures receiving them."
+  },
+  {
+    "name": "Birchlore Rangers",
+    "kind": "creature",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Tap two untapped Elves you control",
+        "additional_cost": {
+          "action": "tap",
+          "count": 2,
+          "target": "untapped Elves you control"
+        },
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_n_creature_type",
+          "value": 2,
+          "creature_type": "Elf"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "The cost taps other Elves rather than using this creature's own tap symbol, so summoning-sick Elves can be tapped to pay it and this card works the turn it lands. Any colour, which makes an Elf board into full fixing."
+  },
+  {
+    "name": "Seton, Krosan Protector",
+    "kind": "creature",
+    "mana_cost": "{G}{G}{G}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Tap an untapped Druid you control",
+        "additional_cost": {
+          "action": "tap",
+          "count": 1,
+          "target": "untapped Druid you control"
+        },
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_creature_type",
+          "value": "Druid"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Birchlore Rangers on the tapping cost. Legendary in effect through its name only; it is a Druid itself, so it can tap itself if it is not summoning sick, and other Druids regardless."
+  },
+  {
+    "name": "Quirion Sentinel",
+    "kind": "creature",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "When this creature enters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "One mana of any colour, once, on arrival. Net minus one against its casting cost, so it is a two-mana body that refunds one and fixes a colour."
+  },
+  {
+    "name": "Priest of Gix",
+    "kind": "creature",
+    "mana_cost": "{2}{B}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 3,
+        "cost": "When this creature enters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Three black on arrival for a three-mana creature, so it is free to cast in black-mana terms and leaves a body behind. The mana comes on the trigger, not from an activated ability, so it cannot be held for later."
+  },
+  {
+    "name": "Soldevi Machinist",
+    "kind": "creature",
+    "mana_cost": "{1}{U}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "C"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": "Spend this mana only to activate abilities of artifacts.",
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two colourless a turn that cannot cast a single spell. The restriction field is doing all the work here, exactly as with Thran Turbine."
+  },
+  {
+    "name": "Adarkar Unicorn",
+    "kind": "creature",
+    "mana_cost": "{1}{W}{W}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "U"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": "Spend this mana only to pay cumulative upkeep costs.",
+        "requires_tap": true,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "C",
+            "U"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "{T}",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": "Spend this mana only to pay cumulative upkeep costs.",
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "The printed ability offers a choice between one mana and two, which is a choice of amount rather than of colour, so it is split into two mutually exclusive entries. Both are restricted to paying cumulative upkeep, which makes this unusable as mana in almost every deck."
+  },
+  {
+    "name": "Orcish Lumberjack",
+    "kind": "creature",
+    "mana_cost": "{R}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_combination",
+          "options": [
+            "R",
+            "G"
+          ],
+          "count": 3
+        },
+        "amount": 3,
+        "net_mana": 3,
+        "cost": "{T}, Sacrifice a Forest",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "Forest"
+        },
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_land_type",
+          "value": [
+            "Forest"
+          ]
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Three mana in any mix of red and green for one land, which is why produces needed a combination mode: unlike Lion's Eye Diamond the three do not have to match. Eats a Forest each time, so it trades long-term mana for a burst, and it checks the Forest land type rather than the card name."
+  },
+  {
+    "name": "Goblin Clearcutter",
+    "kind": "creature",
+    "mana_cost": "{3}{R}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": true,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_combination",
+          "options": [
+            "R",
+            "G"
+          ],
+          "count": 3
+        },
+        "amount": 3,
+        "net_mana": 3,
+        "cost": "{T}, Sacrifice a Forest",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "Forest"
+        },
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_land_type",
+          "value": [
+            "Forest"
+          ]
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": true,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "See Orcish Lumberjack. Four mana instead of one for the same ability."
+  },
+  {
+    "name": "Jungle Patrol",
+    "kind": "creature",
+    "mana_cost": "{3}{G}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "R"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice a token named Wood",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "token named Wood"
+        },
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_token",
+          "value": "Wood"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{1}{G}, {T}",
+        "effect": "Create a 0/1 green Wall creature token with defender named Wood.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Two steps and net negative: two mana and a tap makes a token, and the token converts into one red. Green into red conversion at a punishing rate. Note summoning_sick is false because the mana ability itself only sacrifices a token and needs no tap; the token-making ability does tap, so nothing happens on the turn this lands regardless."
+  },
+  {
+    "name": "Dark Ritual",
+    "kind": "instant",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 2,
+        "cost": "Resolve this spell",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net plus two, and self_sufficient is false because casting it costs black. That is the whole point for a mana calculator: Dark Ritual can never be your first black mana, it multiplies black you already have. Same structural failure as the Odyssey filter lands, in a different card type."
+  },
+  {
+    "name": "Cabal Ritual",
+    "kind": "instant",
+    "mana_cost": "{1}{B}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        "amount": 3,
+        "net_mana": 1,
+        "cost": "Resolve this spell",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B",
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        "amount": 5,
+        "net_mana": 3,
+        "cost": "Resolve this spell",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": {
+          "type": "threshold",
+          "value": "seven or more cards in your graveyard"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two mutually exclusive outputs from one printed spell, split so a consumer can pick the higher one when threshold is on. Net plus one before threshold and plus three after, so the same card is mediocre early and a genuine accelerant late."
+  },
+  {
+    "name": "Culling the Weak",
+    "kind": "instant",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        "amount": 4,
+        "net_mana": 3,
+        "cost": "Resolve this spell",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "creature",
+          "timing": "additional cost to cast"
+        },
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Net plus three, the largest single burst in the pool, and the price is a creature on top of the black mana. The sacrifice is an additional cost to cast, so it happens whether or not the spell resolves."
+  },
+  {
+    "name": "Burnt Offering",
+    "kind": "instant",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_combination",
+          "options": [
+            "B",
+            "R"
+          ],
+          "count": 0
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Resolve this spell",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "creature",
+          "timing": "additional cost to cast"
+        },
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the sacrificed creature's mana value",
+          "note": "Any mix of black and red. Zero if you sacrifice a zero-cost creature."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Converts a creature's mana value into black and red in any combination. Amount is 0 because sacrificing a token or a free creature yields nothing."
+  },
+  {
+    "name": "Songs of the Damned",
+    "kind": "instant",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "B"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Resolve this spell",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of creature cards in your graveyard",
+          "note": "Zero on an empty graveyard."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Dead early and enormous in a deck that fills its own graveyard. Amount 0 with the real number in variable_amount, the same treatment as Gaea's Cradle."
+  },
+  {
+    "name": "Brightstone Ritual",
+    "kind": "instant",
+    "mana_cost": "{R}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "R"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Resolve this spell",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of Goblins on the battlefield",
+          "note": "Counts every Goblin in play, including your opponent's."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "A ritual that only exists in one deck. Note it counts all Goblins on the battlefield rather than only yours."
+  },
+  {
+    "name": "Spoils of Evil",
+    "kind": "instant",
+    "mana_cost": "{2}{B}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Resolve this spell",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of artifact and creature cards in target opponent's graveyard",
+          "note": "Zero against an empty graveyard."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Colourless, contingent entirely on the opponent's graveyard, so it is unreliable by construction and gains life alongside."
+  },
+  {
+    "name": "Energy Tap",
+    "kind": "sorcery",
+    "mana_cost": "{U}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Resolve this spell",
+        "additional_cost": {
+          "action": "tap",
+          "count": 1,
+          "target": "untapped creature you control"
+        },
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the tapped creature's mana value",
+          "note": null
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Turns a creature's cost into colourless for one blue, sorcery speed, and the creature is only tapped rather than sacrificed."
+  },
+  {
+    "name": "Metamorphosis",
+    "kind": "sorcery",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_uniform",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ],
+          "count": 0
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Resolve this spell",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "creature",
+          "timing": "additional cost to cast"
+        },
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one plus the sacrificed creature's mana value",
+          "note": "All the mana is one chosen colour."
+        },
+        "availability": null,
+        "restriction": "Spend this mana only to cast creature spells.",
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Restricted to creature spells, which makes it a specific engine piece rather than acceleration. All the mana is a single chosen colour."
+  },
+  {
+    "name": "Drain Power",
+    "kind": "sorcery",
+    "mana_cost": "{U}{U}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "whatever the targeted player's lands produce"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Resolve this spell",
+        "additional_cost": null,
+        "self_sufficient": false,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the total mana the targeted player's lands produce",
+          "note": "They choose which abilities to activate, so the colours are not yours to pick."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "stack"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Empties an opponent's lands into your pool. The target chooses which mana abilities to activate, so you cannot rely on colours, and against a tapped-out opponent it produces nothing."
+  },
+  {
+    "name": "Eladamri's Vineyard",
+    "kind": "enchantment",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G",
+            "G"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "At the beginning of each player's first main phase",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two green every turn for one mana, and it does the same for your opponent. Symmetric acceleration is a deckbuilding decision, not a mana one, so the file records the output and the note records who else gets it."
+  },
+  {
+    "name": "Carnival of Souls",
+    "kind": "enchantment",
+    "mana_cost": "{1}{B}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B"
+          ]
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Whenever a creature enters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Black mana on every creature entering, yours or your opponent's, at one life each. The trigger is not optional, so in a creature-heavy game it drains you whether you want the mana or not."
+  },
+  {
+    "name": "Iceberg",
+    "kind": "enchantment",
+    "mana_cost": "{X}{U}{U}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Remove an ice counter",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one per ice counter removed",
+          "note": "Enters with X counters, where X is what you paid on casting."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "activated",
+        "cost": "{3}",
+        "effect": "Put an ice counter on this enchantment.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Stores exactly the mana you paid into it and gives it back one at a time, so it is net zero at best and a way to bank mana across turns. Adding counters later at {3} apiece is a loss."
+  },
+  {
+    "name": "Squandered Resources",
+    "kind": "enchantment",
+    "mana_cost": "{B}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "derived",
+          "source": "any mana type the sacrificed land could produce"
+        },
+        "amount": 1,
+        "net_mana": 1,
+        "cost": "Sacrifice a land",
+        "additional_cost": {
+          "action": "sacrifice",
+          "count": 1,
+          "target": "land"
+        },
+        "self_sufficient": true,
+        "condition": {
+          "type": "controls_land"
+        },
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Converts your board into mana one land at a time, unlimited within a turn and no tap required. Colours resolve against whatever you sacrifice, so it reads the land file rather than carrying colours of its own."
+  },
+  {
+    "name": "Food Chain",
+    "kind": "enchantment",
+    "mana_cost": "{2}{G}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_uniform",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ],
+          "count": 0
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Exile a creature you control",
+        "additional_cost": {
+          "action": "exile",
+          "count": 1,
+          "target": "creature you control"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one plus the exiled creature's mana value",
+          "note": "All the mana is one chosen colour."
+        },
+        "availability": null,
+        "restriction": "Spend this mana only to cast creature spells.",
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Restricted to creature spells and net positive by one each time, which is what makes it an engine rather than a rock. Unlimited within a turn as long as creatures keep coming."
+  },
+  {
+    "name": "Mana Cache",
+    "kind": "enchantment",
+    "mana_cost": "{1}{R}{R}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Remove a charge counter",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "one per charge counter removed",
+          "note": "Counters accrue at each player's end step, one per untapped land that player controls."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "triggered",
+        "cost": null,
+        "effect": "At the beginning of each player's end step, put a charge counter on this enchantment for each untapped land that player controls.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Rewards leaving lands untapped, which is a real cost, and any player may spend the counters on their own turn. Symmetric in a way that is easy to miss: your opponent can drain the cache you filled."
+  },
+  {
+    "name": "Mana Echoes",
+    "kind": "enchantment",
+    "mana_cost": "{2}{R}{R}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "C"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "Whenever a creature enters",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of creatures you control sharing a type with the one that entered",
+          "note": null
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Colourless only, and it scales with tribal density rather than with anything the mana base does. Zero in a deck of unrelated creatures."
+  },
+  {
+    "name": "Black Market",
+    "kind": "enchantment",
+    "mana_cost": "{3}{B}{B}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed_variable",
+          "unit": "B"
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "At the beginning of your first main phase",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of charge counters",
+          "note": "One counter per creature that has died since it entered."
+        },
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [
+      {
+        "type": "triggered",
+        "cost": null,
+        "effect": "Whenever a creature dies, put a charge counter on this enchantment.",
+        "sacrifices_self": false
+      }
+    ],
+    "global_effect": null,
+    "notes": "Five mana that produces nothing until creatures start dying, then produces increasingly large amounts automatically. The mana arrives at your first main phase whether you can use it or not."
+  },
+  {
+    "name": "Cadaverous Bloom",
+    "kind": "enchantment",
+    "mana_cost": "{3}{B}{G}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "B",
+            "B"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "Exile a card from your hand",
+        "additional_cost": {
+          "action": "exile",
+          "count": 1,
+          "target": "a card from your hand"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      },
+      {
+        "produces": {
+          "mode": "fixed",
+          "mana": [
+            "G",
+            "G"
+          ]
+        },
+        "amount": 2,
+        "net_mana": 2,
+        "cost": "Exile a card from your hand",
+        "additional_cost": {
+          "action": "exile",
+          "count": 1,
+          "target": "a card from your hand"
+        },
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": null,
+        "availability": null,
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "Two cards' worth of mana per card exiled, unlimited within a turn. Recorded as two separate abilities because the printed choice is between {B}{B} and {G}{G} as pairs, never one of each."
+  },
+  {
+    "name": "Carpet of Flowers",
+    "kind": "enchantment",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [
+      {
+        "produces": {
+          "mode": "choice_uniform",
+          "options": [
+            "W",
+            "U",
+            "B",
+            "R",
+            "G"
+          ],
+          "count": 0
+        },
+        "amount": 0,
+        "net_mana": null,
+        "cost": "At the beginning of each of your main phases",
+        "additional_cost": null,
+        "self_sufficient": true,
+        "condition": null,
+        "sacrifices_self": false,
+        "variable_amount": {
+          "equals": "the number of Islands target opponent controls",
+          "note": "Zero against a deck with no Islands. All the mana is one chosen colour."
+        },
+        "availability": {
+          "pattern": "once_each_turn",
+          "reason": "Only if you have not already added mana with it this turn."
+        },
+        "restriction": null,
+        "requires_tap": false,
+        "zone": "battlefield"
+      }
+    ],
+    "other_abilities": [],
+    "global_effect": null,
+    "notes": "A sideboard card by design: enormous against blue and completely dead otherwise. Amount 0 is the honest default because in most matchups that is exactly what it makes."
+  },
+  {
+    "name": "Wild Growth",
+    "kind": "enchantment",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "the enchanted land",
+      "grants": "adds an additional {G} whenever it is tapped for mana",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Makes no mana itself; it upgrades one land. In source-counting terms the enchanted land becomes a green source in addition to whatever it already was, which is why this cannot be counted as a card-level green source without knowing what it is attached to."
+  },
+  {
+    "name": "Fertile Ground",
+    "kind": "enchantment",
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "the enchanted land",
+      "grants": "adds an additional one mana of any colour whenever it is tapped for mana",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "See Wild Growth, with the extra mana being any colour, which makes it fixing as well as ramp."
+  },
+  {
+    "name": "Overgrowth",
+    "kind": "enchantment",
+    "mana_cost": "{2}{G}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "the enchanted land",
+      "grants": "adds an additional {G}{G} whenever it is tapped for mana",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Two extra green per tap. Three mana invested into a single land, so it is also two cards lost to one removal spell."
+  },
+  {
+    "name": "Elvish Guidance",
+    "kind": "enchantment",
+    "mana_cost": "{2}{G}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "the enchanted land",
+      "grants": "adds an additional {G} for each Elf on the battlefield whenever it is tapped for mana",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Scales with Elves rather than with lands, and counts every Elf in play including your opponent's."
+  },
+  {
+    "name": "Vernal Bloom",
+    "kind": "enchantment",
+    "mana_cost": "{3}{G}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every Forest",
+      "grants": "adds an additional {G} whenever it is tapped for mana",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Symmetric and keyed to the Forest land type, so it helps your opponent's Forests too and does nothing for green lands that lack the type."
+  },
+  {
+    "name": "Mana Flare",
+    "kind": "enchantment",
+    "mana_cost": "{2}{R}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every land, for every player",
+      "grants": "adds an additional one mana of any type that land produced whenever it is tapped for mana",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Doubles every land in the game for both players. Whoever untaps into it first gets the most out of it, which is a deckbuilding argument rather than a mana one."
+  },
+  {
+    "name": "Overabundance",
+    "kind": "enchantment",
+    "mana_cost": "{1}{R}{G}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every land, for every player",
+      "grants": "adds an additional one mana of any type that land produced whenever it is tapped for mana, and deals 1 damage to that player",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Mana Flare with a life cost attached to every activation, for both players. The damage is not optional."
+  },
+  {
+    "name": "Mirari's Wake",
+    "kind": "enchantment",
+    "mana_cost": "{3}{G}{W}",
+    "cmc": 5,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every land you control",
+      "grants": "adds an additional one mana of any type that land produced whenever you tap it for mana",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "One-sided Mana Flare at five mana. Doubles your entire mana base rather than a single land, so its effect on any source count is multiplicative and cannot be expressed as a number of sources."
+  },
+  {
+    "name": "Snowfall",
+    "kind": "enchantment",
+    "mana_cost": "{2}{U}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every Island",
+      "grants": "may add an additional {U}, or {U}{U} instead if the Island is snow",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "The mana can only pay cumulative upkeep costs, including this card's own, so it is close to self-sustaining and useless for casting anything. Note the snow clause is live in this format because the snow basics are legal."
+  },
+  {
+    "name": "Winter's Night",
+    "kind": "enchantment",
+    "mana_cost": "{R}{G}{W}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every snow land",
+      "grants": "adds an additional one mana of any type that land produced, and that land does not untap during its controller's next untap step",
+      "kind": "extra_mana_on_tap",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "World enchantment, symmetric, and it charges every extra mana against the land's next untap, so it converts two turns of a land into one bigger turn. Only relevant to decks running the snow basics."
+  },
+  {
+    "name": "Chaos Moon",
+    "kind": "enchantment",
+    "mana_cost": "{3}{R}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every Mountain, depending on the parity of permanents in play",
+      "grants": "adds an additional {R} on odd turns and produces only colourless on even ones",
+      "kind": "conditional_type_or_output_change",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Flips between helping and hurting based on a permanent count that changes constantly and that neither player fully controls. Recorded honestly rather than resolved: no calculator should model this as a stable effect."
+  },
+  {
+    "name": "Blanket of Night",
+    "kind": "enchantment",
+    "mana_cost": "{1}{B}{B}",
+    "cmc": 3,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every land in play",
+      "grants": "is a Swamp in addition to its other land types",
+      "kind": "type_change",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Changes land types rather than mana, which makes it the single most disruptive card in this file for anything reading the land data. Every land becomes a Swamp, so the Torment Tainted cycle switches on for both players, Cabal Coffers counts every land in play, and the Onslaught fetchlands can find any land with the Swamp type. Symmetric."
+  },
+  {
+    "name": "Multani's Harmony",
+    "kind": "enchantment",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "the enchanted creature",
+      "grants": "gains \"{T}: Add one mana of any colour\"",
+      "kind": "granted_ability",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Turns any creature into a Birds of Paradise. Subject to summoning sickness on the creature receiving it."
+  },
+  {
+    "name": "Overlaid Terrain",
+    "kind": "enchantment",
+    "mana_cost": "{2}{G}{G}",
+    "cmc": 4,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": false,
+    "entry_cost": {
+      "action": "sacrifice",
+      "count": "all",
+      "target": "lands you control",
+      "timing": "replacement",
+      "if_unmet": null
+    },
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every land you control",
+      "grants": "gains \"{T}: Add two mana of any one colour\"",
+      "kind": "granted_ability",
+      "duration": "permanent",
+      "active_zone": "battlefield"
+    },
+    "notes": "Sacrifices your entire mana base as it enters and then doubles whatever you rebuild, so it is a four-mana reset with a huge payoff and no floor. entry_cost carries the sacrifice because it happens as a replacement on entering, not as a trigger you can respond to."
+  },
+  {
+    "name": "Divergent Growth",
+    "kind": "instant",
+    "mana_cost": "{G}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "lands you control",
+      "grants": "gain \"{T}: Add one mana of any colour\"",
+      "kind": "granted_ability",
+      "duration": "until end of turn",
+      "active_zone": "battlefield"
+    },
+    "notes": "One turn of perfect fixing for one green. It grants an ability rather than producing mana, so its value depends entirely on how many untapped lands you have when it resolves."
+  },
+  {
+    "name": "Rain of Filth",
+    "kind": "instant",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "lands you control",
+      "grants": "gain \"Sacrifice this land: Add {B}\"",
+      "kind": "granted_ability",
+      "duration": "until end of turn",
+      "active_zone": "battlefield"
+    },
+    "notes": "Converts your whole mana base into black in a single turn at the cost of the lands themselves. A combo card, and one where counting sources is the wrong question entirely."
+  },
+  {
+    "name": "Bubbling Muck",
+    "kind": "sorcery",
+    "mana_cost": "{B}",
+    "cmc": 1,
+    "enters_tapped": false,
+    "summoning_sick": false,
+    "one_shot": true,
+    "entry_cost": null,
+    "total_activations": null,
+    "abilities": [],
+    "other_abilities": [],
+    "global_effect": {
+      "applies_to": "every Swamp, for every player",
+      "grants": "adds an additional {B} whenever it is tapped for mana",
+      "kind": "extra_mana_on_tap",
+      "duration": "until end of turn",
+      "active_zone": "battlefield"
+    },
+    "notes": "A one-turn High Tide for Swamps, symmetric but sorcery speed so in practice only you benefit. Keyed to the Swamp land type, which Blanket of Night can hand to every land in play."
+  }
+]
