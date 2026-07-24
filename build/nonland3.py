@@ -54,19 +54,19 @@ N.append(spell("Brightstone Ritual","instant","{R}",1,varv("R"),0,
   notes="A ritual that only exists in one deck. Note it counts all Goblins on the battlefield rather than only yours."))
 N.append(spell("Spoils of Evil","instant","{2}{B}",3,varv("C"),0,
   var=V("the number of artifact and creature cards in target opponent's graveyard","Zero against an empty graveyard."),
-  notes="Colourless, contingent entirely on the opponent's graveyard, so it is unreliable by construction and gains life alongside."))
+  notes="Colorless, contingent entirely on the opponent's graveyard, so it is unreliable by construction and gains life alongside."))
 N.append(spell("Energy Tap","sorcery","{U}",1,varv("C"),0,
   addl={"action":"tap","count":1,"target":"untapped creature you control"},
   var=V("the tapped creature's mana value"),
-  notes="Turns a creature's cost into colourless for one blue, sorcery speed, and the creature is only tapped rather than sacrificed."))
+  notes="Turns a creature's cost into colorless for one blue, sorcery speed, and the creature is only tapped rather than sacrificed."))
 N.append(spell("Metamorphosis","sorcery","{G}",1,uni(WUBRG,0),0,
   addl={"action":"sacrifice","count":1,"target":"creature","timing":"additional cost to cast"},
-  var=V("one plus the sacrificed creature's mana value","All the mana is one chosen colour."),
+  var=V("one plus the sacrificed creature's mana value","All the mana is one chosen color."),
   restr="Spend this mana only to cast creature spells.",
-  notes="Restricted to creature spells, which makes it a specific engine piece rather than acceleration. All the mana is a single chosen colour."))
+  notes="Restricted to creature spells, which makes it a specific engine piece rather than acceleration. All the mana is a single chosen color."))
 N.append(spell("Drain Power","sorcery","{U}{U}",2,{"mode":"derived","source":"whatever the targeted player's lands produce"},0,
-  var=V("the total mana the targeted player's lands produce","They choose which abilities to activate, so the colours are not yours to pick."),
-  notes="Empties an opponent's lands into your pool. The target chooses which mana abilities to activate, so you cannot rely on colours, and against a tapped-out opponent it produces nothing."))
+  var=V("the total mana the targeted player's lands produce","They choose which abilities to activate, so the colors are not yours to pick."),
+  notes="Empties an opponent's lands into your pool. The target chooses which mana abilities to activate, so you cannot rely on colors, and against a tapped-out opponent it produces nothing."))
 
 # --- enchantments that produce mana themselves ------------------------------
 N.append(card("Eladamri's Vineyard","enchantment","{G}",1,False,
@@ -84,11 +84,11 @@ N.append(card("Squandered Resources","enchantment","{B}{G}",2,False,
   [ab({"mode":"derived","source":"any mana type the sacrificed land could produce"},1,1,"Sacrifice a land",True,False,
       addl={"action":"sacrifice","count":1,"target":"land"},
       cond={"type":"controls_land"})],
-  notes="Converts your board into mana one land at a time, unlimited within a turn and no tap required. Colours resolve against whatever you sacrifice, so it reads the land file rather than carrying colours of its own."))
+  notes="Converts your board into mana one land at a time, unlimited within a turn and no tap required. Colors resolve against whatever you sacrifice, so it reads the land file rather than carrying colors of its own."))
 N.append(card("Food Chain","enchantment","{2}{G}",3,False,
   [ab(uni(WUBRG,0),0,None,"Exile a creature you control",True,False,
       addl={"action":"exile","count":1,"target":"creature you control"},
-      var=V("one plus the exiled creature's mana value","All the mana is one chosen colour."),
+      var=V("one plus the exiled creature's mana value","All the mana is one chosen color."),
       restr="Spend this mana only to cast creature spells.")],
   notes="Restricted to creature spells and net positive by one each time, which is what makes it an engine rather than a rock. Unlimited within a turn as long as creatures keep coming."))
 N.append(card("Mana Cache","enchantment","{1}{R}{R}",3,False,
@@ -100,7 +100,7 @@ N.append(card("Mana Cache","enchantment","{1}{R}{R}",3,False,
 N.append(card("Mana Echoes","enchantment","{2}{R}{R}",4,False,
   [ab(varv("C"),0,None,"Whenever a creature enters",True,False,
       var=V("the number of creatures you control sharing a type with the one that entered"))],
-  notes="Colourless only, and it scales with tribal density rather than with anything the mana base does. Zero in a deck of unrelated creatures."))
+  notes="Colorless only, and it scales with tribal density rather than with anything the mana base does. Zero in a deck of unrelated creatures."))
 N.append(card("Black Market","enchantment","{3}{B}{B}",5,False,
   [ab(varv("B"),0,None,"At the beginning of your first main phase",True,False,
       var=V("the number of charge counters","One counter per creature that has died since it entered."))],
@@ -115,7 +115,7 @@ N.append(card("Cadaverous Bloom","enchantment","{3}{B}{G}",5,False,
 N.append(card("Carpet of Flowers","enchantment","{G}",1,False,
   [ab(uni(WUBRG,0),0,None,"At the beginning of each of your main phases",True,False,
       var=V("the number of Islands target opponent controls",
-            "Zero against a deck with no Islands. All the mana is one chosen colour."),
+            "Zero against a deck with no Islands. All the mana is one chosen color."),
       avail={"pattern":"once_each_turn","reason":"Only if you have not already added mana with it this turn."})],
   notes="A sideboard card by design: enormous against blue and completely dead otherwise. Amount 0 is the honest default because in most matchups that is exactly what it makes."))
 
@@ -123,8 +123,8 @@ N.append(card("Carpet of Flowers","enchantment","{G}",1,False,
 GL=[
  ("Wild Growth","{G}",1,"the enchanted land","adds an additional {G} whenever it is tapped for mana","extra_mana_on_tap",
   "Makes no mana itself; it upgrades one land. In source-counting terms the enchanted land becomes a green source in addition to whatever it already was, which is why this cannot be counted as a card-level green source without knowing what it is attached to."),
- ("Fertile Ground","{1}{G}",2,"the enchanted land","adds an additional one mana of any colour whenever it is tapped for mana","extra_mana_on_tap",
-  "See Wild Growth, with the extra mana being any colour, which makes it fixing as well as ramp."),
+ ("Fertile Ground","{1}{G}",2,"the enchanted land","adds an additional one mana of any color whenever it is tapped for mana","extra_mana_on_tap",
+  "See Wild Growth, with the extra mana being any color, which makes it fixing as well as ramp."),
  ("Overgrowth","{2}{G}",3,"the enchanted land","adds an additional {G}{G} whenever it is tapped for mana","extra_mana_on_tap",
   "Two extra green per tap. Three mana invested into a single land, so it is also two cards lost to one removal spell."),
  ("Elvish Guidance","{2}{G}",3,"the enchanted land","adds an additional {G} for each Elf on the battlefield whenever it is tapped for mana","extra_mana_on_tap",
@@ -141,11 +141,11 @@ GL=[
   "The mana can only pay cumulative upkeep costs, including this card's own, so it is close to self-sustaining and useless for casting anything. Note the snow clause is live in this format because the snow basics are legal."),
  ("Winter's Night","{R}{G}{W}",3,"every snow land","adds an additional one mana of any type that land produced, and that land does not untap during its controller's next untap step","extra_mana_on_tap",
   "World enchantment, symmetric, and it charges every extra mana against the land's next untap, so it converts two turns of a land into one bigger turn. Only relevant to decks running the snow basics."),
- ("Chaos Moon","{3}{R}",4,"every Mountain, depending on the parity of permanents in play","adds an additional {R} on odd turns and produces only colourless on even ones","conditional_type_or_output_change",
+ ("Chaos Moon","{3}{R}",4,"every Mountain, depending on the parity of permanents in play","adds an additional {R} on odd turns and produces only colorless on even ones","conditional_type_or_output_change",
   "Flips between helping and hurting based on a permanent count that changes constantly and that neither player fully controls. Recorded honestly rather than resolved: no calculator should model this as a stable effect."),
  ("Blanket of Night","{1}{B}{B}",3,"every land in play","is a Swamp in addition to its other land types","type_change",
   "Changes land types rather than mana, which makes it the single most disruptive card in this file for anything reading the land data. Every land becomes a Swamp, so the Torment Tainted cycle switches on for both players, Cabal Coffers counts every land in play, and the Onslaught fetchlands can find any land with the Swamp type. Symmetric."),
- ("Multani's Harmony","{G}",1,"the enchanted creature","gains \"{T}: Add one mana of any colour\"","granted_ability",
+ ("Multani's Harmony","{G}",1,"the enchanted creature","gains \"{T}: Add one mana of any color\"","granted_ability",
   "Turns any creature into a Birds of Paradise. Subject to summoning sickness on the creature receiving it."),
 ]
 for name,mc,cmc,applies,grants,kind,notes in GL:
@@ -153,12 +153,12 @@ for name,mc,cmc,applies,grants,kind,notes in GL:
 
 N.append(card("Overlaid Terrain","enchantment","{2}{G}{G}",4,False,[],
   entry={"action":"sacrifice","count":"all","target":"lands you control","timing":"replacement","if_unmet":None},
-  glob=G("every land you control","gains \"{T}: Add two mana of any one colour\"","granted_ability"),
+  glob=G("every land you control","gains \"{T}: Add two mana of any one color\"","granted_ability"),
   notes="Sacrifices your entire mana base as it enters and then doubles whatever you rebuild, so it is a four-mana reset with a huge payoff and no floor. entry_cost carries the sacrifice because it happens as a replacement on entering, not as a trigger you can respond to."))
 
 # --- global effects, temporary ----------------------------------------------
 N.append(card("Divergent Growth","instant","{G}",1,True,[],
-  glob=G("lands you control","gain \"{T}: Add one mana of any colour\"","granted_ability","until end of turn"),
+  glob=G("lands you control","gain \"{T}: Add one mana of any color\"","granted_ability","until end of turn"),
   notes="One turn of perfect fixing for one green. It grants an ability rather than producing mana, so its value depends entirely on how many untapped lands you have when it resolves."))
 N.append(card("Rain of Filth","instant","{B}",1,True,[],
   glob=G("lands you control","gain \"Sacrifice this land: Add {B}\"","granted_ability","until end of turn"),

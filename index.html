@@ -44,6 +44,9 @@ button.quiet:hover{background:var(--edge);color:var(--ink)}
 .hint code{font-family:var(--mono);font-size:12px;color:var(--gold)}
 .tally{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 20px}
 .tally b{color:var(--ink);font-weight:400}
+.estimate{margin:0 0 20px;font-size:16px;color:var(--muted)}
+.estimate b{font-family:var(--mono);font-size:17px;color:var(--ink);font-weight:400;margin-left:4px}
+.est-note{display:block;margin-top:5px;font-size:14px;max-width:70ch}
 .grid{display:flex;flex-wrap:wrap;gap:12px}
 .tile{flex:1 1 168px;max-width:250px;background:var(--panel);border:1px solid var(--edge);
   border-top-width:2px;border-radius:2px;padding:15px 15px 13px}
@@ -85,6 +88,16 @@ details .body{padding:0 14px 14px 34px;color:var(--muted);max-width:78ch}
 code{font-family:var(--mono);font-size:12px;color:var(--gold)}
 .prose{max-width:70ch;color:var(--muted)}
 .prose p{margin:0 0 14px}
+.edge{max-width:74ch;margin:14px 0 0;padding-left:20px;color:var(--muted);font-size:16px}
+.edge li{margin:0 0 5px}
+details.doc{background:transparent;border:0;border-top:1px solid var(--edge);border-radius:0;margin:32px 0 0}
+details.doc>summary{font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted);padding:14px 0}
+details.doc>summary:hover{color:var(--ink)}
+details.doc[open]>summary{color:var(--gold)}
+table.miss{margin-top:10px;max-width:74ch}
+table.miss th,table.miss td{text-align:left}
+table.miss td.num{font-family:var(--mono);font-size:13px;color:var(--muted)}
 .steps{max-width:70ch;color:var(--muted);padding-left:22px;margin:0 0 18px}
 .steps li{margin:0 0 12px}
 .steps b,.prose b{color:var(--ink);font-weight:500}
@@ -103,8 +116,12 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
 <header>
   <h1>Premodern Mana Sources</h1>
   <p class="thesis">Paste a decklist. Every spell gets checked against the sources it needs to be
-  cast on curve, and every source gets counted for what it produces in play rather than what its
-  mana symbols say.</p>
+  cast on curve, counted from what your cards do in play rather than what their mana symbols say.</p>
+  <ul class="edge">
+    <li>Fetchlands are read against the basics your list actually plays. No duals exist here to find.</li>
+    <li>Skycloud Expanse, Cabal Coffers and Gaea's Cradle all print colors they cannot make alone.</li>
+    <li>Rituals, Lotus Petal, Mox Diamond and the mana creatures count as well.</li>
+  </ul>
 </header>
 
 <div class="cols">
@@ -126,30 +143,27 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
 <section id="howto">
   <h2>How to use this</h2>
   <ol class="steps">
-    <li><b>Get your decklist as plain text.</b> On MTGGoldfish, open the deck and use Download or
-    Copy to Clipboard. On MTGTop8, the decklist is already plain text on the page, so select it and
-    copy. In Moxfield it is More, then Export, then Copy for MTGO. Typing it out by hand works
-    too.</li>
-    <li><b>Paste it into the box.</b> One card per line with the quantity first, like
-    <code>4 Wasteland</code>, which is the shape all three of those exports produce. Set codes and
-    collector numbers are ignored, so a line reading <code>4 Wasteland (TMP) 335</code> is fine.
-    Lines starting with <code>//</code> are skipped.</li>
+    <li><b>Get the list as plain text.</b> MTGGoldfish: Download or Copy to Clipboard. MTGTop8:
+    it is already text on the page, so select and copy. Moxfield: More, Export, Copy for MTGO.
+    Typing it by hand is fine too.</li>
+    <li><b>Paste it in.</b> One card per line, quantity first: <code>4 Wasteland</code>. Set codes
+    and collector numbers are ignored, so <code>4 Wasteland (TMP) 335</code> works. Lines starting
+    with <code>//</code> are skipped.</li>
     <li><b>Mark the sideboard</b> by putting <code>Sideboard</code> on its own line before it.
-    Sideboard cards are still checked, but they are labelled and they do not drive the headline
-    number for a colour, since you are not casting them in every game.</li>
-    <li><b>Correct any card you do not hard-cast.</b> Write the cost you actually pay after the
-    name. <code>4 Foil {0}</code> for a card you always pitch to. If the real cost is lands rather
-    than mana, name the land type: <code>4 Gush {Island}{Island}</code>,
-    <code>4 Snuff Out {Swamp}</code>, <code>4 Daze {Island}</code>.</li>
-    <li><b>Press Analyse.</b> It also runs on its own a moment after you stop typing.</li>
+    Sideboard cards are still checked, but they are labeled and they do not drive the headline
+    number for a color, since you are not casting them in every game.</li>
+    <li><b>Fix any card you never hard-cast</b> by writing the cost you do pay after the name:
+    <code>4 Foil {0}</code>. If that cost is lands rather than mana, name the type:
+    <code>4 Gush {Island}{Island}</code>, <code>4 Snuff Out {Swamp}</code>.</li>
+    <li><b>Press Analyse</b>, or just stop typing and wait a moment.</li>
   </ol>
 
-  <h2>Reading the results</h2>
+  <details class="doc"><summary>What everything on screen means</summary>
   <dl class="legend">
-    <dt>The colour panels</dt>
-    <dd>The large number is your source count for that colour. Under it is the largest requirement
-    any maindeck spell puts on that colour, and the card named is the one putting it there. Green
-    clears, red does not. Colours with no sources and no requirement collapse to a single line.</dd>
+    <dt>The color panels</dt>
+    <dd>The large number is your source count for that color. Under it is the largest requirement
+    any maindeck spell puts on that color, and the card named is the one putting it there. Green
+    clears, red does not. Colors with no sources and no requirement collapse to a single line.</dd>
 
     <dt>Every spell, worst first</dt>
     <dd>One row per card. <b>Sources</b> reads as have of needed, so 13 of 14 is one short.
@@ -164,7 +178,7 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
     count.</dd>
 
     <dt>needs both</dt>
-    <dd>One test with a condition per colour. You need both at once, so the worse colour decides
+    <dd>One test with a condition per color. You need both at once, so the worse color decides
     the row and the later turn decides when it becomes reliable. Each requirement also goes up by
     one, since two things have to line up rather than one.</dd>
 
@@ -172,7 +186,7 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
     <dd>Sideboard card, and a card whose cost you overrode on its line.</dd>
 
     <dt>Sources not counted on turn one</dt>
-    <dd>Lands that make a colour but could not have made it on turn one, each with the reason:
+    <dd>Lands that make a color but could not have made it on turn one, each with the reason:
     entered tapped, needs mana paid into it, carries a condition. They count again from turn two, so
     a card short on turn one is often fine one turn later.</dd>
 
@@ -180,11 +194,11 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
     <dd>Facts about this list specifically. What your fetchlands can find in it, whether your
     conditional lands are switched on, which sources make restricted mana, and anything that changes
     what your other cards do.</dd>
-  </dl>
+  </dl></details>
 
-  <h2>If a colour comes up short</h2>
+  <h2>If a color comes up short</h2>
   <div class="prose">
-    <p>Three options. Add sources of that colour. Accept the later turn, if you hold the card
+    <p>Three options. Add sources of that color. Accept the later turn, if you hold the card
     rather than curve out with it. Cut the card, if it wants a mana base the rest of the deck cannot
     pay for.</p>
     <p>Swapping a tapland for an untapped one moves the turn-one number and nothing else. From turn
@@ -193,69 +207,73 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
 </section>
 
 <section id="learn">
-  <h2>How your mana is counted</h2>
+  <details class="doc"><summary>How the numbers are worked out</summary>
   <div class="prose">
     <p>Requirement numbers are Frank Karsten's, from his 2022 update. A spell counts as castable
-    on curve when you have at least an 89 + M percent chance of drawing the coloured sources for it
+    on curve when you have at least an 89 + M percent chance of drawing the colored sources for it
     by turn M, conditional on having drawn M lands. One-drops are held to 90 percent, four-drops to
     93. He publishes the numbers at 20, 25 and 30 lands; the column here tracks your list and
     interpolates between them.</p>
     <p>Turn one counts untapped sources only. From turn two everything counts, tapped or not, on
     the reasoning that a tapland could have been played a turn earlier. That one rule is why a card
     can miss on turn one and clear on turn two without the deck changing.</p>
-    <p>Multicolour costs are split, looked up per colour, and each requirement raised by one. They
-    report as one row rather than one per colour. You need both at once, so the worse colour decides
+    <p>Multicolor costs are split, looked up per color, and each requirement raised by one. They
+    report as one row rather than one per color. You need both at once, so the worse color decides
     the row and the later turn decides when it becomes reliable.</p>
-    <p>Falling short is a statement about timing rather than a failure. One coloured pip wants 14
+    <p>Falling short is a statement about timing rather than a failure. One colored pip wants 14
     sources at 25 lands to be reliable on turn one, and 13 by turn two. Anything short is also given
     the turn your current sources do support it.</p>
     <p>Gush is where mana costs stop describing the cost. Free-cast, it wants two Islands in play,
     and two blue sources is a different quantity: Skycloud Expanse and Tainted Isle both make blue
     and neither is an Island. Land types written as pips count against lands carrying that type,
     plus any fetchland that can find one. Snow-Covered Islands carry the type.</p>
-    <p>There are no dual lands in the format. A fetchland finds a basic, so its colours come from
+    <p>There are no dual lands in the format. A fetchland finds a basic, so its colors come from
     the rest of your list. Flooded Strand in a deck with no Islands is not a blue source.</p>
     <p>Mana symbols overstate a lot of lands here. Skycloud Expanse prints white and blue and makes
     neither alone. Cabal Coffers and Gaea's Cradle make nothing on an empty board. The Tainted cycle
-    is colourless until a Swamp is out. Anything excluded from a count is listed above it with the
+    is colorless until a Swamp is out. Anything excluded from a count is listed above it with the
     reason.</p>
+    <p>The land count estimate is a different kind of number from everything else here. Source
+    requirements are hypergeometric probability, exact given their assumptions. The land count is
+    Karsten's regression on tournament decklists, 19.59 + 1.90 times average mana value, minus 0.28
+    per cheap draw or accelerant. He reports an R-squared of 0.395 and a root mean square error of
+    2.75, so the shown band is roughly one standard error either side. It is a sanity check, not a
+    target, and the decks it was fitted on did not include this format. Average mana value uses any
+    alternative cost you supplied, so a deck pitching four Foil is not charged for four four-drops.
+    Cheap accelerants are counted from the data; cheap card draw is not, because identifying it
+    means reading what a card does and Impulse never says "draw a card".</p>
     <p>Nonland mana is included. Dorks count half, because they die. Artifact accelerants count
     three quarters. Mox Diamond counts one. Rituals count zero: Dark Ritual multiplies black you
     already have, and it will not cast a turn-one Duress.</p>
-  </div>
-
+  </div></details>
 </section>
 
 <section id="generic">
-  <h2>Why a general-purpose calculator gets this format wrong</h2>
-  <div class="prose">
-    <p>The arithmetic is portable. The assumption underneath it is not, and the assumption is that
-    a card database can tell you what a card produces.</p>
-    <p>Look up Reflecting Pool and the data returns white, blue, black, red and green. On an empty
-    board it produces nothing. Cabal Coffers returns black and makes nothing without Swamps. Gaea's
-    Cradle returns green and makes nothing without creatures. Skycloud Expanse returns white and
-    blue and makes neither by itself. Read four Reflecting Pool that way and you have four sources
-    of every colour, which is wrong by four sources of every colour.</p>
-    <p>Fetchlands are fixing where duals exist. Counting one as a full source of everything it can
-    find is right in a format where it finds a shock land. Here it finds a basic and costs a life,
-    so it is a blue source if and only if you are playing Islands.</p>
-    <p>Costs are not always mana. Read Gush's mana cost and it is a five-mana blue spell, which is
-    not a thing anyone does with it.</p>
-    <p>Conditions disappear in a colour lookup. Tainted Field makes colour while a Swamp is out.
-    Temple of the False God is blank below five lands. Neither fact survives the question of what
-    colours a card can make.</p>
-    <p>And a large share of the mana here is not lands: rituals, Lotus Petal, Mox Diamond, the
-    dorks. Every one of them was read and classified by hand for this page.</p>
-  </div>
+  <h2>What a card database misses</h2>
+  <p class="prose">Card data records what a land could theoretically produce. These are the ones
+  where that is not what happens.</p>
+  <table class="miss"><thead><tr>
+    <th scope=col>Card</th><th scope=col>Recorded as</th><th scope=col>Makes on its own</th>
+  </tr></thead><tbody>
+    <tr><td>Reflecting Pool</td><td class="num">W U B R G</td><td>nothing</td></tr>
+    <tr><td>Skycloud Expanse</td><td class="num">W U</td><td>nothing</td></tr>
+    <tr><td>Cabal Coffers</td><td class="num">B</td><td>nothing, without Swamps</td></tr>
+    <tr><td>Gaea's Cradle</td><td class="num">G</td><td>nothing, without creatures</td></tr>
+    <tr><td>Tainted Field</td><td class="num">W B C</td><td>C, until a Swamp is out</td></tr>
+    <tr><td>Temple of the False God</td><td class="num">C</td><td>nothing, below five lands</td></tr>
+    <tr><td>Flooded Strand</td><td class="num">nothing</td><td>whatever your list plays</td></tr>
+  </tbody></table>
+  <p class="prose">Four Reflecting Pool read from that data is four sources of every color, which
+  is wrong by four sources of every color. Every mana source legal in the format was read and
+  classified by hand instead.</p>
 </section>
 
 <section id="ref">
-  <h2>Sources needed, by cost and land count</h2>
+  <details class="doc"><summary>The full table of source requirements</summary>
   <div id="ktable"></div>
-  <div class="prose" style="margin-top:14px">
-    <p>Most Premodern decks sit nearer 20 lands than 25, so the column that matches your list is
-    highlighted as you type.</p>
-  </div>
+  <p class="prose" style="margin-top:14px">Most Premodern decks sit nearer 20 lands than 25, so the
+  column matching your list is highlighted as you type.</p>
+  </details>
 </section>
 
 <footer>
@@ -266,7 +284,7 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
 
 <script>
 const COLORS=[["W","White","--w"],["U","Blue","--u"],["B","Black","--b"],
-              ["R","Red","--r"],["G","Green","--g"],["C","Colourless","--c"]];
+              ["R","Red","--r"],["G","Green","--g"],["C","Colorless","--c"]];
 const KARSTEN=[
  ["C",12,14,15],["CC",18,21,23],["CCC",19,23,27],["CCCC",20,24,29],
  ["1C",11,13,14],["1CC",15,18,21],["1CCC",17,21,24],["1CCCC",18,22,26],
@@ -380,7 +398,7 @@ function readCost(mc){
     else if(s.length===1 && "WUBRGC".includes(s)) pips[s]=(pips[s]||0)+1;
     else {
       // A land type may stand in as its own pip, for alternative costs that
-      // demand specific lands rather than a colour of mana.
+      // demand specific lands rather than a color of mana.
       const t=LANDTYPES.find(x=>x.toLowerCase()===s.toLowerCase());
       if(t) pips["type:"+t]=(pips["type:"+t]||0)+1;
     }
@@ -449,8 +467,8 @@ function render(text){
   }
 
   // ---- requirements --------------------------------------------------------
-  // One entry per spell. A gold card is a single test with a condition per colour:
-  // you need every colour at once, so the verdict is the worst half.
+  // One entry per spell. A gold card is a single test with a condition per color:
+  // you need every color at once, so the verdict is the worst half.
   const checks=[];
   for(const sp of spells){
     const {cmc,pips}=readCost(sp.cost);
@@ -472,7 +490,7 @@ function render(text){
           if(rounded[col]>=needed(later,landCount)+(gold?1:0)){ okTurn=T; break; }
         }
       }
-      parts.push({colour:col,pattern:pat,need,have,gap,okTurn});
+      parts.push({color:col,pattern:pat,need,have,gap,okTurn});
     }
     if(!parts.length) continue;
     const gap=Math.min(...parts.map(p=>p.gap));
@@ -489,8 +507,25 @@ function render(text){
   for(const c of checks){
     if(c.sideboard) continue;
     for(const p of c.parts){
-      if(p.colour.startsWith("type:")) continue;
-      if(!worst[p.colour]||p.need>worst[p.colour].need) worst[p.colour]={need:p.need,name:c.name};
+      if(p.color.startsWith("type:")) continue;
+      if(!worst[p.color]||p.need>worst[p.color].need) worst[p.color]={need:p.need,name:c.name};
+    }
+  }
+
+  // Karsten's land-count regression. Premodern has no companions and no MDFCs,
+  // so both correction terms are always zero here.
+  let landAdvice=null;
+  if(COSTS){
+    const md=spells.filter(x=>!x.sideboard);
+    let mv=0,n=0;
+    for(const sp of md){ mv+=readCost(sp.cost).cmc*sp.qty; n+=sp.qty; }
+    if(n>0){
+      const amv=mv/n;
+      let ramp=0;
+      for(const e of accel) if(e.card.cmc<=2 && e.card.abilities.length) ramp+=e.qty;
+      const est=19.59+1.90*amv-0.28*ramp;
+      landAdvice={amv,ramp,est,lo:Math.round(est-2.75),hi:Math.round(est+2.75),
+                  inside:landCount>=est-2.75&&landCount<=est+2.75};
     }
   }
 
@@ -500,6 +535,15 @@ function render(text){
   if(accel.length) h+=` &middot; <b>${accel.reduce((n,e)=>n+e.qty,0)}</b> other mana source${accel.length===1?"":"s"}`;
   if(!COSTS) h+=` &middot; card costs unavailable`;
   h+="</p>";
+  if(landAdvice){
+    const a=landAdvice;
+    h+=`<p class="estimate">Land count estimate <b>${a.lo} to ${a.hi}</b>`+
+       `<span class="est-note">average mana value ${a.amv.toFixed(2)}`+
+       (a.ramp?`, ${a.ramp} cheap accelerant${a.ramp===1?"":"s"} counted`:"")+
+       `. Subtract roughly one more land per three or four cheap card-draw spells, which this `+
+       `cannot identify for you. A regression, not a probability: its typical error is `+
+       `about three lands, so treat it as a sanity check rather than a target.</span></p>`;
+  }
 
   const present=COLORS.filter(([s])=>rounded[s]>0||worst[s]);
   const absent=COLORS.filter(([s])=>!rounded[s]&&!worst[s]);
@@ -524,15 +568,15 @@ function render(text){
 
   if(checks.length){
     h+="<h2>Every spell, worst first</h2>"+
-       "<table><caption class=\"sr\">Every spell in the decklist with its coloured source "+
+       "<table><caption class=\"sr\">Every spell in the decklist with its colored source "+
        "requirement, sorted by shortfall.</caption><thead><tr>"+
        "<th scope=col>Card</th><th scope=col class=num>Cost</th>"+
        "<th scope=col class=num>Sources</th><th scope=col>Reliable from</th>"+
        "</tr></thead><tbody>";
     for(const c of checks){
-      const label = p => p.colour.startsWith("type:")
-        ? `<span style="color:var(--c)">${p.colour.slice(5)}</span>`
-        : `<span style="color:var(${(COLORS.find(x=>x[0]===p.colour)||[,,"--c"])[2]})">${p.colour}</span>`;
+      const label = p => p.color.startsWith("type:")
+        ? `<span style="color:var(--c)">${p.color.slice(5)}</span>`
+        : `<span style="color:var(${(COLORS.find(x=>x[0]===p.color)||[,,"--c"])[2]})">${p.color}</span>`;
       const many = c.parts.length>1;
       const sources = c.parts.map(p=>{
         const pair=`${p.have} of ${p.need}`;
@@ -584,7 +628,7 @@ function render(text){
     if(c.fetches){
       const t=fetchTargets(c,lands), names=[...new Set(t.map(x=>x.card.name))];
       flags.push([c.name,names.length
-        ?`Finds ${names.join(", ")} in this list, and its colours are counted through those lands.`
+        ?`Finds ${names.join(", ")} in this list, and its colors are counted through those lands.`
         :`Finds nothing in this list.`]);
     }
     for(const a of (c.abilities||[])){
@@ -599,7 +643,7 @@ function render(text){
         flags.push([c.name,`Dead until you control ${a.condition.value} lands.`]);
       if(a.variable_amount) flags.push([c.name,`Output equals ${a.variable_amount.equals}, floor zero, so it is counted as zero here.`]);
       if(!a.self_sufficient&&symbolsOf(a.produces)&&!explained.has(c.name))
-        flags.push([c.name,`Costs mana to activate, so it cannot produce your first coloured mana.`]);
+        flags.push([c.name,`Costs mana to activate, so it cannot produce your first colored mana.`]);
     }
     if(c.one_shot&&nonlandColors(c).size)
       flags.push([c.name,`One shot, so it is not counted as a source. It multiplies mana you already have.`]);

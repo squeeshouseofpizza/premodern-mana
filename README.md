@@ -12,15 +12,15 @@ Deriving land behaviour from oracle text by pattern matching produces a new bug 
 deck you test. Some examples this data set handles correctly:
 
 - **Skycloud Expanse** is `{1}, {T}: Add {W}{U}`. Anything reading mana symbols records a
-  white-blue source. It produces nothing on its own and can never be your first coloured
+  white-blue source. It produces nothing on its own and can never be your first colored
   mana.
-- **Fetchlands** find basics, because Premodern has no dual lands. Their colours are a
+- **Fetchlands** find basics, because Premodern has no dual lands. Their colors are a
   property of your decklist, not of the card.
 - **Wasteland and Barbarian Ring** both sacrifice themselves. One is cracked early and one
   is held all game.
-- **Ancient Tomb** produces two colourless, not one.
+- **Ancient Tomb** produces two colorless, not one.
 - **Gemstone Mine** has three uses, not unlimited.
-- **The Tainted cycle** only produces colour if you control a Swamp.
+- **The Tainted cycle** only produces color if you control a Swamp.
 - **Riftstone Portal** changes what every other land in your deck does, from the graveyard.
 
 Every card was read individually and the reasoning is in its `notes` field.
@@ -52,7 +52,7 @@ every invariant in SCHEMA.md and fails loudly rather than shipping a broken buil
 
 1. Push the repo.
 2. Settings, Pages, deploy from branch, root of `main`.
-3. Confirm `https://USERNAME.github.io/REPO/` loads and the colour tiles populate. If the
+3. Confirm `https://USERNAME.github.io/REPO/` loads and the color tiles populate. If the
    page reports that card data did not load, `data/premodern_lands.json` is not where the
    page expects it.
 4. Put the contents of `fourthwall-embed.html` into a Fourthwall custom HTML section and
@@ -64,9 +64,9 @@ change ships by pushing here instead of re-pasting markup.
 
 ## What the calculator does
 
-Paste a decklist. Every spell is checked against the number of coloured sources it needs to be
+Paste a decklist. Every spell is checked against the number of colored sources it needs to be
 cast on curve, using Frank Karsten's 2022 tables interpolated to your actual land count, with his
-gold-card rule applied to multicolour spells and turn-one requirements measured against untapped
+gold-card rule applied to multicolor spells and turn-one requirements measured against untapped
 sources only. Results are sorted worst first, so the card your mana base actually fails is at the
 top.
 
@@ -75,7 +75,7 @@ the rest of your decklist, since the format has no duals. Lands whose symbols ov
 excluded from the turn-one count and listed with the reason. Nonland mana is included at Karsten's
 own weightings: dorks at half a source, artifact accelerants at three quarters, Mox Diamond at one,
 and one-shot effects at zero because a ritual multiplies mana you already have rather than making a
-colour available.
+color available.
 
 Two conveniences worth knowing. A line reading `Sideboard` separates the sideboard, which is then
 marked but still checked. And a card you never hard-cast can carry the cost you actually pay,
@@ -86,6 +86,12 @@ wants two Islands on the battlefield, not two blue sources, and a Skycloud Expan
 not an Island. Write a land type as its own pip and it is counted against the lands that carry
 that type, plus any fetchland that can find one: `4 Gush {Island}{Island}`,
 `4 Snuff Out {Swamp}`, `4 Daze {Island}`.
+
+It also estimates a land count from Karsten's regression, shown as a band rather than a number.
+That model has an R-squared of 0.395 and a root mean square error of 2.75 lands, so it is presented
+as a sanity check and labelled as a different kind of number from the source requirements, which are
+exact probability. Average mana value honours any alternative cost supplied on a line, so a deck
+that pitches its Foil is not charged for four-drops it never casts.
 
 It does not simulate. Source counts checked against published targets, Monte Carlo later.
 

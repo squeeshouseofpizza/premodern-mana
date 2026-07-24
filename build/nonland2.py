@@ -36,7 +36,7 @@ N.append(card("Fyndhorn Elves","creature","{G}",1,False,True,False,
   notes="Functionally identical to Llanowar Elves."))
 N.append(card("Birds of Paradise","creature","{G}",1,False,True,False,
   [ab(choice(*WUBRG),1,1,"{T}",True,True)],
-  notes="Any colour for one green, which makes it the best fixer in the pool that is not a land, and a flying blocker besides. Still a creature: it dies to everything, and it cannot tap the turn it arrives."))
+  notes="Any color for one green, which makes it the best fixer in the pool that is not a land, and a flying blocker besides. Still a creature: it dies to everything, and it cannot tap the turn it arrives."))
 N.append(card("Wirewood Elf","creature","{1}{G}",2,False,True,False,
   [ab(fixed("G"),1,1,"{T}",True,True)],notes="Two-mana Llanowar Elves."))
 N.append(card("Vine Trellis","creature","{1}{G}",2,False,True,False,
@@ -53,7 +53,7 @@ N.append(card("Sisters of the Flame","creature","{1}{R}{R}",3,False,True,False,
   [ab(fixed("R"),1,1,"{T}",True,True)],notes="Three mana for one red a turn."))
 N.append(card("Llanowar Dead","creature","{B}{G}",2,False,True,False,
   [ab(fixed("B"),1,1,"{T}",True,True)],
-  notes="Costs green and black and produces black only, so it does not fix, it converts a two-colour investment into one colour."))
+  notes="Costs green and black and produces black only, so it does not fix, it converts a two-color investment into one color."))
 N.append(card("Utopia Tree","creature","{1}{G}",2,False,True,False,
   [ab(choice(*WUBRG),1,1,"{T}",True,True)],
   notes="Birds of Paradise for one more mana and no flying."))
@@ -87,24 +87,24 @@ N.append(card("Blood Vassal","creature","{2}{B}",3,False,False,True,
   notes="Three mana in, two black back whenever you want them. Net negative overall; it exists to convert a body into black at instant speed."))
 N.append(card("Morgue Toad","creature","{2}{B}",3,False,False,True,
   [ab(fixed("U","R"),2,2,"Sacrifice this creature",True,False,sac=True)],
-  notes="Cast for black, cashes in for blue and red, so like the Invasion sacrifice lands its two abilities share no colours with its cost. Fixing across colour pairs, once."))
+  notes="Cast for black, cashes in for blue and red, so like the Invasion sacrifice lands its two abilities share no colors with its cost. Fixing across color pairs, once."))
 N.append(card("Tinder Wall","creature","{G}",1,False,False,True,
   [ab(fixed("R","R"),2,2,"Sacrifice this creature",True,False,sac=True)],
   [oa("activated","{R}, Sacrifice","Deals 2 damage to target creature it's blocking.",True)],
-  notes="One green becomes two red, which is a colour conversion and a net plus one, available the turn it lands. A defender in the meantime."))
+  notes="One green becomes two red, which is a color conversion and a net plus one, available the turn it lands. A defender in the meantime."))
 N.append(card("Skirk Prospector","creature","{R}",1,False,False,False,
   [ab(fixed("R"),1,1,"Sacrifice a Goblin",True,False,
       addl={"action":"sacrifice","count":1,"target":"Goblin"})],
   notes="Repeatable within a turn as long as Goblins keep dying, and it can sacrifice itself since it is a Goblin. No tap, so it works immediately. This is a combo engine in the shape of a mana creature."))
 N.append(card("Blood Celebrant","creature","{B}",1,False,False,False,
   [ab(choice(*WUBRG),1,0,"{B}, Pay 1 life",False,False)],
-  notes="Net zero: one black in, one of any colour out, plus a life. Pure conversion, so it can never produce your first coloured mana, but it converts an unlimited number of times per turn."))
+  notes="Net zero: one black in, one of any color out, plus a life. Pure conversion, so it can never produce your first colored mana, but it converts an unlimited number of times per turn."))
 N.append(card("Agent of Stromgald","creature","{R}",1,False,False,False,
   [ab(fixed("B"),1,0,"{R}",False,False)],
-  notes="Net zero red into black, repeatable, no tap. A colour converter rather than a mana source."))
+  notes="Net zero red into black, repeatable, no tap. A color converter rather than a mana source."))
 N.append(card("Bog Initiate","creature","{1}{B}",2,False,False,False,
   [ab(fixed("B"),1,0,"{1}",False,False)],
-  notes="Net zero generic into black, unlimited per turn. Useful only in a deck that needs to convert a lot of colourless into black in one turn."))
+  notes="Net zero generic into black, unlimited per turn. Useful only in a deck that needs to convert a lot of colorless into black in one turn."))
 N.append(card("Initiates of the Ebon Hand","creature","{B}",1,False,False,False,
   [ab(fixed("B"),1,0,"{1}",False,False,
       avail={"pattern":"self_destructs_past_a_threshold",
@@ -136,14 +136,14 @@ N.append(card("Bog Witch","creature","{2}{B}",3,False,True,False,
 N.append(card("Sea Scryer","creature","{1}{U}",2,False,True,False,
   [ab(fixed("C"),1,1,"{T}",True,True),
    ab(fixed("U"),1,0,"{1}, {T}",False,True)],
-  notes="Both abilities tap it, so they are mutually exclusive: colourless for free, or blue at net zero. Structurally the Homelands castle pattern on a creature."))
+  notes="Both abilities tap it, so they are mutually exclusive: colorless for free, or blue at net zero. Structurally the Homelands castle pattern on a creature."))
 N.append(card("Helionaut","creature","{2}{W}",3,False,True,False,
   [ab(choice(*WUBRG),1,0,"{1}, {T}",False,True)],
-  notes="Net zero fixing on a flying body. Cannot make your first coloured mana."))
+  notes="Net zero fixing on a flying body. Cannot make your first colored mana."))
 N.append(card("Ceta Disciple","creature","{U}",1,False,True,False,
   [ab(choice(*WUBRG),1,0,"{G}, {T}",False,True)],
   [oa("activated","{R}, {T}","Target creature gets +2/+0 until end of turn.")],
-  notes="Costs blue to cast, green to activate, and produces any colour at net zero. A three-colour card that fixes for none of them until you already have two."))
+  notes="Costs blue to cast, green to activate, and produces any color at net zero. A three-color card that fixes for none of them until you already have two."))
 N.append(card("Necra Disciple","creature","{B}",1,False,True,False,
   [ab(choice(*WUBRG),1,0,"{G}, {T}",False,True)],
   [oa("activated","{W}, {T}","Prevent the next 1 damage that would be dealt to any target this turn.")],
@@ -161,19 +161,19 @@ N.append(card("Rofellos, Llanowar Emissary","creature","{G}{G}",2,False,True,Fal
   notes="Legendary. Counts Forests by land type, so snow basics count and nonbasic green lands without the Forest type do not. Zero in a deck with no Forests, which is not hypothetical in a format where much of the fixing is nonbasic."))
 N.append(card("Wirewood Channeler","creature","{3}{G}",4,False,True,False,
   [ab({"mode":"choice_uniform_variable","options":WUBRG},0,None,"{T}",True,True,
-      var=V("the number of Elves on the battlefield","All the mana must be the same chosen colour."))],
-  notes="Like Priest of Titania but any single colour, which turns an Elf board into fixing as well as ramp. All the mana is one colour, not spread across several."))
+      var=V("the number of Elves on the battlefield","All the mana must be the same chosen color."))],
+  notes="Like Priest of Titania but any single color, which turns an Elf board into fixing as well as ramp. All the mana is one color, not spread across several."))
 N.append(card("Soldevi Adnate","creature","{1}{B}",2,False,True,False,
   [ab(varv("B"),0,None,"{T}, Sacrifice a black or artifact creature",True,True,
       addl={"action":"sacrifice","count":1,"target":"black or artifact creature"},
       var=V("the mana value of the sacrificed creature","Zero if the creature sacrificed costs zero."))],
   notes="Converts a large creature into black mana equal to its cost. Needs a specific kind of creature to eat, so in most decks it is dead weight and in a reanimator shell it is a ritual."))
 N.append(card("Harvester Druid","creature","{1}{G}",2,False,True,False,
-  [ab({"mode":"derived","source":"any colour a land you control could produce"},1,1,"{T}",True,True,
+  [ab({"mode":"derived","source":"any color a land you control could produce"},1,1,"{T}",True,True,
       cond={"type":"controls_land_producing_mana"})],
-  notes="Mirrors your own lands, so it fixes nothing your mana base cannot already do; what it does is add a second copy of a colour you are short of. Reflecting Pool on a body, with the same bootstrapping limit."))
+  notes="Mirrors your own lands, so it fixes nothing your mana base cannot already do; what it does is add a second copy of a color you are short of. Reflecting Pool on a body, with the same bootstrapping limit."))
 N.append(card("Quirion Explorer","creature","{1}{G}",2,False,True,False,
-  [ab({"mode":"derived","source":"any colour a land an opponent controls could produce"},1,1,"{T}",True,True,
+  [ab({"mode":"derived","source":"any color a land an opponent controls could produce"},1,1,"{T}",True,True,
       cond={"type":"opponent_controls_land_producing_mana"})],
   notes="Reads the opponent's lands, so its value is a matchup question and it can be blank in game one. Fellwar Stone on a body."))
 N.append(card("Benthic Explorers","creature","{3}{U}",4,False,True,False,
@@ -184,11 +184,11 @@ N.append(card("Benthic Explorers","creature","{3}{U}",4,False,True,False,
 N.append(card("Quirion Elves","creature","{1}{G}",2,False,True,False,
   [ab(fixed("G"),1,1,"{T}",True,True),
    ab(choice(*WUBRG),1,1,"{T}",True,True,
-      cond={"type":"colour_chosen_as_it_enters"})],
-  notes="The second colour is locked in as it enters and cannot be changed afterwards, so the choice mode here is a one-time decision. Both abilities tap it, so it makes one mana a turn, of green or of the named colour."))
+      cond={"type":"color_chosen_as_it_enters"})],
+  notes="The second color is locked in as it enters and cannot be changed afterwards, so the choice mode here is a one-time decision. Both abilities tap it, so it makes one mana a turn, of green or of the named color."))
 N.append(card("Urborg Elf","creature","{1}{G}",2,False,True,False,
   [ab(choice("B","G","U"),1,1,"{T}",True,True)],
-  notes="Three fixed colours, no choice made on entry, one mana a turn."))
+  notes="Three fixed colors, no choice made on entry, one mana a turn."))
 N.append(card("Pygmy Hippo","creature","{G}{U}",2,False,False,False,
   [ab(varv("C"),0,None,"Combat damage trigger when unblocked",True,False,
       cond={"type":"attacks_and_is_unblocked"},
@@ -203,16 +203,16 @@ N.append(card("Witch Engine","creature","{5}{B}",6,False,True,True,
 # --- from other zones and global effects ------------------------------------
 N.append(card("Elvish Spirit Guide","creature","{2}{G}",3,False,False,True,
   [ab(fixed("G"),1,1,"Exile this creature from your hand",True,False,zone="hand")],
-  notes="Free green from your hand without ever casting it, which makes it one of the very few cards in the pool that can produce coloured mana on turn one before any land is played. The zone field exists for this: counted as a battlefield source it would be wrong twice over, since it never enters play when used this way."))
+  notes="Free green from your hand without ever casting it, which makes it one of the very few cards in the pool that can produce colored mana on turn one before any land is played. The zone field exists for this: counted as a battlefield source it would be wrong twice over, since it never enters play when used this way."))
 N.append(card("Citanul Hierophants","creature","{3}{G}",4,False,True,False,
   [ab(fixed("G"),1,1,"{T}",True,True)],
   glob={"applies_to":"creatures you control","grants":"{T}: Add {G}","active_zone":"battlefield"},
-  notes="Grants every creature you control a green mana ability, so like Riftstone Portal it changes what other cards do and cannot be evaluated on its own. Its own tap ability comes from the same granted ability. Any count that sums per-card colours is wrong about your whole board while this is out, and the granted abilities are subject to summoning sickness on the creatures receiving them."))
+  notes="Grants every creature you control a green mana ability, so like Riftstone Portal it changes what other cards do and cannot be evaluated on its own. Its own tap ability comes from the same granted ability. Any count that sums per-card colors is wrong about your whole board while this is out, and the granted abilities are subject to summoning sickness on the creatures receiving them."))
 N.append(card("Birchlore Rangers","creature","{G}",1,False,False,False,
   [ab(choice(*WUBRG),1,1,"Tap two untapped Elves you control",True,False,
       addl={"action":"tap","count":2,"target":"untapped Elves you control"},
       cond={"type":"controls_n_creature_type","value":2,"creature_type":"Elf"})],
-  notes="The cost taps other Elves rather than using this creature's own tap symbol, so summoning-sick Elves can be tapped to pay it and this card works the turn it lands. Any colour, which makes an Elf board into full fixing."))
+  notes="The cost taps other Elves rather than using this creature's own tap symbol, so summoning-sick Elves can be tapped to pay it and this card works the turn it lands. Any color, which makes an Elf board into full fixing."))
 N.append(card("Seton, Krosan Protector","creature","{G}{G}{G}",3,False,False,False,
   [ab(fixed("G"),1,1,"Tap an untapped Druid you control",True,False,
       addl={"action":"tap","count":1,"target":"untapped Druid you control"},
@@ -220,7 +220,7 @@ N.append(card("Seton, Krosan Protector","creature","{G}{G}{G}",3,False,False,Fal
   notes="See Birchlore Rangers on the tapping cost. Legendary in effect through its name only; it is a Druid itself, so it can tap itself if it is not summoning sick, and other Druids regardless."))
 N.append(card("Quirion Sentinel","creature","{1}{G}",2,False,False,True,
   [ab(choice(*WUBRG),1,1,"When this creature enters",True,False)],
-  notes="One mana of any colour, once, on arrival. Net minus one against its casting cost, so it is a two-mana body that refunds one and fixes a colour."))
+  notes="One mana of any color, once, on arrival. Net minus one against its casting cost, so it is a two-mana body that refunds one and fixes a color."))
 N.append(card("Priest of Gix","creature","{2}{B}",3,False,False,True,
   [ab(fixed("B","B","B"),3,3,"When this creature enters",True,False)],
   notes="Three black on arrival for a three-mana creature, so it is free to cast in black-mana terms and leaves a body behind. The mana comes on the trigger, not from an activated ability, so it cannot be held for later."))
@@ -229,11 +229,11 @@ N.append(card("Priest of Gix","creature","{2}{B}",3,False,False,True,
 N.append(card("Soldevi Machinist","creature","{1}{U}",2,False,True,False,
   [ab(fixed("C","C"),2,2,"{T}",True,True,
       restr="Spend this mana only to activate abilities of artifacts.")],
-  notes="Two colourless a turn that cannot cast a single spell. The restriction field is doing all the work here, exactly as with Thran Turbine."))
+  notes="Two colorless a turn that cannot cast a single spell. The restriction field is doing all the work here, exactly as with Thran Turbine."))
 N.append(card("Adarkar Unicorn","creature","{1}{W}{W}",3,False,True,False,
   [ab(fixed("U"),1,1,"{T}",True,True,restr="Spend this mana only to pay cumulative upkeep costs."),
    ab(fixed("C","U"),2,2,"{T}",True,True,restr="Spend this mana only to pay cumulative upkeep costs.")],
-  notes="The printed ability offers a choice between one mana and two, which is a choice of amount rather than of colour, so it is split into two mutually exclusive entries. Both are restricted to paying cumulative upkeep, which makes this unusable as mana in almost every deck."))
+  notes="The printed ability offers a choice between one mana and two, which is a choice of amount rather than of color, so it is split into two mutually exclusive entries. Both are restricted to paying cumulative upkeep, which makes this unusable as mana in almost every deck."))
 
 # --- forest sacrifice -------------------------------------------------------
 N.append(card("Orcish Lumberjack","creature","{R}",1,False,True,False,

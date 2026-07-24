@@ -34,7 +34,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Four mana for a rock that taps for two. Net positive from the turn after it lands, and never fixes colour. cmc is the number that matters most on these: it cannot contribute anything before turn four on an untouched curve."
+    "notes": "Four mana for a rock that taps for two. Net positive from the turn after it lands, and never fixes color. cmc is the number that matters most on these: it cannot contribute anything before turn four on an untouched curve."
   },
   {
     "name": "Thran Dynamo",
@@ -72,7 +72,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Same slot as Sisay's Ring for one more mana of output. Colourless only."
+    "notes": "Same slot as Sisay's Ring for one more mana of output. Colorless only."
   },
   {
     "name": "Worn Powerstone",
@@ -227,7 +227,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Colourless mana that costs a card off the top each time. In a deck that wants a full graveyard the mill is upside; anywhere else it is a real cost and additional_cost records it rather than burying it in text."
+    "notes": "Colorless mana that costs a card off the top each time. In a deck that wants a full graveyard the mill is upside; anywhere else it is a real cost and additional_cost records it rather than burying it in text."
   },
   {
     "name": "White Mana Battery",
@@ -271,7 +271,7 @@
       }
     ],
     "global_effect": null,
-    "notes": "Reads like a storage artifact and works like a bad mana rock. Removing no counters still adds one, so amount is 1, not 0. Charging costs {2} and the tap, which buys one future mana for two present ones, so the storage mode is a net loss and the card is really a four-mana rock that taps for one of its colour."
+    "notes": "Reads like a storage artifact and works like a bad mana rock. Removing no counters still adds one, so amount is 1, not 0. Charging costs {2} and the tap, which buys one future mana for two present ones, so the storage mode is a net loss and the card is really a four-mana rock that taps for one of its color."
   },
   {
     "name": "Blue Mana Battery",
@@ -484,7 +484,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Three mana for a rock that taps for one of two colours. Fixes without accelerating, since it costs three to add one. Its value is entirely colour, which makes it the artifact answer to the same problem the Invasion taplands solve for free."
+    "notes": "Three mana for a rock that taps for one of two colors. Fixes without accelerating, since it costs three to add one. Its value is entirely color, which makes it the artifact answer to the same problem the Invasion taplands solve for free."
   },
   {
     "name": "Drake-Skull Cameo",
@@ -668,7 +668,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Two mana, enters tapped, then taps for one of its colour every turn. Genuine acceleration from the turn after it lands, and the enters_tapped flag is why it is not acceleration on the turn you cast it."
+    "notes": "Two mana, enters tapped, then taps for one of its color every turn. Genuine acceleration from the turn after it lands, and the enters_tapped flag is why it is not acceleration on the turn you cast it."
   },
   {
     "name": "Sky Diamond",
@@ -856,7 +856,7 @@
       }
     ],
     "global_effect": null,
-    "notes": "Net zero mana. You pay {2} and get two back, so this never accelerates anything; it converts generic mana into two specific colours and replaces itself with a card. self_sufficient is false, so it can never produce your first coloured mana, which is the same trap as the Odyssey filter lands from the same block."
+    "notes": "Net zero mana. You pay {2} and get two back, so this never accelerates anything; it converts generic mana into two specific colors and replaces itself with a card. self_sufficient is false, so it can never produce your first colored mana, which is the same trap as the Odyssey filter lands from the same block."
   },
   {
     "name": "Darkwater Egg",
@@ -1350,7 +1350,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Five mana for a 2/2 that can later be turned into three specific colours for one. The mana ability has no tap in its cost, so summoning sickness does not stop you cracking it the turn it arrives. Net plus two when used, but you have already paid five, so this is fixing for a deck that got there, not acceleration."
+    "notes": "Five mana for a 2/2 that can later be turned into three specific colors for one. The mana ability has no tap in its cost, so summoning sickness does not stop you cracking it the turn it arrives. Net plus two when used, but you have already paid five, so this is fixing for a deck that got there, not acceleration."
   },
   {
     "name": "Crosis's Attendant",
@@ -1542,7 +1542,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Free to cast and produces any colour once, so it is one of the few nonland cards in the pool that genuinely can be your first coloured mana on turn one. One shot: using it is the end of it. Net plus one on the turn it is used and minus a card overall."
+    "notes": "Free to cast and produces any color once, so it is one of the few nonland cards in the pool that genuinely can be your first colored mana on turn one. One shot: using it is the end of it. Net plus one on the turn it is used and minus a card overall."
   },
   {
     "name": "Mox Diamond",
@@ -1588,7 +1588,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Free, untapped, any colour, every turn, and the price is a land card discarded as it enters. Same replacement-effect shape as the Alliances lands, so entry_cost carries it: if you cannot or will not discard a land it goes straight to the graveyard. In land-count terms it is a wash, which is why it is played as fixing and tempo rather than as ramp."
+    "notes": "Free, untapped, any color, every turn, and the price is a land card discarded as it enters. Same replacement-effect shape as the Alliances lands, so entry_cost carries it: if you cannot or will not discard a land it goes straight to the graveyard. In land-count terms it is a wash, which is why it is played as fixing and tempo rather than as ramp."
   },
   {
     "name": "Lion's Eye Diamond",
@@ -1629,7 +1629,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Three mana of one colour for free, and the cost is your entire hand, which is why it only functions in decks built to empty their hand first or to use the mana before the discard matters. Instant speed only. produces uses choice_uniform because all three mana are the same chosen colour, not three colours."
+    "notes": "Three mana of one color for free, and the cost is your entire hand, which is why it only functions in decks built to empty their hand first or to use the mana before the discard matters. Instant speed only. produces uses choice_uniform because all three mana are the same chosen color, not three colors."
   },
   {
     "name": "Mana Cylix",
@@ -1669,7 +1669,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Pure colour conversion at net zero. Never accelerates and can never make your first coloured mana. The cheapest fixer in the pool and correspondingly the weakest."
+    "notes": "Pure color conversion at net zero. Never accelerates and can never make your first colored mana. The cheapest fixer in the pool and correspondingly the weakest."
   },
   {
     "name": "Celestial Prism",
@@ -1769,7 +1769,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Two modes, and only the colourless one is self-sufficient. Structurally identical to the Homelands castles: a colourless source with a conversion button attached."
+    "notes": "Two modes, and only the colorless one is self-sufficient. Structurally identical to the Homelands castles: a colorless source with a conversion button attached."
   },
   {
     "name": "Phyrexian Lens",
@@ -1809,7 +1809,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Any colour, no mana cost to activate, so self_sufficient is true and the price is a life per use. The artifact equivalent of City of Brass, except the life loss is part of the ability rather than a trigger on tapping."
+    "notes": "Any color, no mana cost to activate, so self_sufficient is true and the price is a life per use. The artifact equivalent of City of Brass, except the life loss is part of the ability rather than a trigger on tapping."
   },
   {
     "name": "Chromatic Sphere",
@@ -1951,7 +1951,7 @@
       }
     ],
     "global_effect": null,
-    "notes": "Two mana of one chosen colour for one, so net plus one, plus a delayed card. Not to be confused with the Modern Horizons card of a similar name, which is not in this pool."
+    "notes": "Two mana of one chosen color for one, so net plus one, plus a delayed card. Not to be confused with the Modern Horizons card of a similar name, which is not in this pool."
   },
   {
     "name": "Fellwar Stone",
@@ -1967,7 +1967,7 @@
       {
         "produces": {
           "mode": "derived",
-          "source": "any colour a land an opponent controls could produce"
+          "source": "any color a land an opponent controls could produce"
         },
         "amount": 1,
         "net_mana": 1,
@@ -1987,7 +1987,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Colours resolve against the opponent's board, not yours and not the card, so it is the one accelerant in the pool whose usefulness is a matchup question. Against a mono-coloured deck it is a one-colour rock; against nothing it produces nothing. Note it reads colours, so an opponent playing only colourless-producing lands leaves it dead."
+    "notes": "Colors resolve against the opponent's board, not yours and not the card, so it is the one accelerant in the pool whose usefulness is a matchup question. Against a mono-colored deck it is a one-color rock; against nothing it produces nothing. Note it reads colors, so an opponent playing only colorless-producing lands leaves it dead."
   },
   {
     "name": "Star Compass",
@@ -2003,7 +2003,7 @@
       {
         "produces": {
           "mode": "derived",
-          "source": "any colour a basic land you control could produce"
+          "source": "any color a basic land you control could produce"
         },
         "amount": 1,
         "net_mana": 1,
@@ -2063,7 +2063,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "The colour is chosen as it enters and then fixed for the rest of the game, so the choice mode here is a one-time decision rather than a per-activation one. Treat it as a rock of whichever colour you named."
+    "notes": "The color is chosen as it enters and then fixed for the rest of the game, so the choice mode here is a one-time decision rather than a per-activation one. Treat it as a rock of whichever color you named."
   },
   {
     "name": "Charmed Pendant",
@@ -2079,7 +2079,7 @@
       {
         "produces": {
           "mode": "derived",
-          "source": "the coloured mana symbols in the milled card's mana cost"
+          "source": "the colored mana symbols in the milled card's mana cost"
         },
         "amount": 0,
         "net_mana": null,
@@ -2092,8 +2092,8 @@
         "condition": null,
         "sacrifices_self": false,
         "variable_amount": {
-          "equals": "the number of coloured pips on the card milled",
-          "note": "Zero if the milled card is a land or has no coloured pips."
+          "equals": "the number of colored pips on the card milled",
+          "note": "Zero if the milled card is a land or has no colored pips."
         },
         "availability": null,
         "restriction": null,
@@ -2188,7 +2188,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "See Ashnod's Altar. One mana instead of two, but any colour, and likewise unlimited within a turn."
+    "notes": "See Ashnod's Altar. One mana instead of two, but any color, and likewise unlimited within a turn."
   },
   {
     "name": "Cathodion",
@@ -2310,7 +2310,7 @@
       }
     ],
     "global_effect": null,
-    "notes": "Charging costs {1} and the tap to buy one future colourless, so like the mana batteries the storage mode loses tempo. The floor is one, not zero."
+    "notes": "Charging costs {1} and the tap to buy one future colorless, so like the mana batteries the storage mode loses tempo. The floor is one, not zero."
   },
   {
     "name": "Jeweled Amulet",
@@ -2369,7 +2369,7 @@
       {
         "produces": {
           "mode": "fixed_variable",
-          "unit": "any one colour"
+          "unit": "any one color"
         },
         "amount": 0,
         "net_mana": null,
@@ -2478,7 +2478,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Two free colourless every upkeep that cannot pay for a single spell. The restriction field exists for this card: counted as a source without it, it would look like the best accelerant in the format. It pays for activated abilities only."
+    "notes": "Two free colorless every upkeep that cannot pay for a single spell. The restriction field exists for this card: counted as a source without it, it would look like the best accelerant in the format. It pays for activated abilities only."
   },
   {
     "name": "Diamond Kaleidoscope",
@@ -2527,12 +2527,12 @@
       {
         "type": "activated",
         "cost": "{3}, {T}",
-        "effect": "Create a 0/1 colourless Prism artifact creature token.",
+        "effect": "Create a 0/1 colorless Prism artifact creature token.",
         "sacrifices_self": false
       }
     ],
     "global_effect": null,
-    "notes": "Two steps and both are expensive: four to cast, then three and a tap per token, and each token converts into exactly one mana of any colour. Net deeply negative as mana; it exists for decks that want the tokens themselves."
+    "notes": "Two steps and both are expensive: four to cast, then three and a tap per token, and each token converts into exactly one mana of any color. Net deeply negative as mana; it exists for decks that want the tokens themselves."
   },
   {
     "name": "Metalworker",
@@ -2609,7 +2609,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Seven mana for a flying body that taps for one of any colour. By the time this is castable the fixing is decoration."
+    "notes": "Seven mana for a flying body that taps for one of any color. By the time this is castable the fixing is decoration."
   },
   {
     "name": "Llanowar Elves",
@@ -2721,7 +2721,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Any colour for one green, which makes it the best fixer in the pool that is not a land, and a flying blocker besides. Still a creature: it dies to everything, and it cannot tap the turn it arrives."
+    "notes": "Any color for one green, which makes it the best fixer in the pool that is not a land, and a flying blocker besides. Still a creature: it dies to everything, and it cannot tap the turn it arrives."
   },
   {
     "name": "Wirewood Elf",
@@ -2944,7 +2944,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Costs green and black and produces black only, so it does not fix, it converts a two-colour investment into one colour."
+    "notes": "Costs green and black and produces black only, so it does not fix, it converts a two-color investment into one color."
   },
   {
     "name": "Utopia Tree",
@@ -3299,7 +3299,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Cast for black, cashes in for blue and red, so like the Invasion sacrifice lands its two abilities share no colours with its cost. Fixing across colour pairs, once."
+    "notes": "Cast for black, cashes in for blue and red, so like the Invasion sacrifice lands its two abilities share no colors with its cost. Fixing across color pairs, once."
   },
   {
     "name": "Tinder Wall",
@@ -3343,7 +3343,7 @@
       }
     ],
     "global_effect": null,
-    "notes": "One green becomes two red, which is a colour conversion and a net plus one, available the turn it lands. A defender in the meantime."
+    "notes": "One green becomes two red, which is a color conversion and a net plus one, available the turn it lands. A defender in the meantime."
   },
   {
     "name": "Skirk Prospector",
@@ -3423,7 +3423,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Net zero: one black in, one of any colour out, plus a life. Pure conversion, so it can never produce your first coloured mana, but it converts an unlimited number of times per turn."
+    "notes": "Net zero: one black in, one of any color out, plus a life. Pure conversion, so it can never produce your first colored mana, but it converts an unlimited number of times per turn."
   },
   {
     "name": "Agent of Stromgald",
@@ -3459,7 +3459,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Net zero red into black, repeatable, no tap. A colour converter rather than a mana source."
+    "notes": "Net zero red into black, repeatable, no tap. A color converter rather than a mana source."
   },
   {
     "name": "Bog Initiate",
@@ -3495,7 +3495,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Net zero generic into black, unlimited per turn. Useful only in a deck that needs to convert a lot of colourless into black in one turn."
+    "notes": "Net zero generic into black, unlimited per turn. Useful only in a deck that needs to convert a lot of colorless into black in one turn."
   },
   {
     "name": "Initiates of the Ebon Hand",
@@ -3845,7 +3845,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Both abilities tap it, so they are mutually exclusive: colourless for free, or blue at net zero. Structurally the Homelands castle pattern on a creature."
+    "notes": "Both abilities tap it, so they are mutually exclusive: colorless for free, or blue at net zero. Structurally the Homelands castle pattern on a creature."
   },
   {
     "name": "Helionaut",
@@ -3885,7 +3885,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Net zero fixing on a flying body. Cannot make your first coloured mana."
+    "notes": "Net zero fixing on a flying body. Cannot make your first colored mana."
   },
   {
     "name": "Ceta Disciple",
@@ -3932,7 +3932,7 @@
       }
     ],
     "global_effect": null,
-    "notes": "Costs blue to cast, green to activate, and produces any colour at net zero. A three-colour card that fixes for none of them until you already have two."
+    "notes": "Costs blue to cast, green to activate, and produces any color at net zero. A three-color card that fixes for none of them until you already have two."
   },
   {
     "name": "Necra Disciple",
@@ -4086,7 +4086,7 @@
         "sacrifices_self": false,
         "variable_amount": {
           "equals": "the number of Elves on the battlefield",
-          "note": "All the mana must be the same chosen colour."
+          "note": "All the mana must be the same chosen color."
         },
         "availability": null,
         "restriction": null,
@@ -4096,7 +4096,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Like Priest of Titania but any single colour, which turns an Elf board into fixing as well as ramp. All the mana is one colour, not spread across several."
+    "notes": "Like Priest of Titania but any single color, which turns an Elf board into fixing as well as ramp. All the mana is one color, not spread across several."
   },
   {
     "name": "Soldevi Adnate",
@@ -4153,7 +4153,7 @@
       {
         "produces": {
           "mode": "derived",
-          "source": "any colour a land you control could produce"
+          "source": "any color a land you control could produce"
         },
         "amount": 1,
         "net_mana": 1,
@@ -4173,7 +4173,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Mirrors your own lands, so it fixes nothing your mana base cannot already do; what it does is add a second copy of a colour you are short of. Reflecting Pool on a body, with the same bootstrapping limit."
+    "notes": "Mirrors your own lands, so it fixes nothing your mana base cannot already do; what it does is add a second copy of a color you are short of. Reflecting Pool on a body, with the same bootstrapping limit."
   },
   {
     "name": "Quirion Explorer",
@@ -4189,7 +4189,7 @@
       {
         "produces": {
           "mode": "derived",
-          "source": "any colour a land an opponent controls could produce"
+          "source": "any color a land an opponent controls could produce"
         },
         "amount": 1,
         "net_mana": 1,
@@ -4299,7 +4299,7 @@
         "additional_cost": null,
         "self_sufficient": true,
         "condition": {
-          "type": "colour_chosen_as_it_enters"
+          "type": "color_chosen_as_it_enters"
         },
         "sacrifices_self": false,
         "variable_amount": null,
@@ -4311,7 +4311,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "The second colour is locked in as it enters and cannot be changed afterwards, so the choice mode here is a one-time decision. Both abilities tap it, so it makes one mana a turn, of green or of the named colour."
+    "notes": "The second color is locked in as it enters and cannot be changed afterwards, so the choice mode here is a one-time decision. Both abilities tap it, so it makes one mana a turn, of green or of the named color."
   },
   {
     "name": "Urborg Elf",
@@ -4349,7 +4349,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Three fixed colours, no choice made on entry, one mana a turn."
+    "notes": "Three fixed colors, no choice made on entry, one mana a turn."
   },
   {
     "name": "Pygmy Hippo",
@@ -4470,7 +4470,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Free green from your hand without ever casting it, which makes it one of the very few cards in the pool that can produce coloured mana on turn one before any land is played. The zone field exists for this: counted as a battlefield source it would be wrong twice over, since it never enters play when used this way."
+    "notes": "Free green from your hand without ever casting it, which makes it one of the very few cards in the pool that can produce colored mana on turn one before any land is played. The zone field exists for this: counted as a battlefield source it would be wrong twice over, since it never enters play when used this way."
   },
   {
     "name": "Citanul Hierophants",
@@ -4512,7 +4512,7 @@
       "duration": "permanent",
       "active_zone": "battlefield"
     },
-    "notes": "Grants every creature you control a green mana ability, so like Riftstone Portal it changes what other cards do and cannot be evaluated on its own. Its own tap ability comes from the same granted ability. Any count that sums per-card colours is wrong about your whole board while this is out, and the granted abilities are subject to summoning sickness on the creatures receiving them."
+    "notes": "Grants every creature you control a green mana ability, so like Riftstone Portal it changes what other cards do and cannot be evaluated on its own. Its own tap ability comes from the same granted ability. Any count that sums per-card colors is wrong about your whole board while this is out, and the granted abilities are subject to summoning sickness on the creatures receiving them."
   },
   {
     "name": "Birchlore Rangers",
@@ -4560,7 +4560,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "The cost taps other Elves rather than using this creature's own tap symbol, so summoning-sick Elves can be tapped to pay it and this card works the turn it lands. Any colour, which makes an Elf board into full fixing."
+    "notes": "The cost taps other Elves rather than using this creature's own tap symbol, so summoning-sick Elves can be tapped to pay it and this card works the turn it lands. Any color, which makes an Elf board into full fixing."
   },
   {
     "name": "Seton, Krosan Protector",
@@ -4643,7 +4643,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "One mana of any colour, once, on arrival. Net minus one against its casting cost, so it is a two-mana body that refunds one and fixes a colour."
+    "notes": "One mana of any color, once, on arrival. Net minus one against its casting cost, so it is a two-mana body that refunds one and fixes a color."
   },
   {
     "name": "Priest of Gix",
@@ -4718,7 +4718,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Two colourless a turn that cannot cast a single spell. The restriction field is doing all the work here, exactly as with Thran Turbine."
+    "notes": "Two colorless a turn that cannot cast a single spell. The restriction field is doing all the work here, exactly as with Thran Turbine."
   },
   {
     "name": "Adarkar Unicorn",
@@ -4775,7 +4775,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "The printed ability offers a choice between one mana and two, which is a choice of amount rather than of colour, so it is split into two mutually exclusive entries. Both are restricted to paying cumulative upkeep, which makes this unusable as mana in almost every deck."
+    "notes": "The printed ability offers a choice between one mana and two, which is a choice of amount rather than of color, so it is split into two mutually exclusive entries. Both are restricted to paying cumulative upkeep, which makes this unusable as mana in almost every deck."
   },
   {
     "name": "Orcish Lumberjack",
@@ -5223,7 +5223,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Colourless, contingent entirely on the opponent's graveyard, so it is unreliable by construction and gains life alongside."
+    "notes": "Colorless, contingent entirely on the opponent's graveyard, so it is unreliable by construction and gains life alongside."
   },
   {
     "name": "Energy Tap",
@@ -5264,7 +5264,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Turns a creature's cost into colourless for one blue, sorcery speed, and the creature is only tapped rather than sacrificed."
+    "notes": "Turns a creature's cost into colorless for one blue, sorcery speed, and the creature is only tapped rather than sacrificed."
   },
   {
     "name": "Metamorphosis",
@@ -5303,7 +5303,7 @@
         "sacrifices_self": false,
         "variable_amount": {
           "equals": "one plus the sacrificed creature's mana value",
-          "note": "All the mana is one chosen colour."
+          "note": "All the mana is one chosen color."
         },
         "availability": null,
         "restriction": "Spend this mana only to cast creature spells.",
@@ -5313,7 +5313,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Restricted to creature spells, which makes it a specific engine piece rather than acceleration. All the mana is a single chosen colour."
+    "notes": "Restricted to creature spells, which makes it a specific engine piece rather than acceleration. All the mana is a single chosen color."
   },
   {
     "name": "Drain Power",
@@ -5340,7 +5340,7 @@
         "sacrifices_self": false,
         "variable_amount": {
           "equals": "the total mana the targeted player's lands produce",
-          "note": "They choose which abilities to activate, so the colours are not yours to pick."
+          "note": "They choose which abilities to activate, so the colors are not yours to pick."
         },
         "availability": null,
         "restriction": null,
@@ -5350,7 +5350,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Empties an opponent's lands into your pool. The target chooses which mana abilities to activate, so you cannot rely on colours, and against a tapped-out opponent it produces nothing."
+    "notes": "Empties an opponent's lands into your pool. The target chooses which mana abilities to activate, so you cannot rely on colors, and against a tapped-out opponent it produces nothing."
   },
   {
     "name": "Eladamri's Vineyard",
@@ -5507,7 +5507,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Converts your board into mana one land at a time, unlimited within a turn and no tap required. Colours resolve against whatever you sacrifice, so it reads the land file rather than carrying colours of its own."
+    "notes": "Converts your board into mana one land at a time, unlimited within a turn and no tap required. Colors resolve against whatever you sacrifice, so it reads the land file rather than carrying colors of its own."
   },
   {
     "name": "Food Chain",
@@ -5545,7 +5545,7 @@
         "sacrifices_self": false,
         "variable_amount": {
           "equals": "one plus the exiled creature's mana value",
-          "note": "All the mana is one chosen colour."
+          "note": "All the mana is one chosen color."
         },
         "availability": null,
         "restriction": "Spend this mana only to cast creature spells.",
@@ -5636,7 +5636,7 @@
     ],
     "other_abilities": [],
     "global_effect": null,
-    "notes": "Colourless only, and it scales with tribal density rather than with anything the mana base does. Zero in a deck of unrelated creatures."
+    "notes": "Colorless only, and it scales with tribal density rather than with anything the mana base does. Zero in a deck of unrelated creatures."
   },
   {
     "name": "Black Market",
@@ -5780,7 +5780,7 @@
         "sacrifices_self": false,
         "variable_amount": {
           "equals": "the number of Islands target opponent controls",
-          "note": "Zero against a deck with no Islands. All the mana is one chosen colour."
+          "note": "Zero against a deck with no Islands. All the mana is one chosen color."
         },
         "availability": {
           "pattern": "once_each_turn",
@@ -5830,12 +5830,12 @@
     "other_abilities": [],
     "global_effect": {
       "applies_to": "the enchanted land",
-      "grants": "adds an additional one mana of any colour whenever it is tapped for mana",
+      "grants": "adds an additional one mana of any color whenever it is tapped for mana",
       "kind": "extra_mana_on_tap",
       "duration": "permanent",
       "active_zone": "battlefield"
     },
-    "notes": "See Wild Growth, with the extra mana being any colour, which makes it fixing as well as ramp."
+    "notes": "See Wild Growth, with the extra mana being any color, which makes it fixing as well as ramp."
   },
   {
     "name": "Overgrowth",
@@ -6019,7 +6019,7 @@
     "other_abilities": [],
     "global_effect": {
       "applies_to": "every Mountain, depending on the parity of permanents in play",
-      "grants": "adds an additional {R} on odd turns and produces only colourless on even ones",
+      "grants": "adds an additional {R} on odd turns and produces only colorless on even ones",
       "kind": "conditional_type_or_output_change",
       "duration": "permanent",
       "active_zone": "battlefield"
@@ -6061,7 +6061,7 @@
     "other_abilities": [],
     "global_effect": {
       "applies_to": "the enchanted creature",
-      "grants": "gains \"{T}: Add one mana of any colour\"",
+      "grants": "gains \"{T}: Add one mana of any color\"",
       "kind": "granted_ability",
       "duration": "permanent",
       "active_zone": "battlefield"
@@ -6088,7 +6088,7 @@
     "other_abilities": [],
     "global_effect": {
       "applies_to": "every land you control",
-      "grants": "gains \"{T}: Add two mana of any one colour\"",
+      "grants": "gains \"{T}: Add two mana of any one color\"",
       "kind": "granted_ability",
       "duration": "permanent",
       "active_zone": "battlefield"
@@ -6109,7 +6109,7 @@
     "other_abilities": [],
     "global_effect": {
       "applies_to": "lands you control",
-      "grants": "gain \"{T}: Add one mana of any colour\"",
+      "grants": "gain \"{T}: Add one mana of any color\"",
       "kind": "granted_ability",
       "duration": "until end of turn",
       "active_zone": "battlefield"

@@ -42,8 +42,8 @@ disagree, this file is right.
 | `net_mana` | `amount` minus any mana in the activation cost. Null when variable. This is the number that matters: Aysen Abbey's `{1}, {T}: Add {W}` nets zero and its `{2}, {T}` mode nets minus one. |
 | `cost` | Human-readable activation cost. Not intended for parsing. |
 | `additional_cost` | Structured non-mana cost that is not sacrificing this land, such as Lake of the Dead eating a Swamp. |
-| `self_sufficient` | Can this ability be activated with no other mana available? **False for every filter land.** A calculator asking "can this be my first coloured source" filters on `produces` containing a colour and this being true. This one field prevents the entire Skycloud Expanse class of bug. |
-| `condition` | Structured requirement, or null. Types in use: `controls_land_type`, `controls_n_lands`, `controls_other_land_producing_mana`, `controls_coloured_permanent`, `opponent_may_prevent`. |
+| `self_sufficient` | Can this ability be activated with no other mana available? **False for every filter land.** A calculator asking "can this be my first colored source" filters on `produces` containing a color and this being true. This one field prevents the entire Skycloud Expanse class of bug. |
+| `condition` | Structured requirement, or null. Types in use: `controls_land_type`, `controls_n_lands`, `controls_other_land_producing_mana`, `controls_colored_permanent`, `opponent_may_prevent`. |
 | `sacrifices_self` | Does activating this ability sacrifice this land. |
 | `variable_amount` | Present when the amount depends on game state. Carries `equals`, `accrual`, and `requires_untap_before_use`. |
 | `availability` | Restriction that using this ability imposes on future turns. Patterns in use: `every_other_turn`, `skips_next_untap`, `one_activation_per_land_drop`, `requires_upkeep_payment`, `consumes_a_land_per_use`, `consumes_land_drop_each_turn`. |
@@ -54,10 +54,10 @@ disagree, this file is right.
   Balduvian Trading Post's `{T}: Add {C}{R}` is `["C","R"]`.
 - `choice` — `options` lists the symbols, one of which you pick. Always `amount: 1`.
   A painland's `{T}: Add {W} or {U}` is `["W","U"]`.
-- `choice_uniform` — `count` mana, all of a single chosen colour. Lotus Vale only.
+- `choice_uniform` — `count` mana, all of a single chosen color. Lotus Vale only.
 - `fixed_variable` — `unit` is the single symbol, repeated a variable number of times.
   The storage lands, Gaea's Cradle, Serra's Sanctum, Cabal Coffers.
-- `derived` — colours resolve against the board. Reflecting Pool and Meteor Crater.
+- `derived` — colors resolve against the board. Reflecting Pool and Meteor Crater.
 
 The `fixed` and `choice` distinction is the single most important thing in this schema.
 Both produce two mana symbols in their text and they mean opposite things.

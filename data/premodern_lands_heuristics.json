@@ -58,15 +58,15 @@
     {
       "name": "Bad River",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Island and Swamp cards in the decklist",
+      "assumed_colors": "colors of the Island and Swamp cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
-      "basis": "Counts as a source of whatever it can actually find in this deck. Zero for a colour with no fetchable land."
+      "basis": "Counts as a source of whatever it can actually find in this deck. Zero for a color with no fetchable land."
     },
     {
       "name": "Flood Plain",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Plains and Island cards in the decklist",
+      "assumed_colors": "colors of the Plains and Island cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
       "basis": "See Bad River."
@@ -74,7 +74,7 @@
     {
       "name": "Grasslands",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Forest and Plains cards in the decklist",
+      "assumed_colors": "colors of the Forest and Plains cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
       "basis": "See Bad River."
@@ -82,7 +82,7 @@
     {
       "name": "Mountain Valley",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Mountain and Forest cards in the decklist",
+      "assumed_colors": "colors of the Mountain and Forest cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
       "basis": "See Bad River."
@@ -90,7 +90,7 @@
     {
       "name": "Rocky Tar Pit",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Swamp and Mountain cards in the decklist",
+      "assumed_colors": "colors of the Swamp and Mountain cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
       "basis": "See Bad River."
@@ -98,10 +98,10 @@
     {
       "name": "Reflecting Pool",
       "assumed_amount": 1,
-      "assumed_colors": "union of the colours of the other lands in the decklist",
+      "assumed_colors": "union of the colors of the other lands in the decklist",
       "floor": 0,
       "confidence": "opinion",
-      "basis": "One mana, and colour identity borrowed from the rest of the mana base. Produces nothing if it is the only mana-producing land you control."
+      "basis": "One mana, and color identity borrowed from the rest of the mana base. Produces nothing if it is the only mana-producing land you control."
     },
     {
       "name": "Gaea's Cradle",
@@ -162,26 +162,26 @@
     {
       "name": "Terrain Generator",
       "assumed_amount": 1,
-      "assumed_colors": "colourless",
+      "assumed_colors": "colorless",
       "floor": 0,
       "confidence": "opinion",
-      "basis": "Count only its own colourless mana. The basic it deploys should be counted as that basic, not as extra output from this card."
+      "basis": "Count only its own colorless mana. The basic it deploys should be counted as that basic, not as extra output from this card."
     },
     {
       "name": "Meteor Crater",
       "assumed_amount": 1,
-      "assumed_colors": "colours of your own non-land permanents once a board exists",
+      "assumed_colors": "colors of your own non-land permanents once a board exists",
       "floor": 0,
       "confidence": "opinion",
-      "basis": "Zero with only lands on the battlefield, since lands are colourless. Cannot cast your first spell, only later ones in a colour you already have out."
+      "basis": "Zero with only lands on the battlefield, since lands are colorless. Cannot cast your first spell, only later ones in a color you already have out."
     },
     {
       "name": "Terminal Moraine",
       "assumed_amount": 1,
-      "assumed_colors": "colourless",
+      "assumed_colors": "colorless",
       "floor": 0,
       "confidence": "opinion",
-      "basis": "Count only its own colourless mana. The basic it fetches should be counted as that basic, not as extra output from this card."
+      "basis": "Count only its own colorless mana. The basic it fetches should be counted as that basic, not as extra output from this card."
     },
     {
       "name": "Cabal Coffers",
@@ -202,15 +202,15 @@
     {
       "name": "Bloodstained Mire",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Swamp and Mountain cards in the decklist",
+      "assumed_colors": "colors of the Swamp and Mountain cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
-      "basis": "Counts as a source of whatever it can actually find in this deck. Zero for a colour with no fetchable land. Costs 1 life and can be cracked the turn it is played."
+      "basis": "Counts as a source of whatever it can actually find in this deck. Zero for a color with no fetchable land. Costs 1 life and can be cracked the turn it is played."
     },
     {
       "name": "Flooded Strand",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Plains and Island cards in the decklist",
+      "assumed_colors": "colors of the Plains and Island cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
       "basis": "See Bloodstained Mire."
@@ -218,7 +218,7 @@
     {
       "name": "Polluted Delta",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Island and Swamp cards in the decklist",
+      "assumed_colors": "colors of the Island and Swamp cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
       "basis": "See Bloodstained Mire."
@@ -226,7 +226,7 @@
     {
       "name": "Windswept Heath",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Forest and Plains cards in the decklist",
+      "assumed_colors": "colors of the Forest and Plains cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
       "basis": "See Bloodstained Mire."
@@ -234,7 +234,7 @@
     {
       "name": "Wooded Foothills",
       "assumed_amount": 1,
-      "assumed_colors": "colours of the Mountain and Forest cards in the decklist",
+      "assumed_colors": "colors of the Mountain and Forest cards in the decklist",
       "floor": 0,
       "confidence": "opinion",
       "basis": "See Bloodstained Mire."

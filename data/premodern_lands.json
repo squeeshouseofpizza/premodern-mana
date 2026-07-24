@@ -245,7 +245,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "The damage is a triggered ability on becoming tapped, not a cost on the mana ability. Three consequences a calculator should not blur together: the mana ability itself is free and unconditional, so this is a genuine untapped five-colour source on turn one; the damage cannot be declined or routed around by paying differently; and it fires on any tap for any reason, including taps by opponents' effects and taps for abilities that are not mana abilities. Contrast the Ice Age painlands, where the damage is part of one specific ability's effect and the colourless mode avoids it entirely."
+    "notes": "The damage is a triggered ability on becoming tapped, not a cost on the mana ability. Three consequences a calculator should not blur together: the mana ability itself is free and unconditional, so this is a genuine untapped five-color source on turn one; the damage cannot be declined or routed around by paying differently; and it fires on any tap for any reason, including taps by opponents' effects and taps for abilities that are not mana abilities. Contrast the Ice Age painlands, where the damage is part of one specific ability's effect and the colorless mode avoids it entirely."
   },
   {
     "name": "Oasis",
@@ -268,7 +268,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Produces no mana at all. Kept in the file with an empty abilities array rather than omitted, so a calculator reading a decklist counts it as a land that is not a mana source instead of failing the lookup and guessing. Any consumer computing coloured sources should iterate abilities, which is empty here, not assume every land contributes."
+    "notes": "Produces no mana at all. Kept in the file with an empty abilities array rather than omitted, so a calculator reading a decklist counts it as a land that is not a mana source instead of failing the lookup and guessing. Any consumer computing colored sources should iterate abilities, which is empty here, not assume every land contributes."
   },
   {
     "name": "Mishra's Factory",
@@ -319,7 +319,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless only; never a source of coloured mana. Animation costs {1} and does not tap it, so it can be animated and still tapped for mana the same turn. The pump ability costs {T} and competes directly with the mana ability, so a turn spent pumping is a turn this land produces nothing."
+    "notes": "Colorless only; never a source of colored mana. Animation costs {1} and does not tap it, so it can be animated and still tapped for mana the same turn. The pump ability costs {T} and competes directly with the mana ability, so a turn spent pumping is a turn this land produces nothing."
   },
   {
     "name": "Urza's Mine",
@@ -515,7 +515,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "See Urza's Mine. Tower is the only one of the three that goes to 3, so assembled Tron is 7 colourless, not 6."
+    "notes": "See Urza's Mine. Tower is the only one of the three that goes to 3, so assembled Tron is 7 colorless, not 6."
   },
   {
     "name": "Safe Haven",
@@ -1152,7 +1152,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Two separate abilities, not one ability with a rider. The colourless mode is free of damage, which is why these are not simply worse City of Brass: a deck using one for generic costs pays nothing. The 1 damage in the second ability is part of that ability's effect rather than a cost, so it cannot be declined once that mode is chosen, but choosing the colourless mode avoids it entirely. Damage source is the land, so it is damage and not life loss, which matters for prevention effects. Untapped, unconditional, unlimited: a real turn-one source of both its colours."
+    "notes": "Two separate abilities, not one ability with a rider. The colorless mode is free of damage, which is why these are not simply worse City of Brass: a deck using one for generic costs pays nothing. The 1 damage in the second ability is part of that ability's effect rather than a cost, so it cannot be declined once that mode is chosen, but choosing the colorless mode avoids it entirely. Damage source is the land, so it is damage and not life loss, which matters for prevention effects. Untapped, unconditional, unlimited: a real turn-one source of both its colors."
   },
   {
     "name": "Underground River",
@@ -1435,7 +1435,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Enters untapped and has no activation cost, so on the turn you use it this is a clean dual source and it can be a turn-one coloured source. The cost is paid in tempo afterwards: usable on your first turn, then not your second, then yes your third. total_activations is null because the number of uses is unlimited over a long enough game; the constraint is rate, not total, and it lives in availability. A calculator that treats this as a plain dual land will overcount available mana on consecutive turns, which is the failure mode to watch."
+    "notes": "Enters untapped and has no activation cost, so on the turn you use it this is a clean dual source and it can be a turn-one colored source. The cost is paid in tempo afterwards: usable on your first turn, then not your second, then yes your third. total_activations is null because the number of uses is unlimited over a long enough game; the constraint is rate, not total, and it lives in availability. A calculator that treats this as a plain dual land will overcount available mana on consecutive turns, which is the failure mode to watch."
   },
   {
     "name": "River Delta",
@@ -1729,7 +1729,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Produces no mana and drains it. The cumulative upkeep is paid in mana, so this is a negative mana source that gets worse every turn: {1} on the first upkeep, {2} on the second, and so on. Anything modelling available mana per turn should subtract, not ignore."
+    "notes": "Produces no mana and drains it. The cumulative upkeep is paid in mana, so this is a negative mana source that gets worse every turn: {1} on the first upkeep, {2} on the second, and so on. Anything modeling available mana per turn should subtract, not ignore."
   },
   {
     "name": "Ice Floe",
@@ -2041,7 +2041,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "This is the Skycloud Expanse trap in its worst form. Anything reading mana symbols records a green, red and white source. In play it is a colourless land that can convert: the green mode nets zero mana and the red or white mode actively loses one. Neither coloured mode is self-sufficient, so this can never be your first coloured source, and with this as your only land you cannot produce a single coloured mana at all. Count it as a colourless source that fixes late, never as fixing that enables a curve."
+    "notes": "This is the Skycloud Expanse trap in its worst form. Anything reading mana symbols records a green, red and white source. In play it is a colorless land that can convert: the green mode nets zero mana and the red or white mode actively loses one. Neither colored mode is self-sufficient, so this can never be your first colored source, and with this as your only land you cannot produce a single colored mana at all. Count it as a colorless source that fixes late, never as fixing that enables a curve."
   },
   {
     "name": "Aysen Abbey",
@@ -2625,7 +2625,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "The big ability sacrifices a Swamp, not itself, so sacrifices_self is false and additional_cost carries the real price. Lake of the Dead survives; your Swamp does not. It is repeatable as long as you keep feeding it Swamps, which is why it is not modelled as a one-shot. Entry cost eats a Swamp too, so getting to the four-mana turn costs two Swamps in total. Net mana on the turn you fire it is plus four, but land count drops by one each time and the file does not model that decay anywhere except here."
+    "notes": "The big ability sacrifices a Swamp, not itself, so sacrifices_self is false and additional_cost carries the real price. Lake of the Dead survives; your Swamp does not. It is repeatable as long as you keep feeding it Swamps, which is why it is not modeled as a one-shot. Entry cost eats a Swamp too, so getting to the four-mana turn costs two Swamps in total. Net mana on the turn you fire it is plus four, but land count drops by one each time and the file does not model that decay anywhere except here."
   },
   {
     "name": "School of the Unseen",
@@ -2685,7 +2685,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Same family as the Homelands castles. Reads as a five-colour source and is not one: the coloured mode nets minus one and is not self-sufficient, so it can never be your first coloured mana and never accelerates you. It is a colourless land with an expensive late-game fixing button."
+    "notes": "Same family as the Homelands castles. Reads as a five-color source and is not one: the colored mode nets minus one and is not self-sufficient, so it can never be your first colored mana and never accelerates you. It is a colorless land with an expensive late-game fixing button."
   },
   {
     "name": "Sheltered Valley",
@@ -2772,7 +2772,7 @@
       "returns_self_to_hand": true
     },
     "global_effect": null,
-    "notes": "Produces no mana itself, so abilities is empty. Three costs a naive reading misses. It enters tapped, so it cannot fetch the turn it lands. The fetched land arrives tapped, so it gives no mana that turn either. And it bounces itself every turn, which means replaying it consumes your land drop, so the engine only nets you a land per turn if you would otherwise have had nothing to play. Fetches any basic, so its colours resolve against the decklist, not the card."
+    "notes": "Produces no mana itself, so abilities is empty. Three costs a naive reading misses. It enters tapped, so it cannot fetch the turn it lands. The fetched land arrives tapped, so it gives no mana that turn either. And it bounces itself every turn, which means replaying it consumes your land drop, so the engine only nets you a land per turn if you would otherwise have had nothing to play. Fetches any basic, so its colors resolve against the decklist, not the card."
   },
   {
     "name": "Bad River",
@@ -2808,7 +2808,7 @@
       "returns_self_to_hand": false
     },
     "global_effect": null,
-    "notes": "Produces no mana of its own, so abilities is empty and produces is null. Its colours are a property of the decklist, not the card: it finds any card with the listed land types, which in this pool means the basics and the snow basics. Note basic_only is false because the printed text says card, not basic card, so anything that ever gains one of these types is a legal target. Two timing costs that separate this cycle from the Onslaught fetches: it enters tapped, and cracking it costs {T}, so it cannot be played and cracked on the same turn. The land it finds arrives untapped, which the Onslaught cycle does not, and it costs no life."
+    "notes": "Produces no mana of its own, so abilities is empty and produces is null. Its colors are a property of the decklist, not the card: it finds any card with the listed land types, which in this pool means the basics and the snow basics. Note basic_only is false because the printed text says card, not basic card, so anything that ever gains one of these types is a legal target. Two timing costs that separate this cycle from the Onslaught fetches: it enters tapped, and cracking it costs {T}, so it cannot be played and cracked on the same turn. The land it finds arrives untapped, which the Onslaught cycle does not, and it costs no life."
   },
   {
     "name": "Flood Plain",
@@ -3009,7 +3009,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "The card that motivated the abilities array. One object, two genuinely different modes: a normal colourless land, or two colourless once. A single amount_per_activation and a single sacrifices_self cannot hold both without lying about one of them."
+    "notes": "The card that motivated the abilities array. One object, two genuinely different modes: a normal colorless land, or two colorless once. A single amount_per_activation and a single sacrifices_self cannot hold both without lying about one of them."
   },
   {
     "name": "Teferi's Isle",
@@ -3323,7 +3323,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Plain colourless land for mana purposes. The Griffin ability costs {T} and competes with the mana ability."
+    "notes": "Plain colorless land for mana purposes. The Griffin ability costs {T} and competes with the mana ability."
   },
   {
     "name": "Quicksand",
@@ -3367,7 +3367,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source that doubles as removal. The sacrifice is on a non-mana ability, which is why other_abilities carries its own sacrifices_self: a deck expecting to use Quicksand as removal should not count it as a land for the rest of the game."
+    "notes": "Colorless source that doubles as removal. The sacrifice is on a non-mana ability, which is why other_abilities carries its own sacrifices_self: a deck expecting to use Quicksand as removal should not count it as a land for the rest of the game."
   },
   {
     "name": "Undiscovered Paradise",
@@ -3418,7 +3418,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Enters untapped and taps for any colour immediately, so unlike most fixing in this era it is a genuine turn-one coloured source. The price is that it never untaps; it bounces instead. It is one mana per land drop, so in a deck that wants to develop its mana base every turn it is not free fixing, it is a tax on growth. It can still be tapped during an opponent's turn before it returns."
+    "notes": "Enters untapped and taps for any color immediately, so unlike most fixing in this era it is a genuine turn-one colored source. The price is that it never untaps; it bounces instead. It is one mana per land drop, so in a deck that wants to develop its mana base every turn it is not free fixing, it is a tax on growth. It can still be tapped during an opponent's turn before it returns."
   },
   {
     "name": "Gemstone Mine",
@@ -3458,7 +3458,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Three activations total, then it sacrifices itself. total_activations is 3 and it is the field that matters more than anything else on this card: treated as an unlimited five-colour source it is one of the best lands in the format, and treated correctly it is three mana spread across a game. The sacrifice happens after the third use, when the last counter is gone, so you do get all three. sacrifices_self is true on the ability because using it is what eventually kills it."
+    "notes": "Three activations total, then it sacrifices itself. total_activations is 3 and it is the field that matters more than anything else on this card: treated as an unlimited five-color source it is one of the best lands in the format, and treated correctly it is three mana spread across a game. The sacrifice happens after the third use, when the last counter is gone, so you do get all three. sacrifices_self is true on the ability because using it is what eventually kills it."
   },
   {
     "name": "Lotus Vale",
@@ -3506,7 +3506,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Three mana of any one colour, all the same colour, which is why produces needs the choice_uniform mode rather than choice: you do not get to spread it across three colours. Entry cost is two untapped lands, and it is a replacement effect, so if you cannot pay it goes straight to the graveyard and you have lost the card and your land drop for nothing. Board arithmetic: two lands and a land drop become one land. Mana per turn is roughly break even, card economy is not, and the whole thing dies to one Wasteland."
+    "notes": "Three mana of any one color, all the same color, which is why produces needs the choice_uniform mode rather than choice: you do not get to spread it across three colors. Entry cost is two untapped lands, and it is a replacement effect, so if you cannot pay it goes straight to the graveyard and you have lost the card and your land drop for nothing. Board arithmetic: two lands and a land drop become one land. Mana per turn is roughly break even, card economy is not, and the whole thing dies to one Wasteland."
   },
   {
     "name": "Scorched Ruins",
@@ -3552,7 +3552,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "See Lotus Vale for the entry cost. Four colourless from one land is the largest single activation in the pool so far, and it is colourless, so it accelerates but never fixes."
+    "notes": "See Lotus Vale for the entry cost. Four colorless from one land is the largest single activation in the pool so far, and it is colorless, so it accelerates but never fixes."
   },
   {
     "name": "Winding Canyons",
@@ -3596,7 +3596,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. The flash ability costs {T} plus two, so any turn it is used this land is a net drain of two rather than a source."
+    "notes": "Colorless source. The flash ability costs {T} plus two, so any turn it is used this land is a net drain of two rather than a source."
   },
   {
     "name": "Caldera Lake",
@@ -3653,7 +3653,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Enters tapped and still deals damage, which makes this cycle strictly worse than the Ice Age painlands rather than a variant of them. Same two-ability structure: the colourless mode is free of damage and the coloured mode is not, and the damage is part of that ability's effect rather than a cost, so it cannot be declined once the mode is chosen. The enters_tapped flag is the whole difference and it is the thing that keeps these out of decks that the Ice Age cycle is fine for."
+    "notes": "Enters tapped and still deals damage, which makes this cycle strictly worse than the Ice Age painlands rather than a variant of them. Same two-ability structure: the colorless mode is free of damage and the colored mode is not, and the damage is part of that ability's effect rather than a cost, so it cannot be declined once the mode is chosen. The enters_tapped flag is the whole difference and it is the thing that keeps these out of decks that the Ice Age cycle is fine for."
   },
   {
     "name": "Pine Barrens",
@@ -3931,7 +3931,7 @@
         "variable_amount": null,
         "availability": {
           "pattern": "skips_next_untap",
-          "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
+          "reason": "Using this ability leaves the land tapped through your next untap step, so the colored mode is available every other turn."
         },
         "requires_tap": true,
         "restriction": null,
@@ -3941,7 +3941,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Enters untapped, and the colourless mode is completely unrestricted: tap it for {C} every turn forever with no penalty. Only the coloured mode locks it through your next untap step, which is why availability sits on that ability rather than on the card. Rate works out the same as the Ice Age depletion cycle, usable for colour on alternating turns, but the mechanism and the free colourless mode are different and a calculator that treats the two cycles as interchangeable will undercount this one."
+    "notes": "Enters untapped, and the colorless mode is completely unrestricted: tap it for {C} every turn forever with no penalty. Only the colored mode locks it through your next untap step, which is why availability sits on that ability rather than on the card. Rate works out the same as the Ice Age depletion cycle, usable for color on alternating turns, but the mechanism and the free colorless mode are different and a calculator that treats the two cycles as interchangeable will undercount this one."
   },
   {
     "name": "Rootwater Depths",
@@ -3991,7 +3991,7 @@
         "variable_amount": null,
         "availability": {
           "pattern": "skips_next_untap",
-          "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
+          "reason": "Using this ability leaves the land tapped through your next untap step, so the colored mode is available every other turn."
         },
         "requires_tap": true,
         "restriction": null,
@@ -4051,7 +4051,7 @@
         "variable_amount": null,
         "availability": {
           "pattern": "skips_next_untap",
-          "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
+          "reason": "Using this ability leaves the land tapped through your next untap step, so the colored mode is available every other turn."
         },
         "requires_tap": true,
         "restriction": null,
@@ -4111,7 +4111,7 @@
         "variable_amount": null,
         "availability": {
           "pattern": "skips_next_untap",
-          "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
+          "reason": "Using this ability leaves the land tapped through your next untap step, so the colored mode is available every other turn."
         },
         "requires_tap": true,
         "restriction": null,
@@ -4171,7 +4171,7 @@
         "variable_amount": null,
         "availability": {
           "pattern": "skips_next_untap",
-          "reason": "Using this ability leaves the land tapped through your next untap step, so the coloured mode is available every other turn."
+          "reason": "Using this ability leaves the land tapped through your next untap step, so the colored mode is available every other turn."
         },
         "requires_tap": true,
         "restriction": null,
@@ -4218,7 +4218,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Two colourless per activation, not one. Amount is the whole point of this card and a classifier that records only colour identity loses it entirely. The 2 damage is part of the ability's effect, not a cost, so it is unavoidable and applies on every activation. Untapped, unconditional, unlimited, so it is real turn-one acceleration and the life total is the only limit."
+    "notes": "Two colorless per activation, not one. Amount is the whole point of this card and a classifier that records only color identity loses it entirely. The 2 damage is part of the ability's effect, not a cost, so it is unavoidable and applies on every activation. Untapped, unconditional, unlimited, so it is real turn-one acceleration and the life total is the only limit."
   },
   {
     "name": "Wasteland",
@@ -4262,7 +4262,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "A colourless source until the moment it is not. The sacrifice is on a non-mana ability, so sacrifices_self is false on the mana ability and true on the other_abilities entry. Behaviourally this is cracked early and proactively, which is what separates it from a card like Barbarian Ring that also sacrifices itself but gets held for a late-game finish. Nothing in the schema encodes that intent; the difference lives in the note and in what the ability actually does."
+    "notes": "A colorless source until the moment it is not. The sacrifice is on a non-mana ability, so sacrifices_self is false on the mana ability and true on the other_abilities entry. Behaviourally this is cracked early and proactively, which is what separates it from a card like Barbarian Ring that also sacrifices itself but gets held for a late-game finish. Nothing in the schema encodes that intent; the difference lives in the note and in what the ability actually does."
   },
   {
     "name": "Reflecting Pool",
@@ -4298,7 +4298,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colours resolve against the board, not the card, so produces gets its own mode rather than a list. Per the Gatherer rulings the ability checks the effects of your other lands' mana abilities but not their costs, their activation conditions, or whether they are untapped: a Homelands castle you cannot afford to activate still feeds it, as does a tapped land. Mana types include colourless, so a land that could add {C} lets this add {C}. What it cannot do is bootstrap. If every other land you control either lacks a mana ability or is another Reflecting Pool, you may activate it and it produces nothing, so a hand of Reflecting Pools makes zero mana. An earlier revision of this note claimed the opposite about conditional lands; it was wrong and the rulings are the reason it changed."
+    "notes": "Colors resolve against the board, not the card, so produces gets its own mode rather than a list. Per the Gatherer rulings the ability checks the effects of your other lands' mana abilities but not their costs, their activation conditions, or whether they are untapped: a Homelands castle you cannot afford to activate still feeds it, as does a tapped land. Mana types include colorless, so a land that could add {C} lets this add {C}. What it cannot do is bootstrap. If every other land you control either lacks a mana ability or is another Reflecting Pool, you may activate it and it produces nothing, so a hand of Reflecting Pools makes zero mana. An earlier revision of this note claimed the opposite about conditional lands; it was wrong and the rulings are the reason it changed."
   },
   {
     "name": "Maze of Shadows",
@@ -4342,7 +4342,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. The shadow ability costs {T} and competes with the mana ability."
+    "notes": "Colorless source. The shadow ability costs {T} and competes with the mana ability."
   },
   {
     "name": "Ghost Town",
@@ -4386,7 +4386,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source with a free escape hatch from Wasteland and other targeted land removal, usable only on an opponent's turn. Bouncing it is not a mana cost but it does cost your next land drop to replay, and it cannot be used to reset itself on your own turn. Not modelled as an availability restriction because using the mana ability imposes nothing; the bounce is optional and independent."
+    "notes": "Colorless source with a free escape hatch from Wasteland and other targeted land removal, usable only on an opponent's turn. Bouncing it is not a mana cost but it does cost your next land drop to replay, and it cannot be used to reset itself on your own turn. Not modeled as an availability restriction because using the mana ability imposes nothing; the bounce is optional and independent."
   },
   {
     "name": "Stalking Stones",
@@ -4430,7 +4430,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. Animation costs six but does not tap it and is permanent, so unlike the Urza's Legacy manlands it is a one-time investment rather than a per-turn cost. Still a land after animating, so it keeps producing mana."
+    "notes": "Colorless source. Animation costs six but does not tap it and is permanent, so unlike the Urza's Legacy manlands it is a one-time investment rather than a per-turn cost. Still a land after animating, so it keeps producing mana."
   },
   {
     "name": "Volrath's Stronghold",
@@ -4476,7 +4476,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. Legendary, so a second copy is dead. The recursion ability costs {T} plus two mana, so a turn spent using it is a turn this land is a net drain rather than a source."
+    "notes": "Colorless source. Legendary, so a second copy is dead. The recursion ability costs {T} plus two mana, so a turn spent using it is a turn this land is a net drain rather than a source."
   },
   {
     "name": "City of Traitors",
@@ -4521,7 +4521,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Two colourless with no damage, and the price is that your next land drop kills it. total_activations is null rather than 1 because the count is not fixed: hold your land drops and it keeps producing indefinitely. In practice a deck plays it, uses it, and loses it on the following turn, so a calculator modelling turn-by-turn mana should treat the acceleration as borrowed rather than permanent. Only lands you play trigger it, so opponents cannot force it off and lands put onto the battlefield by effects rather than played do not trigger it either."
+    "notes": "Two colorless with no damage, and the price is that your next land drop kills it. total_activations is null rather than 1 because the count is not fixed: hold your land drops and it keeps producing indefinitely. In practice a deck plays it, uses it, and loses it on the following turn, so a calculator modeling turn-by-turn mana should treat the acceleration as borrowed rather than permanent. Only lands you play trigger it, so opponents cannot force it off and lands put onto the battlefield by effects rather than played do not trigger it either."
   },
   {
     "name": "Drifting Meadow",
@@ -4565,7 +4565,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Enters tapped, produces one mana of its colour, and carries an ability that is only usable from hand. Cycling is recorded with type activated_from_hand because it has no bearing on mana once the card is on the battlefield; what it changes is the decision to play the land at all. A calculator counting coloured sources in a decklist should count this at full weight, but a calculator modelling opening hands should know the card has a second use as a cantrip and will sometimes never be a land."
+    "notes": "Enters tapped, produces one mana of its color, and carries an ability that is only usable from hand. Cycling is recorded with type activated_from_hand because it has no bearing on mana once the card is on the battlefield; what it changes is the decision to play the land at all. A calculator counting colored sources in a decklist should count this at full weight, but a calculator modeling opening hands should know the card has a second use as a cantrip and will sometimes never be a land."
   },
   {
     "name": "Remote Isle",
@@ -4785,7 +4785,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "The colourless member of the cycling cycle and the only one that does not enter tapped. Easy to lose that difference if the six are treated as one group."
+    "notes": "The colorless member of the cycling cycle and the only one that does not enter tapped. Easy to lose that difference if the six are treated as one group."
   },
   {
     "name": "Gaea's Cradle",
@@ -4928,7 +4928,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "The second ability sacrifices a creature, not the land, so sacrifices_self is false and additional_cost carries the price. Repeatable as long as you have creatures. Like Gaea's Cradle it converts a board into mana, but unlike the Cradle it always has a floor: the colourless mode works on an empty board."
+    "notes": "The second ability sacrifices a creature, not the land, so sacrifices_self is false and additional_cost carries the price. Repeatable as long as you have creatures. Like Gaea's Cradle it converts a board into mana, but unlike the Cradle it always has a floor: the colorless mode works on an empty board."
   },
   {
     "name": "Thran Quarry",
@@ -4976,7 +4976,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Untapped, free, any colour, unlimited. On raw mana production this is the best fixing in the pool so far, and the entire cost is the survival clause. The condition on the mana ability is null on purpose: you can tap it for any colour even with no creatures, it simply dies at the end step. Note the trigger checks at the beginning of the end step of every turn, not only yours, so losing your last creature on an opponent's turn kills it before you untap."
+    "notes": "Untapped, free, any color, unlimited. On raw mana production this is the best fixing in the pool so far, and the entire cost is the survival clause. The condition on the mana ability is null on purpose: you can tap it for any color even with no creatures, it simply dies at the end step. Note the trigger checks at the beginning of the end step of every turn, not only yours, so losing your last creature on an opponent's turn kills it before you untap."
   },
   {
     "name": "Shivan Gorge",
@@ -5022,7 +5022,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. The damage ability costs {T} plus three mana, so any turn it is used this land is a net drain of three."
+    "notes": "Colorless source. The damage ability costs {T} plus three mana, so any turn it is used this land is a net drain of three."
   },
   {
     "name": "Faerie Conclave",
@@ -5066,7 +5066,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Enters tapped, so it is never a turn-one source of its colour, and that is the real cost of the cycle. Animation does not tap it, so it can be tapped for mana and animated in the same turn, but the animation cost is mana out of the same pool, and a land that attacks is tapped and produces nothing on your next turn until it untaps. Still a land while animated, so it keeps its mana ability."
+    "notes": "Enters tapped, so it is never a turn-one source of its color, and that is the real cost of the cycle. Animation does not tap it, so it can be tapped for mana and animated in the same turn, but the animation cost is mana out of the same pool, and a land that attacks is tapped and produces nothing on your next turn until it untaps. Still a land while animated, so it keeps its mana ability."
   },
   {
     "name": "Forbidding Watchtower",
@@ -5288,7 +5288,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. The regeneration ability costs {T} plus a green mana, so it competes with the mana ability and requires green from elsewhere. Legendary."
+    "notes": "Colorless source. The regeneration ability costs {T} plus a green mana, so it competes with the mana ability and requires green from elsewhere. Legendary."
   },
   {
     "name": "Peat Bog",
@@ -5325,7 +5325,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Two activations total, then it sacrifices itself, so total_activations is 2 and the lifetime output is four mana. Enters tapped, so nothing on the turn it lands. This is the cycle most likely to be misread as a normal dual-producing land: it taps for two of its colour, which looks like acceleration, but it is a four-mana card that occupies a land slot and then disappears. Contrast the Fallen Empires storage lands, which are also slow but never run out."
+    "notes": "Two activations total, then it sacrifices itself, so total_activations is 2 and the lifetime output is four mana. Enters tapped, so nothing on the turn it lands. This is the cycle most likely to be misread as a normal dual-producing land: it taps for two of its color, which looks like acceleration, but it is a four-mana card that occupies a land slot and then disappears. Contrast the Fallen Empires storage lands, which are also slow but never run out."
   },
   {
     "name": "Hickory Woodlot",
@@ -5750,7 +5750,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source with repeatable land destruction. The sacrifice is a land, not necessarily this one, so sacrifices_self is false; you can feed it another land and keep Dust Bowl. Each use costs three mana plus a land plus this land's tap, so a turn spent activating it is deeply negative on mana."
+    "notes": "Colorless source with repeatable land destruction. The sacrifice is a land, not necessarily this one, so sacrifices_self is false; you can feed it another land and keep Dust Bowl. Each use costs three mana plus a land plus this land's tap, so a turn spent activating it is deeply negative on mana."
   },
   {
     "name": "High Market",
@@ -5794,7 +5794,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. The sacrifice outlet costs {T} and competes with the mana ability, and it eats a creature rather than the land."
+    "notes": "Colorless source. The sacrifice outlet costs {T} and competes with the mana ability, and it eats a creature rather than the land."
   },
   {
     "name": "Rishadan Port",
@@ -5838,7 +5838,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. Any turn it is used to tap a land it is a net drain of one and produces nothing itself, which is the whole tension in playing it: it is either your mana or their mana, never both."
+    "notes": "Colorless source. Any turn it is used to tap a land it is a net drain of one and produces nothing itself, which is the whole tension in playing it: it is either your mana or their mana, never both."
   },
   {
     "name": "Tower of the Magistrate",
@@ -5882,7 +5882,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source with a non-mana ability that competes for the tap."
+    "notes": "Colorless source with a non-mana ability that competes for the tap."
   },
   {
     "name": "Henge of Ramos",
@@ -5942,7 +5942,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Same trap as School of the Unseen and the Homelands castles. Reads as five-colour fixing; the coloured mode nets minus one and is not self-sufficient, so it can never produce your first coloured mana."
+    "notes": "Same trap as School of the Unseen and the Homelands castles. Reads as five-color fixing; the colored mode nets minus one and is not self-sufficient, so it can never produce your first colored mana."
   },
   {
     "name": "Kor Haven",
@@ -5988,7 +5988,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. Legendary. The prevention ability needs white from elsewhere and taps the land, so it is never both mana and defence on the same turn."
+    "notes": "Colorless source. Legendary. The prevention ability needs white from elsewhere and taps the land, so it is never both mana and defence on the same turn."
   },
   {
     "name": "Rath's Edge",
@@ -6135,7 +6135,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Five-colour fixing that any opponent can switch off for one mana, so it should not be counted as a reliable coloured source in any matchup where the opponent holds mana up. The Gatherer ruling of 2004-10-04 says the card carries errata specifically so that it cannot be activated during the casting of a spell or the activation of an ability, which exists to stop an opponent paying {1} and leaving you short mid-cast. The practical consequence is that the mana has to be floated before you begin casting, never tapped in response to your own spell. An earlier revision of this note guessed at a stack-based explanation for that restriction; the ruling is the reason it changed."
+    "notes": "Five-color fixing that any opponent can switch off for one mana, so it should not be counted as a reliable colored source in any matchup where the opponent holds mana up. The Gatherer ruling of 2004-10-04 says the card carries errata specifically so that it cannot be activated during the casting of a spell or the activation of an ability, which exists to stop an opponent paying {1} and leaving you short mid-cast. The practical consequence is that the mana has to be floated before you begin casting, never tapped in response to your own spell. An earlier revision of this note guessed at a stack-based explanation for that restriction; the ruling is the reason it changed."
   },
   {
     "name": "Wintermoon Mesa",
@@ -6179,7 +6179,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Enters tapped, taps for colourless, and the ability sacrifices it, so it is a land that converts itself into a one-shot double Rishadan Port activation for two mana."
+    "notes": "Enters tapped, taps for colorless, and the ability sacrifices it, so it is a land that converts itself into a one-shot double Rishadan Port activation for two mana."
   },
   {
     "name": "Coastal Tower",
@@ -6216,7 +6216,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "The simplest shape in the format: enters tapped, taps for one of two colours, no cost, no limit, no condition. Worth recording precisely because it is the baseline every more complicated dual should be compared against. Never a turn-one source of either colour."
+    "notes": "The simplest shape in the format: enters tapped, taps for one of two colors, no cost, no limit, no condition. Worth recording precisely because it is the baseline every more complicated dual should be compared against. Never a turn-one source of either color."
   },
   {
     "name": "Elfhame Palace",
@@ -6421,7 +6421,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "The colours of the two abilities do not overlap, which makes this cycle a genuine trap for anything reading mana symbols. Ancient Spring looks like a white-blue-black land. In play it is a blue land that can, exactly once, be cashed in for white and black instead. Note the sacrifice mode produces both symbols together, mode fixed, not a choice between them. Enters tapped, so nothing on turn one, and after the sacrifice you are down a land."
+    "notes": "The colors of the two abilities do not overlap, which makes this cycle a genuine trap for anything reading mana symbols. Ancient Spring looks like a white-blue-black land. In play it is a blue land that can, exactly once, be cashed in for white and black instead. Note the sacrifice mode produces both symbols together, mode fixed, not a choice between them. Enters tapped, so nothing on turn one, and after the sacrifice you are down a land."
   },
   {
     "name": "Geothermal Crevice",
@@ -6709,7 +6709,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Untapped colourless land that can convert itself once into any single coloured mana. Unlike the Homelands and Masques filters the coloured mode is self-sufficient and nets a full mana, because the price is the land rather than mana. A calculator should count it as one coloured source of every colour, available once."
+    "notes": "Untapped colorless land that can convert itself once into any single colored mana. Unlike the Homelands and Masques filters the colored mode is self-sufficient and nets a full mana, because the price is the land rather than mana. A calculator should count it as one colored source of every color, available once."
   },
   {
     "name": "Keldon Necropolis",
@@ -6755,7 +6755,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. Legendary. The damage ability costs five mana plus a creature plus the tap, so it is a late-game mana sink and never competes with using this as a land."
+    "notes": "Colorless source. Legendary. The damage ability costs five mana plus a creature plus the tap, so it is a late-game mana sink and never competes with using this as a land."
   },
   {
     "name": "Crosis's Catacombs",
@@ -7048,7 +7048,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Free untapped any-colour mana on the turn it lands, and after that every single use costs a card exiled from hand. The first activation is genuinely free, which is why availability sits on the ability rather than the card and why enters_tapped is false. In a deck that empties its hand this stops untapping entirely and becomes a dead land, so the restriction is not a fixed rate like the depletion lands, it is contingent on a resource the mana base cannot supply."
+    "notes": "Free untapped any-color mana on the turn it lands, and after that every single use costs a card exiled from hand. The first activation is genuinely free, which is why availability sits on the ability rather than the card and why enters_tapped is false. In a deck that empties its hand this stops untapping entirely and becomes a dead land, so the restriction is not a fixed rate like the depletion lands, it is contingent on a resource the mana base cannot supply."
   },
   {
     "name": "Meteor Crater",
@@ -7063,7 +7063,7 @@
       {
         "produces": {
           "mode": "derived",
-          "source": "a colour of a permanent you control"
+          "source": "a color of a permanent you control"
         },
         "amount": 1,
         "net_mana": 1,
@@ -7071,7 +7071,7 @@
         "additional_cost": null,
         "self_sufficient": true,
         "condition": {
-          "type": "controls_coloured_permanent"
+          "type": "controls_colored_permanent"
         },
         "sacrifices_self": false,
         "variable_amount": null,
@@ -7084,7 +7084,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Derived like Reflecting Pool but from a different pool of objects, and much weaker for it. It reads colours off permanents you control, and lands are almost always colourless, so with only lands on the battlefield this produces nothing at all. It cannot help you cast your first spell, only your second onwards, and only in a colour you already have on board. Note it looks at permanents, not lands, so an artifact or a coloured creature enables it."
+    "notes": "Derived like Reflecting Pool but from a different pool of objects, and much weaker for it. It reads colors off permanents you control, and lands are almost always colorless, so with only lands on the battlefield this produces nothing at all. It cannot help you cast your first spell, only your second onwards, and only in a color you already have on board. Note it looks at permanents, not lands, so an artifact or a colored creature enables it."
   },
   {
     "name": "Terminal Moraine",
@@ -7138,7 +7138,7 @@
       "returns_self_to_hand": false
     },
     "global_effect": null,
-    "notes": "A colourless land that can convert itself into any basic for two mana. Unlike the Mirage fetches it costs mana and the fetched land arrives tapped, so the turn you use it costs you three mana of tempo for a land that does nothing until next turn. Colours resolve against the decklist."
+    "notes": "A colorless land that can convert itself into any basic for two mana. Unlike the Mirage fetches it costs mana and the fetched land arrives tapped, so the turn you use it costs you three mana of tempo for a land that does nothing until next turn. Colors resolve against the decklist."
   },
   {
     "name": "Battlefield Forge",
@@ -7195,7 +7195,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Mechanically identical to the Ice Age painlands, and unlike the Tempest cycle these enter untapped. Free colourless mode with no damage, free coloured mode with 1 damage as part of that ability's effect rather than as a cost. Real turn-one sources of both colours. Together with the Ice Age five these are the backbone of two-colour mana in the format."
+    "notes": "Mechanically identical to the Ice Age painlands, and unlike the Tempest cycle these enter untapped. Free colorless mode with no damage, free colored mode with 1 damage as part of that ability's effect rather than as a cost. Real turn-one sources of both colors. Together with the Ice Age five these are the backbone of two-color mana in the format."
   },
   {
     "name": "Caves of Koilos",
@@ -7460,7 +7460,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "The card that started this project. One ability, no colourless mode, and it costs a mana to use, so self_sufficient is false and this can never be your first coloured source. Alone on the battlefield it produces nothing at all. What it does do is convert one generic mana into two coloured, which is net plus one and genuinely good in a deck that already has a mana base, so it should not be written off either. produces is mode fixed with both symbols: you get {W} and {U} together, never a choice between them."
+    "notes": "The card that started this project. One ability, no colorless mode, and it costs a mana to use, so self_sufficient is false and this can never be your first colored source. Alone on the battlefield it produces nothing at all. What it does do is convert one generic mana into two colored, which is net plus one and genuinely good in a deck that already has a mana base, so it should not be written off either. produces is mode fixed with both symbols: you get {W} and {U} together, never a choice between them."
   },
   {
     "name": "Darkwater Catacombs",
@@ -7668,7 +7668,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Enters tapped, taps for its colour, or cashes itself in for any single colour. Both modes are free and self-sufficient, so the fixing here is real in a way the Odyssey filter cycle's is not, at the price of the land itself and a turn of tempo."
+    "notes": "Enters tapped, taps for its color, or cashes itself in for any single color. Both modes are free and self-sufficient, so the fixing here is real in a way the Odyssey filter cycle's is not, at the price of the land itself and a turn of tempo."
   },
   {
     "name": "Seafloor Debris",
@@ -8084,7 +8084,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "No colourless mode, so unlike every painland cycle every single tap for mana costs you a life. Enters untapped and is otherwise unrestricted. The threshold ability sacrifices it and is gated on seven cards in your graveyard, which is a condition the mana base cannot supply on its own. Behaviourally this is the opposite of Wasteland despite both sacrificing themselves: Wasteland is cracked early and proactively, these are held all game and cashed in late, so a deck expects to use them as lands for many turns first."
+    "notes": "No colorless mode, so unlike every painland cycle every single tap for mana costs you a life. Enters untapped and is otherwise unrestricted. The threshold ability sacrifices it and is gated on seven cards in your graveyard, which is a condition the mana base cannot supply on its own. Behaviourally this is the opposite of Wasteland despite both sacrificing themselves: Wasteland is cracked early and proactively, these are held all game and cashed in late, so a deck expects to use them as lands for many turns first."
   },
   {
     "name": "Centaur Garden",
@@ -8188,7 +8188,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "The five-colour mode is net zero: five mana in, five mana out, one of each colour. It is a colour converter, not acceleration, and it is not self-sufficient. Useful only in a deck that already produces five generic and needs all five colours in one turn, which is a narrow ask."
+    "notes": "The five-color mode is net zero: five mana in, five mana out, one of each color. It is a color converter, not acceleration, and it is not self-sufficient. Useful only in a deck that already produces five generic and needs all five colors in one turn, which is a narrow ask."
   },
   {
     "name": "Deserted Temple",
@@ -8232,7 +8232,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source whose second ability can target itself, since the tap is paid as a cost before the ability resolves, so for one mana it can reset itself. More usefully it untaps a land that produces more than one mana, which is why it is played alongside Cabal Coffers and the storage lands rather than as a mana source in its own right."
+    "notes": "Colorless source whose second ability can target itself, since the tap is paid as a cost before the ability resolves, so for one mana it can reset itself. More usefully it untaps a land that produces more than one mana, which is why it is played alongside Cabal Coffers and the storage lands rather than as a mana source in its own right."
   },
   {
     "name": "Petrified Field",
@@ -8276,7 +8276,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source that trades itself for a land in the graveyard, so it is roughly land-count neutral and card-count neutral, buying back whatever was killed or sacrificed earlier."
+    "notes": "Colorless source that trades itself for a land in the graveyard, so it is roughly land-count neutral and card-count neutral, buying back whatever was killed or sacrificed earlier."
   },
   {
     "name": "Tarnished Citadel",
@@ -8336,7 +8336,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Painland structure with a five-colour coloured mode and a much steeper price: 3 damage per activation, part of the ability's effect rather than a cost, so it cannot be declined. The colourless mode is free. Untapped and unlimited, so as raw fixing it is excellent and the life total is the constraint."
+    "notes": "Painland structure with a five-color colored mode and a much steeper price: 3 damage per activation, part of the ability's effect rather than a cost, so it cannot be declined. The colorless mode is free. Untapped and unlimited, so as raw fixing it is excellent and the life total is the constraint."
   },
   {
     "name": "Cabal Coffers",
@@ -8436,7 +8436,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "The colourless mode is free and unconditional; only the coloured mode requires a Swamp, so the condition sits on that ability alone. It checks the Swamp land type, so Snow-Covered Swamp turns it on and this land does not count itself. In a deck with no Swamps at all it is simply a colourless land. Worth noting against Reflecting Pool: the Pool ignores activation conditions, so a Tainted Field with no Swamp in play still lets a Reflecting Pool produce white or black."
+    "notes": "The colorless mode is free and unconditional; only the colored mode requires a Swamp, so the condition sits on that ability alone. It checks the Swamp land type, so Snow-Covered Swamp turns it on and this land does not count itself. In a deck with no Swamps at all it is simply a colorless land. Worth noting against Reflecting Pool: the Pool ignores activation conditions, so a Tainted Field with no Swamp in play still lets a Reflecting Pool produce white or black."
   },
   {
     "name": "Tainted Isle",
@@ -8679,7 +8679,7 @@
       "returns_self_to_hand": false
     },
     "global_effect": null,
-    "notes": "The first fetch in the file that gets two lands, and it gets one of each type rather than a choice, which is why the fetches object gained a selection key. Both arrive tapped and it costs {2} plus the land, so the turn you use it is heavily negative and the payoff is a land ahead plus fixed colours from the following turn. Searches by land type, not for basics, so it can find any Forest or Plains card."
+    "notes": "The first fetch in the file that gets two lands, and it gets one of each type rather than a choice, which is why the fetches object gained a selection key. Both arrive tapped and it costs {2} plus the land, so the turn you use it is heavily negative and the payoff is a land ahead plus fixed colors from the following turn. Searches by land type, not for basics, so it can find any Forest or Plains card."
   },
   {
     "name": "Nantuko Monastery",
@@ -8723,7 +8723,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source. Animation does not tap it, so mana and animation are compatible on the same turn, but it needs green and white from elsewhere and seven cards in the graveyard."
+    "notes": "Colorless source. Animation does not tap it, so mana and animation are compatible on the same turn, but it needs green and white from elsewhere and seven cards in the graveyard."
   },
   {
     "name": "Riftstone Portal",
@@ -8771,7 +8771,7 @@
       "grants": "{T}: Add {G} or {W}",
       "active_zone": "graveyard"
     },
-    "notes": "Unique in this file and the one card here that cannot be evaluated in isolation. On the battlefield it is a colourless land. In the graveyard it grants every land you control the ability to tap for green or white, which means a deck's entire mana base changes colour identity based on whether this card has been discarded or milled. Any calculator that sums per-card colours will be wrong about every other land in the deck while this sits in the graveyard, so global_effect is set to make it findable rather than leaving the fact buried in a note."
+    "notes": "Unique in this file and the one card here that cannot be evaluated in isolation. On the battlefield it is a colorless land. In the graveyard it grants every land you control the ability to tap for green or white, which means a deck's entire mana base changes color identity based on whether this card has been discarded or milled. Any calculator that sums per-card colors will be wrong about every other land in the deck while this sits in the graveyard, so global_effect is set to make it findable rather than leaving the fact buried in a note."
   },
   {
     "name": "Bloodstained Mire",
@@ -8807,7 +8807,7 @@
       "returns_self_to_hand": false
     },
     "global_effect": null,
-    "notes": "Produces no mana itself, so abilities is empty and produces is null; its colours are a property of the decklist, since Premodern has no dual lands and these can only find what the deck actually plays. Three differences from the Mirage cycle, all of them in this one's favour. It enters untapped, so it can be played and cracked on the same turn. The land it finds arrives untapped. The price is 1 life. Searches by land type rather than for basics, so anything carrying the type is legal, which in this pool means the basics and the snow basics."
+    "notes": "Produces no mana itself, so abilities is empty and produces is null; its colors are a property of the decklist, since Premodern has no dual lands and these can only find what the deck actually plays. Three differences from the Mirage cycle, all of them in this one's favour. It enters untapped, so it can be played and cracked on the same turn. The land it finds arrives untapped. The price is 1 life. Searches by land type rather than for basics, so anything carrying the type is legal, which in this pool means the basics and the snow basics."
   },
   {
     "name": "Flooded Strand",
@@ -8995,7 +8995,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Same shape as the Urza's Saga cycling lands, with one difference: cycling costs a single mana of this land's own colour rather than {2}. That makes it cheaper in the deck that wants it and unusable in a deck that cannot produce that colour, which is a real constraint on a card whose whole point is flexibility. Enters tapped. Cycling is recorded as activated_from_hand and has no bearing on battlefield mana."
+    "notes": "Same shape as the Urza's Saga cycling lands, with one difference: cycling costs a single mana of this land's own color rather than {2}. That makes it cheaper in the deck that wants it and unusable in a deck that cannot produce that color, which is a real constraint on a card whose whole point is flexibility. Enters tapped. Cycling is recorded as activated_from_hand and has no bearing on battlefield mana."
   },
   {
     "name": "Forgotten Cave",
@@ -9215,7 +9215,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "Colourless source with a tribal ability that costs coloured mana this land cannot produce, so it never pays for its own ability and any turn it is used it is a net drain. Records as a colourless source only; the colour in the activation cost is a requirement, not production, and is exactly the sort of symbol a text scanner would wrongly count."
+    "notes": "Colorless source with a tribal ability that costs colored mana this land cannot produce, so it never pays for its own ability and any turn it is used it is a net drain. Records as a colorless source only; the color in the activation cost is a requirement, not production, and is exactly the sort of symbol a text scanner would wrongly count."
   },
   {
     "name": "Daru Encampment",
@@ -9479,7 +9479,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "See Contested Cliffs. Colourless source; the ability needs white and blue from elsewhere and eats a Bird, not the land."
+    "notes": "See Contested Cliffs. Colorless source; the ability needs white and blue from elsewhere and eats a Bird, not the land."
   },
   {
     "name": "Starlit Sanctum",
@@ -9530,7 +9530,7 @@
     ],
     "fetches": null,
     "global_effect": null,
-    "notes": "See Contested Cliffs. Two separate non-mana abilities in different colours; neither produces mana and both compete with the tap."
+    "notes": "See Contested Cliffs. Two separate non-mana abilities in different colors; neither produces mana and both compete with the tap."
   },
   {
     "name": "Grand Coliseum",
@@ -9590,7 +9590,7 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "City of Brass that enters tapped and has a free colourless mode. Two structural differences from City of Brass beyond the tapped entry: the damage here is part of the coloured ability's effect rather than a trigger on becoming tapped, so tapping for colourless costs nothing and taps by opponents' effects cost nothing either. Never a turn-one source of anything."
+    "notes": "City of Brass that enters tapped and has a free colorless mode. Two structural differences from City of Brass beyond the tapped entry: the damage here is part of the colored ability's effect rather than a trigger on becoming tapped, so tapping for colorless costs nothing and taps by opponents' effects cost nothing either. Never a turn-one source of anything."
   },
   {
     "name": "Temple of the False God",
@@ -9630,6 +9630,6 @@
     "other_abilities": [],
     "fetches": null,
     "global_effect": null,
-    "notes": "Two colourless, and completely dead until you control five lands, itself included. Until then it is not a mana source at all, it is a blank that costs you a land drop, which is why the condition sits on the only ability rather than anywhere softer. Once live it is genuine acceleration with no cost and no limit. self_sufficient is true because activating it needs no mana; the constraint is the board, not the pool."
+    "notes": "Two colorless, and completely dead until you control five lands, itself included. Until then it is not a mana source at all, it is a blank that costs you a land drop, which is why the condition sits on the only ability rather than anywhere softer. Once live it is genuine acceleration with no cost and no limit. self_sufficient is true because activating it needs no mana; the constraint is the board, not the pool."
   }
 ]
