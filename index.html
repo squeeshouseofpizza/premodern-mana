@@ -252,6 +252,17 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--edge);color:v
     percent over 80 or 87. The numbers let you make that call rather than making it for you. The toggle switches between
     playing and drawing first; every figure is a few points higher on the draw, since you have seen
     one more card.</p>
+    <p>One thing the panel does not do is adjust for cantrips. It reads the table at the land count
+    you typed, and a deck full of cheap card draw effectively runs more lands than that number
+    suggests, since each cantrip digs you toward your next drop. Karsten's own land-count formula
+    accounts for this: lands = 19.59 + 1.90 times your average mana value, minus 0.28 for each cheap
+    card-draw or mana-ramp spell. A four-cantrip deck is therefore about one land richer than it
+    looks. This applies to replacement cantrips like Opt that draw a card and swap themselves out
+    one-for-one; a dig spell like Impulse that looks at several cards and takes one is card
+    selection rather than replacement, so it does not thin your deck the same way and is a looser
+    fit for the formula. The tool cannot sort this out for you, since it means reading what each card
+    does, so run the adjustment yourself and read the panel at the higher number if you want the
+    fuller picture.</p>
     <p>Nonland mana is included. Dorks count half, because they die. Artifact accelerants count
     three quarters. Mox Diamond counts one. Rituals count zero: Dark Ritual multiplies black you
     already have, and it will not cast a turn-one Duress.</p>
