@@ -58,6 +58,10 @@ button.quiet:hover{background:var(--edge);color:var(--ink)}
   background:rgba(28,29,33,.66);border:1px solid var(--edge);border-radius:2px;padding:8px 10px;
   text-align:center}
 .cantripbox input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.ctreset{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:none;
+  color:var(--muted);background:transparent;border:0;padding:2px 4px;cursor:pointer;text-decoration:underline}
+.ctreset:hover{color:var(--gold)}
+.ctreset:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .dropintro{margin:0 0 12px;color:var(--muted);font-size:16px}
 .dropintro b,.dropnote b{color:var(--ink)}
 .drops{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}
@@ -652,6 +656,7 @@ function render(text){
          `<label class="cantripbox">Cheap draw or ramp`+
            `<input id="cantrips" type="number" min="0" max="30" step="1" value="${cn}" `+
            `inputmode="numeric" aria-label="Number of cheap card-draw or mana-ramp spells">`+
+           `${cn>0?`<button type="button" id="ctreset" class="ctreset" aria-label="Reset to zero">reset</button>`:""}`+
          `</label>`+
        `</div>`;
 
@@ -797,18 +802,37 @@ new ResizeObserver(reportHeight).observe(document.body);
 
 const $=id=>document.getElementById(id);
 $("out").addEventListener("click",e=>{
+  if(e.target.closest("#ctreset")){ cantrips=0; render($("list").value); return; }
   const b=e.target.closest(".tg"); if(!b) return;
   drawMode=b.dataset.draw==="1"; render($("list").value);
 });
 // Cantrip count: update state, re-render, then restore focus to the recreated input
 // so the user can keep typing (a full re-render replaces the input element).
+let ctTimer;
 $("out").addEventListener("input",e=>{
+  const inp=e.target.closest("#cantrips"); if(!inp) return;
+  // Do NOT clamp or re-render mid-keystroke: that fights the typist and destroys the field.
+  // Just read the raw value, update state, and debounce the re-render so the input the user
+  // is typing into stays put until they pause.
+  let v=parseInt(inp.value,10); if(isNaN(v)||v<0) v=0;
+  cantrips=v;
+  const hadFocus = document.activeElement===inp;
+  const caret = inp.selectionStart;
+  clearTimeout(ctTimer);
+  ctTimer=setTimeout(()=>{
+    render($("list").value);
+    if(hadFocus){
+      const again=document.getElementById("cantrips");
+      if(again){ again.focus(); try{ again.setSelectionRange(caret,caret); }catch(_){} }
+    }
+  },400);
+});
+// Clamp only when the user leaves the field or presses Enter, never mid-type.
+$("out").addEventListener("change",e=>{
   const inp=e.target.closest("#cantrips"); if(!inp) return;
   let v=parseInt(inp.value,10); if(isNaN(v)||v<0) v=0; if(v>30) v=30;
   cantrips=v;
   render($("list").value);
-  const again=document.getElementById("cantrips");
-  if(again){ again.focus(); const L=again.value.length; try{again.setSelectionRange(L,L);}catch(_){} }
 });
 $("run").onclick=()=>render($("list").value);
 $("clear").onclick=()=>{$("list").value="";render("");};
