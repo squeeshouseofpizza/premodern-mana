@@ -50,6 +50,14 @@ button.quiet:hover{background:var(--edge);color:var(--ink)}
 .tg+.tg{border-left:1px solid var(--edge)}
 .tg:hover{color:var(--ink)}
 .tg.on{background:var(--gold);color:var(--ground)}
+.dropctl{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:14px}
+.dropctl .toggle{margin-bottom:0}
+.cantripbox{display:inline-flex;align-items:center;gap:9px;font-family:Cinzel,serif;font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cantripbox input{width:56px;font-family:var(--mono);font-size:15px;color:var(--ink);
+  background:rgba(28,29,33,.66);border:1px solid var(--edge);border-radius:2px;padding:8px 10px;
+  text-align:center}
+.cantripbox input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .dropintro{margin:0 0 12px;color:var(--muted);font-size:16px}
 .dropintro b,.dropnote b{color:var(--ink)}
 .drops{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}
@@ -362,6 +370,7 @@ function karstenTable(lands){
 
 let LANDS=null,NONLANDS=null,COSTS=null,BYNAME=null;
 let drawMode=false;
+let cantrips=0;
 const norm=s=>s.toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g," ").trim();
 
 function symbolsOf(p){
@@ -615,26 +624,63 @@ function render(text){
   }
 
   if(landCount>=1){
-    const d=landDrops(landCount);
     const draw=drawMode;
-    const row=draw?d.draw:d.play;
-    const cells=row.map((pct,i)=>{
+    const cn=Math.max(0,cantrips|0);
+    const effRaw=landCount + cn*0.28;
+    const eff=Math.round(effRaw);
+    const adjusted = cn>0 && eff!==landCount;
+
+    const dRaw=landDrops(landCount);
+    const dAdj=landDrops(adjusted?eff:landCount);
+    const rawRow=draw?dRaw.draw:dRaw.play;
+    const adjRow=draw?dAdj.draw:dAdj.play;
+    // Turn 2 (index 0) always reads the raw count: a spell cannot help you reach a
+    // land drop you must already have made in order to cast it. Turns 3+ use the adjusted count.
+    const cells=adjRow.map((pct,i)=>{
       const turn=i+2;
+      const val = (i===0 ? rawRow[0] : pct);
       return `<div class="drop"><div class="dt">${turn} by turn ${turn}</div>`+
-             `<div class="dp">${pct.toFixed(1)}%</div></div>`;
+             `<div class="dp">${val.toFixed(1)}%</div></div>`;
     }).join("");
+
     h+=`<h2>Landing your land drops</h2>`+
-       `<div class="toggle" role="tablist" aria-label="Play or draw">`+
-         `<button role="tab" class="tg ${draw?"":"on"}" data-draw="0" aria-selected="${!draw}">On the play</button>`+
-         `<button role="tab" class="tg ${draw?"on":""}" data-draw="1" aria-selected="${draw}">On the draw</button>`+
-       `</div>`+
-       `<p class="dropintro">With <b>${landCount}</b> lands, ${draw?"on the draw":"on the play"}, `+
-       `under a standard mulligan${d.clamped?` (read at ${d.used}, the nearest row Karsten published)`:""}:</p>`+
-       `<div class="drops">${cells}</div>`+
-       `<p class="dropnote">Exact hypergeometric probabilities, not an estimate. There is no single `+
-       `right answer: a deck that needs three lands to operate wants that turn-three figure high, `+
-       `while a low-curve deck can live with less. Karsten's own comfort line for a deck that needs `+
-       `its third land was around 90 percent.</p>`;
+       `<div class="dropctl">`+
+         `<div class="toggle" role="tablist" aria-label="Play or draw">`+
+           `<button role="tab" class="tg ${draw?"":"on"}" data-draw="0" aria-selected="${!draw}">On the play</button>`+
+           `<button role="tab" class="tg ${draw?"on":""}" data-draw="1" aria-selected="${draw}">On the draw</button>`+
+         `</div>`+
+         `<label class="cantripbox">Cheap draw or ramp`+
+           `<input id="cantrips" type="number" min="0" max="30" step="1" value="${cn}" `+
+           `inputmode="numeric" aria-label="Number of cheap card-draw or mana-ramp spells">`+
+         `</label>`+
+       `</div>`;
+
+    if(adjusted){
+      h+=`<p class="dropintro">With <b>${landCount}</b> lands and <b>${cn}</b> cheap draw-or-ramp `+
+         `${cn===1?"spell":"spells"}, ${draw?"on the draw":"on the play"}, reading at an effective `+
+         `<b>${eff}</b> lands${d.clamped?` (Karsten's nearest published row)`:""}:</p>`;
+    }else{
+      h+=`<p class="dropintro">With <b>${landCount}</b> lands, ${draw?"on the draw":"on the play"}, `+
+         `under a standard mulligan${d.clamped?` (read at ${d.used}, the nearest row Karsten published)`:""}:</p>`;
+    }
+
+    h+=`<div class="drops">${cells}</div>`;
+
+    if(adjusted){
+      h+=`<p class="dropnote">Adjusted, not exact. Karsten's land-count math treats each cheap draw `+
+         `or ramp spell as worth about 0.28 of a land, so ${cn} of them read like `+
+         `${(cn*0.28).toFixed(1)} extra lands from turn three on. Turn two is left unadjusted: a `+
+         `spell cannot help you make a land drop you already need in order to cast it. He calls the `+
+         `0.28 rule an imprecise hack, so take the adjusted figures as a good estimate. Set the box `+
+         `to 0 for the exact draw odds. A deck that needs its third land on time wants the `+
+         `turn-three number near 90 percent.</p>`;
+    }else{
+      h+=`<p class="dropnote">Exact hypergeometric probabilities, not an estimate. Enter your cheap `+
+         `card-draw and ramp count above to adjust for the digging those cards do. There is no single `+
+         `right answer: a deck that needs three lands to operate wants that turn-three figure high, `+
+         `while a low-curve deck can live with less. Karsten's comfort line for a deck that needs its `+
+         `third land was around 90 percent.</p>`;
+    }
   }
 
   if(checks.length){
@@ -753,6 +799,16 @@ const $=id=>document.getElementById(id);
 $("out").addEventListener("click",e=>{
   const b=e.target.closest(".tg"); if(!b) return;
   drawMode=b.dataset.draw==="1"; render($("list").value);
+});
+// Cantrip count: update state, re-render, then restore focus to the recreated input
+// so the user can keep typing (a full re-render replaces the input element).
+$("out").addEventListener("input",e=>{
+  const inp=e.target.closest("#cantrips"); if(!inp) return;
+  let v=parseInt(inp.value,10); if(isNaN(v)||v<0) v=0; if(v>30) v=30;
+  cantrips=v;
+  render($("list").value);
+  const again=document.getElementById("cantrips");
+  if(again){ again.focus(); const L=again.value.length; try{again.setSelectionRange(L,L);}catch(_){} }
 });
 $("run").onclick=()=>render($("list").value);
 $("clear").onclick=()=>{$("list").value="";render("");};
