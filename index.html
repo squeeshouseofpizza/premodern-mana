@@ -658,10 +658,10 @@ function render(text){
     if(adjusted){
       h+=`<p class="dropintro">With <b>${landCount}</b> lands and <b>${cn}</b> cheap draw-or-ramp `+
          `${cn===1?"spell":"spells"}, ${draw?"on the draw":"on the play"}, reading at an effective `+
-         `<b>${eff}</b> lands${d.clamped?` (Karsten's nearest published row)`:""}:</p>`;
+         `<b>${eff}</b> lands${dAdj.clamped?` (Karsten's nearest published row)`:""}:</p>`;
     }else{
       h+=`<p class="dropintro">With <b>${landCount}</b> lands, ${draw?"on the draw":"on the play"}, `+
-         `under a standard mulligan${d.clamped?` (read at ${d.used}, the nearest row Karsten published)`:""}:</p>`;
+         `under a standard mulligan${dRaw.clamped?` (read at ${dRaw.used}, the nearest row Karsten published)`:""}:</p>`;
     }
 
     h+=`<div class="drops">${cells}</div>`;
