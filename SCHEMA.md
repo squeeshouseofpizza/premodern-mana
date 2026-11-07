@@ -50,14 +50,14 @@ disagree, this file is right.
 
 ### `produces` modes
 
-- `fixed` — `mana` is the literal list of symbols produced, all of them, every time.
+- `fixed`: `mana` is the literal list of symbols produced, all of them, every time.
   Balduvian Trading Post's `{T}: Add {C}{R}` is `["C","R"]`.
-- `choice` — `options` lists the symbols, one of which you pick. Always `amount: 1`.
+- `choice`: `options` lists the symbols, one of which you pick. Always `amount: 1`.
   A painland's `{T}: Add {W} or {U}` is `["W","U"]`.
-- `choice_uniform` — `count` mana, all of a single chosen color. Lotus Vale only.
-- `fixed_variable` — `unit` is the single symbol, repeated a variable number of times.
+- `choice_uniform`: `count` mana, all of a single chosen color. Lotus Vale only.
+- `fixed_variable`: `unit` is the single symbol, repeated a variable number of times.
   The storage lands, Gaea's Cradle, Serra's Sanctum, Cabal Coffers.
-- `derived` — colors resolve against the board. Reflecting Pool and Meteor Crater.
+- `derived`: colors resolve against the board. Reflecting Pool and Meteor Crater.
 
 The `fixed` and `choice` distinction is the single most important thing in this schema.
 Both produce two mana symbols in their text and they mean opposite things.

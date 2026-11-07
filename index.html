@@ -736,7 +736,7 @@ function render(text){
       }
       const copies=[...seen.values()].reduce((n,d)=>n+d.qty,0);
       h+=`<details><summary><span style="color:var(${v})">${label}</span> &middot; ${copies} land${copies===1?"":"s"}</summary><div class="body">`;
-      for(const [name,d] of seen) h+=`<p><span class="num" style="color:var(--gold)">${d.qty}&times;</span> <b>${name}</b> — ${d.why}.</p>`;
+      for(const [name,d] of seen) h+=`<p><span class="num" style="color:var(--gold)">${d.qty}&times;</span> <b>${name}</b>: ${d.why}.</p>`;
       h+="</div></details>";
     }
   }

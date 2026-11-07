@@ -5,7 +5,7 @@ granted below.
 
 This project has two parts under two different licenses.
 
-## The data — Creative Commons Attribution-ShareAlike 4.0 International
+## The data: Creative Commons Attribution-ShareAlike 4.0 International
 
 The hand-classified card data, meaning the files in `data/` and the reasoning in
 their `notes` fields, is licensed CC BY-SA 4.0.
@@ -17,7 +17,7 @@ You may share and adapt it, including commercially, on two conditions:
 - **ShareAlike.** If you build on the data, you must release your version under
   this same license. You cannot take this data into a closed or proprietary tool.
 
-## The code — source-available, non-commercial
+## The code: source-available, non-commercial
 
 The application code, meaning `index.html`, the scripts in `build/`, and the embed
 files, is source-available. You may read it, run it, fork it for your own
