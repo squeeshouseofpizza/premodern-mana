@@ -372,7 +372,7 @@ function karstenTable(lands){
   return h+"</tbody></table>";
 }
 
-let LANDS=null,NONLANDS=null,COSTS=null,BYNAME=null;
+let LANDS=null,NONLANDS=null,COSTS=null,BYNAME=null,BANNED=new Set();
 let drawMode=false;
 let cantrips=0;
 const norm=s=>s.toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g," ").trim();
@@ -477,14 +477,15 @@ function render(text){
   const rows=parse(text);
   if(!rows.length){out.innerHTML='<p class="empty">Paste a decklist on the left.</p>';return;}
 
-  const lands=[],accel=[],spells=[],unknown=[];
+  const lands=[],accel=[],spells=[],unknown=[],banned=[];
   for(const r of rows){
     const key=norm(r.name), L=LANDS.get(key), N=NONLANDS.get(key);
     if(L&&!r.sideboard) lands.push({qty:r.qty,card:L});
     else if(L) lands.push({qty:0,card:L});
     else if(N){ if(!r.sideboard) accel.push({qty:r.qty,card:N}); }
     const cost = r.override || (COSTS?COSTS.get(key):null) || (N?N.mana_cost:null);
-    if(cost) spells.push({...r,cost});
+    if(BANNED.has(key)&&!L&&!N) banned.push(r);
+    else if(cost) spells.push({...r,cost});
     else if(!L&&!N) unknown.push(r);
   }
   const landCount=lands.reduce((n,e)=>n+e.qty,0);
@@ -779,8 +780,13 @@ function render(text){
     }
   }
 
+  if(banned.length){
+    h+='<h2>Banned in Premodern</h2><div class="err">'+
+       banned.map(u=>`<div>${u.qty} ${u.name}</div>`).join("")+
+       '<p style="margin:10px 0 0;color:var(--muted)">Not counted.</p></div>';
+  }
   if(unknown.length){
-    h+='<h2>Not recognised</h2><div class="err">'+
+    h+='<h2>Not recognized</h2><div class="err">'+
        unknown.slice(0,12).map(u=>`<div>${u.qty} ${u.name}</div>`).join("")+
        '<p style="margin:10px 0 0;color:var(--muted)">Expected one card per line, like <code>4 Wasteland</code>.</p></div>';
   }
@@ -841,8 +847,10 @@ let t;$("list").oninput=()=>{clearTimeout(t);t=setTimeout(()=>render($("list").v
 Promise.all([
   fetch("data/premodern_lands.json").then(r=>r.json()),
   fetch("data/premodern_nonlands.json").then(r=>r.json()),
-  fetch("data/premodern_card_costs.json").then(r=>r.ok?r.json():null).catch(()=>null)
-]).then(([l,n,c])=>{
+  fetch("data/premodern_card_costs.json").then(r=>r.ok?r.json():null).catch(()=>null),
+  fetch("data/banned.json").then(r=>r.ok?r.json():[]).catch(()=>[])
+]).then(([l,n,c,b])=>{
+  BANNED=new Set(b.map(norm));
   LANDS=new Map(l.map(x=>[norm(x.name),x]));
   NONLANDS=new Map(n.map(x=>[norm(x.name),x]));
   COSTS=c?new Map(Object.entries(c).map(([k,v])=>[norm(k),v])):null;
