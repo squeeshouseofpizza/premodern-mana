@@ -9,9 +9,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ground:#17120c; --panel:rgba(28,29,33,.66); --edge:#2e2a24;
-  --gold:#d6a34a; --ink:#e6ddcd; --muted:#8d8172; --flag:#b5573c; --ok:#7d9e6a;
+  --ground:#1c1d21; --panel:#232429; --edge:#33353b;
+  --gold:#d6a34a; --ink:#ece9e2; --muted:#a6a49d; --flag:#b5573c; --ok:#7d9e6a;
   --w:#ece3ca; --u:#7fa8c9; --b:#a08fae; --r:#c4694a; --g:#7d9e6a; --c:#9a8f7d;
+  --label:Verdana,"DejaVu Sans",Geneva,sans-serif;
   --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
@@ -27,14 +28,14 @@ h1{font-family:Cinzel,serif;font-weight:600;font-size:clamp(26px,3.4vw,38px);
 .thesis{margin:0;max-width:64ch;color:var(--muted)}
 .cols{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:36px;align-items:start}
 @media(max-width:900px){.cols{grid-template-columns:1fr}}
-label.field{display:block;font-family:Cinzel,serif;font-size:12px;letter-spacing:.16em;
+label.field{display:block;font-family:var(--label);font-weight:bold;font-size:12px;letter-spacing:.06em;
   text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-textarea{width:100%;height:360px;resize:vertical;background:rgba(28,29,33,.66);color:var(--ink);
+textarea{width:100%;height:360px;resize:vertical;background:#18191d;color:var(--ink);
   border:1px solid var(--edge);border-radius:2px;font-family:var(--mono);font-size:13px;
   line-height:1.7;padding:14px}
 textarea:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .row{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
-button{font-family:Cinzel,serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+button{font-family:var(--label);font-weight:bold;font-size:12px;letter-spacing:.06em;text-transform:uppercase;
   background:transparent;color:var(--gold);border:1px solid var(--gold);padding:9px 16px;
   border-radius:2px;cursor:pointer}
 button:hover{background:var(--gold);color:var(--ground)}
@@ -45,17 +46,17 @@ button.quiet:hover{background:var(--edge);color:var(--ink)}
 .tally{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 20px}
 .tally b{color:var(--ink);font-weight:400}
 .toggle{display:inline-flex;border:1px solid var(--edge);border-radius:2px;overflow:hidden;margin-bottom:14px}
-.tg{font-family:Cinzel,serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+.tg{font-family:var(--label);font-weight:bold;font-size:11px;letter-spacing:.06em;text-transform:uppercase;
   background:transparent;color:var(--muted);border:0;border-radius:0;padding:11px 18px;cursor:pointer}
 .tg+.tg{border-left:1px solid var(--edge)}
 .tg:hover{color:var(--ink)}
 .tg.on{background:var(--gold);color:var(--ground)}
 .dropctl{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:14px}
 .dropctl .toggle{margin-bottom:0}
-.cantripbox{display:inline-flex;align-items:center;gap:9px;font-family:Cinzel,serif;font-size:11px;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cantripbox{display:inline-flex;align-items:center;gap:9px;font-family:var(--label);font-weight:bold;font-size:11px;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .cantripbox input{width:56px;font-family:var(--mono);font-size:15px;color:var(--ink);
-  background:rgba(28,29,33,.66);border:1px solid var(--edge);border-radius:2px;padding:8px 10px;
+  background:#18191d;border:1px solid var(--edge);border-radius:2px;padding:8px 10px;
   text-align:center}
 .cantripbox input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .ctreset{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:none;
@@ -67,13 +68,13 @@ button.quiet:hover{background:var(--edge);color:var(--ink)}
 .drops{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}
 .drop{flex:1 1 130px;max-width:200px;background:var(--panel);border:1px solid var(--edge);
   border-radius:2px;padding:13px 14px}
-.dt{font-family:Cinzel,serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.dt{font-family:var(--label);font-weight:bold;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .dp{font-family:var(--mono);font-size:26px;margin-top:6px;font-variant-numeric:tabular-nums}
 .dropnote{margin:0;color:var(--muted);font-size:14px;max-width:74ch}
 .grid{display:flex;flex-wrap:wrap;gap:12px}
 .tile{flex:1 1 168px;max-width:250px;background:var(--panel);border:1px solid var(--edge);
   border-top-width:2px;border-radius:2px;padding:15px 15px 13px}
-.tile .sym{font-family:Cinzel,serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.tile .sym{font-family:var(--label);font-weight:bold;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 .tile .big{font-family:var(--mono);font-size:34px;line-height:1.05;margin:6px 0 0;font-variant-numeric:tabular-nums}
 .tile .need{font-size:15px;color:var(--muted)}
 .tile .sub{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:9px;
@@ -81,7 +82,7 @@ button.quiet:hover{background:var(--edge);color:var(--ink)}
 .tile.short{border-color:var(--flag)}
 .tile.short .big{color:var(--flag)}
 .absent{margin:14px 0 0;color:var(--muted);font-size:15px}
-h2{font-family:Cinzel,serif;font-weight:500;font-size:13px;letter-spacing:.16em;
+h2{font-family:var(--label);font-weight:bold;font-size:12px;letter-spacing:.06em;
   text-transform:uppercase;color:var(--muted);margin:38px 0 14px;padding-bottom:8px;
   border-bottom:1px solid var(--edge)}
 table{border-collapse:collapse;width:100%;font-size:15px}
@@ -89,8 +90,8 @@ th,td{text-align:right;padding:8px 12px;border-bottom:1px solid var(--edge);vert
 th:first-child,td:first-child{text-align:left}
 td.card{font-family:"EB Garamond",serif;font-size:16px}
 td.num,th.num{font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums}
-thead th{font-family:Cinzel,serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--muted);font-weight:500}
+thead th{font-family:var(--label);font-weight:bold;font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted)}
 .oncurve{color:var(--muted)}
 .late{color:var(--flag)}
 .by{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--flag);
@@ -118,7 +119,7 @@ code{font-family:var(--mono);font-size:12px;color:var(--gold)}
 .why-body{padding:0 16px 4px 16px}
 .why-body p{max-width:70ch;margin:0 0 12px;color:var(--ink);font-size:16px}
 details.doc{background:transparent;border:0;border-top:1px solid var(--edge);border-radius:0;margin:32px 0 0}
-details.doc>summary{font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em;
+details.doc>summary{font-family:var(--label);font-weight:bold;font-size:12px;letter-spacing:.06em;
   text-transform:uppercase;color:var(--muted);padding:14px 0}
 details.doc>summary:hover{color:var(--ink)}
 details.doc[open]>summary{color:var(--gold)}
